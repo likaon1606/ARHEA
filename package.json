@@ -1,0 +1,45 @@
+{
+  "name": "wordpress-gulp-template",
+  "version": "4.4",
+  "description": "Wordpress Gulp Template",
+  "exports": "./gulpfile.js",
+  "type": "module",
+  "author": "Carlos Medina",
+  "private": true,
+  "repository": "github:medinnna/wordpress-gulp-boilerplate",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "browser-sync": "^3.0.2",
+    "del": "^7.1.0",
+    "figlet": "^1.7.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^9.0.1",
+    "gulp-flatmap": "1.0.2",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rezzy": "^3.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^5.0.0",
+    "image-size": "^1.1.1",
+    "imagemin": "^9.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
+    "inquirer": "^10.1.8",
+    "merge-stream": "2.0.0",
+    "penthouse": "2.3.3",
+    "sass": "^1.77.8"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 5%",
+    "not dead"
+  ],
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
