@@ -3,6 +3,83 @@ body
   
 p
   font-size: 16px
+
+.landing__content
+  color: #fff
+  
+.banner__image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  filter: brightness(50%)
+  z-index: -1
+
+.landing__menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: 50px 40px
+  margin-top: 0
+  left: 0
+  z-index: 2
+
+.banner__content
+  z-index: 2
+  padding: 40px
+
+.banner__title
+  font-size: 52px
+  font-weight: normal
+
+.banner__subtitle, .contact-btn
+  margin-top: 40px
+  font-weight: normal
+
+.contact-btn
+  padding: 16px 32px
+  background: rgba(0, 0, 0, 0.2)
+  backdrop-filter: blur(8px)
+  border: 1px solid white
+  transition: all 0.3s ease-in-out
+
+.contact-btn:hover, .btn__development button:hover,
+.button-about:hover
+  background: #153B67
+  transition: all 0.3s ease-in-out
+
+.submenu-link
+  margin-top: 100px
+  font-weight: normal
+
+.banner__links
+  display: flex
+  flex-direction: row
+  list-style: none
+  padding-left: 0
+
+  & a
+    color: white
+    text-decoration: none
+
+.pl__links
+  margin-left: 20px
+
+.banner__social-icons
+  position: fixed
+  right: 40px
+  top: 70%
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 10px
+  z-index: 3
+  a
+    display: block
+
+//******************S
   
 .about
   width: 100%
@@ -54,14 +131,28 @@ p
   width: auto
   border: 1px solid #272424
 
-.section-development h1, h3, p, button
+// ********************
+
+.section__development
+  position: relative
+
+.development__image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  filter: brightness(50%)
+  z-index: -1
+
+.section__development h1, h3, p, button
   color: #fff
 
-.development h1
+.development__contain h1
   padding-top: 5%
   text-align: center
 
-.development p
+.development__contain p
   padding-top: 1%
   text-align: center
 
@@ -74,12 +165,12 @@ p
 .development-nums h3
   font-size: 64px
 
-.btn-development
+.btn__development
   display: flex
   justify-content: center
   margin-top: 3%
 
-.btn-development button
+.btn__development button
   font-size: 16px
   padding: 16px 32px
   background: transparent
@@ -105,6 +196,12 @@ p
   padding: 16px 32px
   border: 1px solid #153B67
   background: transparent
+
+.btn-inovation:hover
+  color: #fff
+  background: #153B67
+  transition: all 0.3s ease-in-out
+
 
 //** slider **
 #carousel
@@ -152,6 +249,8 @@ p
 
 .btn__cardcarousel button:hover, .btn__form:hover
   color: #fff
+  background: #153B67
+  transition: all 0.3s ease-in-out 
 
 // ***********
 

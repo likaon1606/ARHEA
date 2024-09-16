@@ -1,4 +1,4 @@
-<section class="landing__content">
+<!-- <section class="landing__content">
   <?php echo siteImage("banner_principal", "banner__image", "Banner Principal"); ?>
   <div class="landing__menu">
     <?php siteImage("banner-left","img-banner-left","Banner-left");?> 
@@ -27,4 +27,4 @@
       <div><a href="#"><?php siteImage("instagram","","Instagram");?></a></div>  
     </div>
   </div>
-</section>
+</section> -->
