@@ -4,6 +4,50 @@ body
 p
   font-size: 16px
 
+.menu-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  background-color: #153B67
+  display: none
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  z-index: 3
+  opacity: 0
+  transition: opacity 0.5s ease-in-out
+
+  &.active
+    display: flex
+    opacity: 1
+
+.menu-list
+  list-style: none
+  text-align: center
+  padding: 0
+
+  li
+    margin: 20px 0
+
+    a
+      color: white
+      text-decoration: none
+      font-size: 36px
+      border-bottom: 1px solid white
+      padding-bottom: 10px
+      transition: color 0.3s ease-in-out
+
+      &:hover
+        color: #ddd
+
+  //******
+
+.landing__content
+  position: absolute
+  color: #fff
+
 .landing__content
   position: relative
   color: #fff
@@ -27,7 +71,10 @@ p
   padding: 50px 100px
   top: 0
   left: 0
-  z-index: 2
+  z-index: 4
+
+.close__menu
+  display: none
 
 .banner__content
   margin-top: 100px
