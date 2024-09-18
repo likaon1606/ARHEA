@@ -4,26 +4,9 @@
 */
 ?>
 
-<?php get_header(); ?>
 
 <section class="landing__content">
-  <!-- Menú Overlay -->
-  <div class="menu-overlay">
-    <ul class="menu-list">
-      <li><a href="#">INICIO</a></li>
-      <li><a href="#">ACERCA DE ARHEA</a></li>
-      <li><a href="#">PROYECTOS</a></li>
-      <li><a href="#">COLABORADORES</a></li>
-      <li><a href="#">CONTACTO</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="landing__menu">
-        <?php siteImage("banner-left", "img-banner-left", "Banner-left"); ?> 
-        <?php siteImage("hamburguer", "img-hamburguer", "Menú"); ?> 
-        <?php siteImage("close", "close__menu", "close menu"); ?>
-      </div>
+  <?php get_header(); ?>
 
       <div class="banner__content">
         <h1 class="banner__title">DESARROLLOS <br> INMOBILIARIOS <br> DE VALOR</h1>
@@ -38,11 +21,6 @@
           </ul>
         </div>
 
-        <div class="banner__social-icons">
-          <div><a href="#"><?php siteImage("whatsapp", "", "WhatsApp"); ?></a></div>
-          <div><a href="#"><?php siteImage("facebook", "", "Facebook"); ?></a></div>
-          <div><a href="#"><?php siteImage("instagram", "", "Instagram"); ?></a></div>  
-        </div>
       </div>
     </div>
   </div>

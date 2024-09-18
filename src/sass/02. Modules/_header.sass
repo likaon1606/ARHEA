@@ -1,0 +1,57 @@
+.container__menu
+  position: relative
+  z-index: 3333
+  background-color: transparent
+  
+.menu-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  padding: 400px 100px
+  background-color: #153B67
+  display: none
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  z-index: 3
+  opacity: 0
+  transition: opacity 0.5s ease-in-out
+
+  &.active
+    display: flex
+    opacity: 1
+
+.menu-list
+  list-style: none
+  text-align: start
+  padding: 0
+
+  li
+    margin: 20px 0
+
+    a
+      color: #fff
+      text-decoration: none
+      font-size: 32px
+      border-bottom: 1px solid #fff
+      padding-bottom: 10px
+      transition: color 0.3s ease-in-out
+
+      &:hover
+        color: #000
+
+.landing__menu
+  position: absolute
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  padding: 50px 100px
+  top: 0
+  left: 0
+  z-index: 4
+
+.close__menu
+  display: none

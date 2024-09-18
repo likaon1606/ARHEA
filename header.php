@@ -43,5 +43,6 @@
 
 <body <?php body_class(); ?>>
   <?php include(TEMPLATEPATH . '/includes/nav.php'); ?>
+  <?php include(TEMPLATEPATH . '/includes/socials.php'); ?>
 
   <div class="global__wrapper" data-namespace="<?php echo $post_slug; ?>">
