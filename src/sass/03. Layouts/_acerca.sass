@@ -1,6 +1,7 @@
 .about__me
   position: relative
   color: #fff
+  margin-bottom: 300px
 
 .about__image
   position: absolute
@@ -20,35 +21,170 @@
   font-size: 52px
   font-weight: normal
 
-.about__subtitle, .contact-btn
+.about__subtitle
   margin-top: 40px
   font-weight: normal
 
-.about__contact-btn
-  margin-top: 40px
+.about__submenu-link
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-top: 100px
+  font-weight: normal
+
+.about__projects-btn, .__black-description-btn
   padding: 16px 32px
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
   border: 1px solid white
   transition: all 0.3s ease-in-out
 
-.about__contact-btn:hover
+.about__projects-btn:hover, .__black-description-btn:hover
   background: #153B67
   transition: all 0.3s ease-in-out
 
-.about__submenu-link
-  margin-top: 100px
-  font-weight: normal
+.about__info-btn
+  padding: 16px 0px
+  background: transparent
+  margin-left: 100px
+  border: none
+  border-bottom: 2px solid #fff
 
-.about__links
+//**********
+
+.about__gray-section
+  margin-bottom: 150px
+
+.about__content-gray 
+  width: 100%
   display: flex
-  flex-direction: row
-  list-style: none
-  padding-left: 0
+  justify-content: center
+  align-items: center
+  & h1
+    font-size: 48px
+    color: #153B67 
+  & p, span
+    color: #272424
 
-  & a
-    color: white
-    text-decoration: none
+.about__gray-title, .about__gray-description
+  flex: 1
+  max-width: 40%
 
-.about__links
-  margin-left: 20px
+// *********
+
+.about__img-simple
+  width: 100%
+  overflow: hidden
+  margin-bottom: 150px
+
+.container-fluid
+  padding: 0
+
+.img-fluid
+  width: 100%
+  height: auto
+
+// ***********
+
+.about__values
+  margin-bottom: 150px
+
+.about__values-content
+  width: 55%
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  align-items: center
+  & p
+    color: #272424
+  & h1
+    color: #153B67
+    font-size: 48px
+  & h3
+    color: #272424
+    font-size: 28px
+
+.about__subtitle
+  margin-top: 20px
+  text-align: center
+
+.about__mision-vision
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 20px
+
+.about__mision, .about__vision
+  background: #fff
+  padding: 32px
+  box-shadow: 0 0 10px 1px #a5a5a5
+
+// ************
+
+.about__values-image-half
+  width: 100vw  
+  overflow: hidden
+  position: relative
+  color: #fff
+
+  .about__image-half
+    position: relative
+    width: 100%  
+    height: 1200px  // auto
+
+    .about__black, .about__blue
+      position: absolute
+      width: 100%
+      height: 50%
+      left: 0
+
+    .about__black
+      top: 0
+      background-color: #272424
+      z-index: 1
+      display: flex
+      justify-content: space-around
+      align-items: flex-start
+      padding-top: 50px
+      & h1
+        font-size: 48px
+      & p
+        margin-top: 20px
+
+    .about__blue
+      bottom: 0
+      background-color: #153B67
+      z-index: 1
+
+    .about__image-in-half
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 80%
+      height: 30%
+      object-fit: cover
+      transform: translate(-50%, -50%)  
+      z-index: 2
+
+.__black-separator
+  margin-top: 50px
+  margin-bottom: 50px
+
+.__black-description-btn
+  margin-top: 50px
+
+  @include media-breakpoint-down(lg)  // Para pantallas medianas y menores
+    .about__image-half
+      height: 400px
+
+  @include media-breakpoint-down(md)  // Para pantallas pequeñas
+    .about__image-half
+      height: 300px
+      .about__image-in-half
+        width: 90%  // Ajusta el ancho de la imagen para pantallas pequeñas
+
+  @include media-breakpoint-down(sm)  // Para pantallas extra pequeñas
+    .about__image-half
+      height: 250px
+      .about__image-in-half
+        width: 95%
