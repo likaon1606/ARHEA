@@ -8,6 +8,8 @@ $(window).on("load", () => {
     homeFunctions();
   } else if (currentNamespace == "inicio") {
     sliderHome();
+  } else if (currentNamespace == 'inicio' || currentNamespace == 'acerca-de') {
+    effectMenu();
   }
 });
 

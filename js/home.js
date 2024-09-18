@@ -38,6 +38,7 @@ function sliderHome() {
 }
 
 // ** effect menu *
+
 function effectMenu() {
   // Select icons hamburguer/close
   const hamburguerIcon = document.querySelector('.img-hamburguer');

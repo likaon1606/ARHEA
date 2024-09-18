@@ -20,10 +20,8 @@
             <li class="pl__links"><a href="#">EL CARIBE</a></li>
           </ul>
         </div>
-
+        
       </div>
-    </div>
-  </div>
 
   <?php echo siteImage("banner_principal", "banner__image", "Banner Principal"); ?>
 </section>

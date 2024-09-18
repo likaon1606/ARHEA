@@ -1,2 +1,54 @@
 .about__me
   position: relative
+  color: #fff
+
+.about__image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  filter: brightness(40%)
+  z-index: -1
+
+.about__content
+  margin-top: 150px
+  z-index: 2
+  padding: 50px 100px
+
+.about__title
+  font-size: 52px
+  font-weight: normal
+
+.about__subtitle, .contact-btn
+  margin-top: 40px
+  font-weight: normal
+
+.about__contact-btn
+  margin-top: 40px
+  padding: 16px 32px
+  background: rgba(0, 0, 0, 0.2)
+  backdrop-filter: blur(8px)
+  border: 1px solid white
+  transition: all 0.3s ease-in-out
+
+.about__contact-btn:hover
+  background: #153B67
+  transition: all 0.3s ease-in-out
+
+.about__submenu-link
+  margin-top: 100px
+  font-weight: normal
+
+.about__links
+  display: flex
+  flex-direction: row
+  list-style: none
+  padding-left: 0
+
+  & a
+    color: white
+    text-decoration: none
+
+.about__links
+  margin-left: 20px
