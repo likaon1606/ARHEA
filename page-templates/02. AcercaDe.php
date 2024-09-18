@@ -76,6 +76,7 @@
 
 <section class="about__values-image-half">
   <div class="about__image-half">
+
     <div class="about__black">
       <div class="__black-description">
         <h1>CORE VALUES</h1>
@@ -89,8 +90,35 @@
         <h2>CALIDAD</h2>
       </div>
     </div>
-    <div class="about__blue"></div>
-    <?php echo siteImage("image__half", "about__image-in-half", "Imagen dividida a la mitad entre dos contenedores"); ?>
+
+      <?php echo siteImage("image__half", "about__image-in-half", "Imagen dividida a la mitad entre dos contenedores"); ?>
+
+    <div class="about__blue">
+      <h1>CONOCE A NUESTRO <br>EQUIPO DIRECTIVO</h1>
+      <p>Poseemos más de dos <strong>décadas de conocimiento en el ámbito de bienes raíces,</strong> respaldados por un grupo de profesionales enfocados en los proyectos y sus residentes.
+      </p>
+      
+      <div class="__blue-content">
+        <div class="__blue-content-ganem">
+          <?php echo siteImage("ganem", "__ganem", "Imagen de HECTOR AREHIGA GANEM"); ?>
+          <div class="__ganem-description">
+            <h4>HÉCTOR<br>AÉCHIGA <br>GANEM</h4>
+            <p>Arhea Property<br>Development</p>
+            <p>Fundador, Presidente y Consejero<br>Delegado</p>
+          </div>
+        </div>
+
+        <div class="__blue-content-saiz">
+          <?php echo siteImage("saiz", "__saiz", "Imagen de JOSÉ LUIS SAÍZ FERNÁNDEZ"); ?>
+          <div class="__saiz-description">
+            <h4>JOSÉ LUIS SAÍZ<br>FERNÁNDEZ</h4>
+            <p>Arhea Property<br>Development</p>
+            <p>VP - Unidad de Negocio Multifamiliar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
 
