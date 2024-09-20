@@ -68,26 +68,44 @@ function effectMenu() {
   });
 }
 
-// ** active *
+// ** active section projects*
 
-function setActiveButton() {
-  const links = document.querySelectorAll('.projects__submenu a');
+function switchSection(activeBtnId, activeSectionId) {
+  
+  const buttons = document.querySelectorAll('.projects__submenu a');
+  const sections = document.querySelectorAll('.projects__img__submenu');
 
-  links.forEach(link => {
-    link.addEventListener('click', function(event) {
-      event.preventDefault(); 
+  // Quitar la clase 'active__projects' de todos los botones
+  buttons.forEach(button => button.classList.remove('active__projects'));
 
-      links.forEach(l => l.classList.remove('active__projects'));
+  // Ocultar todas las secciones
+  sections.forEach(section => section.style.display = 'none');
 
-      this.classList.add('active__projects');
-    });
-  });
+  // Mostrar la sección activa
+  document.getElementById(activeSectionId).style.display = 'flex';
+
+  // Añadir la clase 'active__projects' al botón correspondiente
+  document.getElementById(activeBtnId).classList.add('active__projects');
 }
 
+// Función que se ejecuta al cargar la página
+window.onload = function() {
+  // Activar Residencial al cargar la página
+  switchSection('residencialBtn', 'residencialSection');
 
+  // Añadir eventos de clic para cambiar de sección
+  document.getElementById('residencialBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    switchSection('residencialBtn', 'residencialSection');
+  });
 
+  document.getElementById('comercialBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    switchSection('comercialBtn', 'comercialSection');
+  });
 
-
-
-
-
+  document.getElementById('caribeBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    switchSection('caribeBtn', 'caribeSection');
+  });
+};
