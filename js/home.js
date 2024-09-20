@@ -2,6 +2,7 @@ function homeFunctions() {
   homeIntro();
   sliderHome();
   effectMenu();
+  setActiveButton();
 }
 
 function homeIntro() {
@@ -66,6 +67,24 @@ function effectMenu() {
     hamburguerIcon.style.display = 'block'; // Show icon hamburguer
   });
 }
+
+// ** active *
+
+function setActiveButton() {
+  const links = document.querySelectorAll('.projects__submenu a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); 
+
+      links.forEach(l => l.classList.remove('active__projects'));
+
+      this.classList.add('active__projects');
+    });
+  });
+}
+
+
 
 
 

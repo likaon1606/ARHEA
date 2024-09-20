@@ -1,0 +1,125 @@
+//projects__content
+  
+.projects__content
+  position: relative
+  color: #fff
+  
+.project__banner-img
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: auto
+  filter: brightness(50%)
+  z-index: -1
+
+.banner__project-content
+  margin-top: 150px
+  z-index: 2
+  padding: 50px 0px
+
+.banner__project-title
+  font-size: 52px
+  font-weight: normal
+
+.banner__project-subtitle, .projects__btn__info
+  margin-top: 40px
+  font-weight: normal
+
+.projects__btn__info
+  padding: 16px 32px
+  background: rgba(0, 0, 0, 0.2)
+  backdrop-filter: blur(8px)
+  border: 1px solid white
+  transition: all 0.3s ease-in-out
+
+.projects__btn__info:hover
+  background: #153B67
+  transition: all 0.3s ease-in-out
+
+.banner__project-submenu
+  margin-top: 100px
+  font-weight: normal
+
+.banner__project-links
+  display: flex
+  flex-direction: row
+  list-style: none
+  padding-left: 0
+
+  & a
+    color: white
+    text-decoration: none
+
+.project__links
+  margin-left: 20px
+
+//*** submenu__projects ***
+
+.projects__section
+  width: 100%
+  margin: 0 auto
+
+.projects__section-title
+  text-align: center
+  margin-top: 150px
+
+  & p
+    margin-top: 20px
+
+  & h1, p
+    color: #272424
+
+  & h1
+    font-size: 48px
+    text-transform: uppercase
+    font-weight: normal
+
+    & span
+      color: #153B67
+
+.projects__submenu
+  margin-top: 50px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+
+  & a
+    flex-grow: 1
+    display: flex
+    justify-content: center
+    text-decoration: none
+
+    &.active__projects button
+      color: #fff 
+      background-color: #153B67 
+
+  & button
+    width: 100%
+    background-color: transparent
+    border: solid 2px #153B67
+    padding: 16px 32px
+    color: #272424
+    transition: all 0.3s ease-in-out
+    
+    &:hover
+      color: #fff
+      background-color: #153B67
+
+.projects__img__submenu 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+  .project__residencial-img 
+    flex: 0 1 calc(33.33% - 1rem) // 3 imágenes por fila con un margen
+    margin-bottom: 1rem // Espacio entre filas
+    box-sizing: border-box 
+
+    img 
+      width: 100% 
+      height: auto 
+
+
+

@@ -31,7 +31,6 @@ function add_theme_scripts() {
   wp_enqueue_script("slick", "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js", array('jquery'), "1.9.0", true);
   // wp_enqueue_script("hubspot", "//js.hsforms.net/forms/embed/v2.js", array(), "2.0", false);
   wp_enqueue_script("main", get_template_directory_uri() . "/js/main.js", array('jquery'), "1.0", true);
-  wp_enqueue_script("animations", get_template_directory_uri() . "/js/animations.js", array(), "1.0", true); // animated nums
   wp_localize_script('main', 'site_parameters', $site_parameters);
 }
 

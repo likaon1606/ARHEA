@@ -130,7 +130,7 @@
   .about__image-half
     position: relative
     width: 100%  
-    height: 1400px  // auto
+    height: 1500px  // auto
 
     .about__black, .about__blue
       position: absolute
@@ -145,7 +145,7 @@
       display: flex
       justify-content: space-around
       align-items: flex-start
-      padding-top: 50px
+      padding-top: 150px
       & h1
         font-size: 48px
       & p
@@ -156,10 +156,14 @@
       background-color: #153B67
       z-index: -1
       & h1
-        margin-top: 15%
+        margin-top: 12%
+        text-align: center
+      & .__about__blue-subtitle
+        margin-top: 20px
         text-align: center
 
       .__blue-content
+        margin-top: 50px
         display: flex
         justify-content: space-around
         align-items: flex-end
@@ -168,13 +172,16 @@
           display: flex
           justify-content: center
           align-items: center
+          
+          & h4, p
+            margin-left: 20px
 
     .about__image-in-half
       position: absolute
       top: 50%
       left: 50%
       width: 80%
-      height: 25%
+      height: 20%
       object-fit: cover
       transform: translate(-50%, -50%)  
       z-index: 2

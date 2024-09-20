@@ -6,10 +6,15 @@ $(window).on("load", () => {
 
   if (currentNamespace == "inicio") {
     homeFunctions();
-  } else if (currentNamespace == "inicio") {
     sliderHome();
-  } else if (currentNamespace == 'inicio' || currentNamespace == 'acerca-de') {
+  } 
+
+  if (["inicio", "acerca-de", "proyectos", "colaboradores", "contacto"].includes(currentNamespace)) {
     effectMenu();
+  }
+
+  if (currentNamespace == "proyectos") {
+    setActiveButton();
   }
 });
 

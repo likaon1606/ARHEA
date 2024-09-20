@@ -95,7 +95,7 @@
 
     <div class="about__blue">
       <h1>CONOCE A NUESTRO <br>EQUIPO DIRECTIVO</h1>
-      <p>Poseemos más de dos <strong>décadas de conocimiento en el ámbito de bienes raíces,</strong> respaldados por un grupo de profesionales enfocados en los proyectos y sus residentes.
+      <p class="__about__blue-subtitle">Poseemos más de dos <strong>décadas de conocimiento en el ámbito de bienes raíces,</strong> respaldados por un grupo<br>de profesionales enfocados en los proyectos y sus residentes.
       </p>
       
       <div class="__blue-content">

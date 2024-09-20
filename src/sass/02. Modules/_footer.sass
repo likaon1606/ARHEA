@@ -1,3 +1,106 @@
+//** form ****
+
+.section__form
+  margin: 7% 7%
+  display: flex
+  justify-content: space-between
+
+.section__form p
+  color: #272424
+
+.section__form h2
+  color: #153B67
+  font-size: 48px
+
+.form__left
+  flex: 1
+  width: 35%
+
+.p__left
+  margin-top: 5%
+
+.form__info
+  margin-top: 18%
+      
+.info__item
+  display: flex
+  justify-content: stretch
+
+#p__left
+  margin-left: 3%
+
+#pipe__form1, #pipe__form2, #pipe__form3
+  color: #153B67
+  line-height: 1
+
+#pipe__form1
+  font-size: 58px
+  margin-left: 3%
+
+#pipe__form2
+  margin-left: 4.5%
+
+#pipe__form3
+  margin-left: 9.5%
+
+#pipe__form2, #pipe__form3
+  font-weight: 900
+
+
+.form__right
+  margin-top: 5%
+  flex: 1
+
+.form__right form
+  display: flex
+  flex-direction: column
+  margin-left: 20%
+  width: 65%
+  & label
+    color: #272424
+  & input, select, textarea
+    border: none
+    border-bottom: 2px solid #153B67
+    font-size: 1rem
+    color: #272424
+    background-color: transparent
+    outline: none  
+    &:focus
+      border-bottom-color: #5a799b
+
+.form__right form input
+  margin-bottom: 4%
+
+.btn__form 
+  align-self: flex-end 
+  margin-top: 5%
+  padding: 16px 32px
+  font-size: 16px
+  background-color: transparent
+  color: #272424
+  border: 2px solid #153B67
+  cursor: pointer
+  transition: background-color 0.3s, color 0.3s
+  width: auto 
+  
+@media (max-width: 768px)
+  .grid
+    grid-template-columns: repeat(2, 1fr) /* En pantallas más pequeñas, 2 columnas */
+
+    .section__form
+    flex-direction: column
+
+    .form__left
+      padding-right: 0
+      margin-bottom: 20px
+
+@media (max-width: 480px)
+  .grid
+    grid-template-columns: repeat(1, 1fr) /* En móviles, 1 columna */
+
+
+// ******  
+  
 .footer
   background-color: #272424
   color: #fff
