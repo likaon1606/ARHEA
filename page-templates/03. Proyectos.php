@@ -51,7 +51,7 @@
 
         <div class="projects__img__submenu" id="residencialSection" style="display: flex;">
 
-          <div class="__images__submenu-residencial">
+          <div class="__images__submenu-residencial" data-id="1">
             <?php echo siteImage("ALTHAUS_SAN_ÁNGEL", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
             <div class="submenu-residencial-txt">
               <h2>ALTAHUS SAN ÁNGEL</h2>
@@ -60,9 +60,13 @@
                 SAN ÁNGEL CIUDAD DE MÉXICO
               </p>
               <p>Edificio de vivienda en renta con 26 niveles y 242 unidades desde 42 m².</p>
-              <button>Ver más</button>
+              <button  class="submenu-residencial-btn" data-target="1">Ver más</button>
             </div>
           </div>
+
+          
+
+
 
           <div class="__images__submenu-residencial">
             <?php echo siteImage("ALTHAUS_PEDREGAL", "project__residencial-img", "ALTHAUS_PEDREGAL"); ?>
@@ -181,7 +185,44 @@
               <p>...</p>
               <button>Ver más</button>
             </div>
-          </div>          
+          </div>
+
+          <?php include 'modalProjects.php'; ?>
+
+<?php if ($selectedProject): ?>
+
+<div class="modal-residencial" data-id="<?= $selectedProject['id']; ?>">
+  <div class="slider-projects">
+    <div>
+      <?php echo siteImage("woha", "slider__projects__img", "en venta woha"); ?>
+    </div>
+    <div>
+      <?php echo siteImage("lomas", "slider__projects__img", "en venta lomas"); ?>
+    </div>
+    <div>
+      <?php echo siteImage("kabeek", "slider__projects__img", "en venta kabeek"); ?>
+    </div>
+  </div>
+
+  <div class="modal-content">
+    <span class="close-modal">X</span>
+    <div class="modal-text">
+      <h3><?= $selectedProject['title']; ?></h3>
+      <a href="<?= isset($selectedProject['url']) ? $selectedProject['url'] : '#'; ?>" target="_blank" rel="noopener noreferrer">
+        <p>SITIO WEB</p>
+      </a>
+      <h3 class="__modal_mt">UBICACIÓN</h3>
+      <hr class="__projects__hr">
+      <p><?= $selectedProject['location']; ?></p>
+      <h3>DISEÑO</h3>
+      <hr class="__projects__hr">
+      <p><?= $selectedProject['design']; ?></p>
+      <p  class="__modal_mt"><?= $selectedProject['description']; ?></p>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
+
         </div>
 
         <!-- Imágenes de COMERCIAL -->
@@ -296,6 +337,7 @@
               <button>Ver más</button>
             </div>
           </div>
+
 
         </div>
       </div>

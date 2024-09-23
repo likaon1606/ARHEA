@@ -14,7 +14,8 @@ $(window).on("load", () => {
   }
 
   if (currentNamespace == "proyectos") {
-    setActiveButton();
+    showModal();
+    sliderProjects();
   }
 });
 
