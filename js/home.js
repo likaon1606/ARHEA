@@ -3,6 +3,7 @@ function homeFunctions() {
   sliderHome();
   sliderProjects();
   effectMenu();
+  switchSection();
   showModal();
 }
 
@@ -42,7 +43,7 @@ function sliderHome() {
 function sliderProjects() {
   $('.slider-projects').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -76,9 +77,6 @@ function sliderProjects() {
     ]
   });
 }
-
-
-
 
 // ** effect menu *
 
@@ -152,15 +150,15 @@ window.onload = function() {
   });
 };
 
+
 // ** show MODAL **
 
+// document.addEventListener('DOMContentLoaded', showModal);
+
 function showModal() {
-  // Seleccionar los botones y los modales
   const buttons = document.querySelectorAll('.submenu-residencial-btn');
-  const modal = document.querySelectorAll('.modal-residencial');
   const closeButtons = document.querySelectorAll('.close-modal');
 
-  // Función para mostrar un modal específico
   function openModal(id) {
     const modal = document.querySelector(`.modal-residencial[data-id="${id}"]`);
     if (modal) {
@@ -168,29 +166,27 @@ function showModal() {
     }
   }
 
-  // Función para cerrar un modal específico
   function closeModal(modal) {
     if (modal) {
       modal.style.display = 'none'; // Ocultar modal
     }
   }
 
-  // Agregar evento click a los botones para abrir el modal correspondiente
   buttons.forEach(button => {
     button.addEventListener('click', function () {
       const targetId = this.getAttribute('data-target');
-      openModal(targetId); // Llamar la función para abrir el modal correcto
+      console.log(`Abriendo modal con ID: ${targetId}`);
+      openModal(targetId);
     });
   });
 
-  // Agregar evento click a los botones de cerrar
   closeButtons.forEach(button => {
     button.addEventListener('click', function () {
       const modal = this.closest('.modal-residencial');
-      closeModal(modal); // Llamar la función para cerrar el modal
+      if (modal) {
+        closeModal(modal);
+      }
     });
   });
-
-
 }
 

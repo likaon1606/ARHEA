@@ -14,8 +14,9 @@ $(window).on("load", () => {
   }
 
   if (currentNamespace == "proyectos") {
-    showModal();
     sliderProjects();
+    showModal();
+    switchSection();
   }
 });
 
