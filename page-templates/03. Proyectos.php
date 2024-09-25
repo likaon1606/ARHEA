@@ -8,7 +8,7 @@
   <?php get_header(); ?>
 
   <!--** MODALS PROJECTS **-->
-  <?php include 'modalProjects.php'; ?>
+  <?php include get_template_directory() . '/includes/modalProjects.php'; ?>
 
   <div class="container">
     <div class="row">
