@@ -7,6 +7,9 @@
 <section class="projects__content">
   <?php get_header(); ?>
 
+  <!--** MODALS PROJECTS **-->
+  <?php include 'modalProjects.php'; ?>
+
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -180,9 +183,7 @@
               <p>...</p>
               <button class="submenu-residencial-btn" data-target="10">Ver más</button>
             </div>
-            <!--** MODALS PROJECTS **-->
           </div>
-          <?php include 'modalProjects.php'; ?>
         </div>
 
 
@@ -205,27 +206,27 @@
 
           <div class="__images__submenu-comercial">
             <?php echo siteImage("DEL_PARQUE", "project__residencial-img", "DEL_PARQUE"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="12">
               <h2>CASA DEL PARQUE</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Tlalpan, Ciudad de México
               </p>
               <p>Proyecto de retiro para adultos mayores al sur de la Ciudad de México con 49 departamentos.</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="12">Ver más</button>
             </div>
           </div>
 
           <div class="__images__submenu-comercial">
             <?php echo siteImage("JUNIOR_CLUB", "project__residencial-img", "JUNIOR_CLUB"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="13">
               <h2>JUNIOR CLUB</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Condesa, Ciudad de México
               </p>
               <p>Complejo de usos mixtos con 1,900 m² de área comercial y casi 8,000 m²de construcción.</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="13">Ver más</button>
             </div>
           </div>
         </div>
@@ -236,66 +237,66 @@
           
           <div class="__images__submenu-caribe">
             <?php echo siteImage("caribeSection_WOHA", "project__residencial-img", "caribeSection_WOHA"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="14">
               <h2>WOHA</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Puerto Cancún, Cancún
               </p>
               <p>Residencial High-End de departamentos con diseño y funcionalidad eficientes desde 115 m².</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="14">Ver más</button>
             </div>
           </div>
 
           <div class="__images__submenu-caribe">
             <?php echo siteImage("caribeSection_KABEEK", "project__residencial-img", "caribeSection_KABEEK"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="15">
               <h2>KABEEK MARINA & CONDOS</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Lago Nichupte, Cancún
               </p>
               <p>Condos diseñados bajo un exclusivo concepto de vida náutica de alto lujo de 500 m² cada uno.</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="15">Ver más</button>
             </div>
           </div>
 
           <div class="__images__submenu-caribe">
             <?php echo siteImage("caribeSection_KAB_RESIDENCIAL", "project__kab-img", "caribeSection_KAB_RESIDENCIAL"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="16">
               <h2>KABEEK RESIDENCIAL – PUERTO CANCÚN</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Puerto Cancún, Cancún
               </p>
               <p>30 amplios apartamentos con diseño atemporal de 450 m² cada uno.</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="16">Ver más</button>
             </div>
           </div>
 
           <div class="__images__submenu-caribe">
             <?php echo siteImage("caribeSection_PUNTA", "project__residencial-img", "caribeSection_PUNTA"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="17">
               <h2>LA PUNTA</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Puerto Cancún, Cancún
               </p>
               <p>Residencial náutico con 13 casas con acabados de máxima calidad y extraordinarias vistas a Los Canales de Puerto Cancún.</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="17">Ver más</button>
             </div>
           </div>
 
           <div class="__images__submenu-caribe">
             <?php echo siteImage("caribeSection_NYZUC", "project__residencial-img", "PASEO_MOLINO"); ?>
-            <div class="submenu-residencial-txt">
+            <div class="submenu-residencial-txt" data-id="18">
               <h2>ALDEA NIZUC</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 Cancún
               </p>
               <p>Proyecto residencial donde la arquitectura y la madre naturaleza se unen para crear un lugar nunca antes visto.</p>
-              <button>Ver más</button>
+              <button class="submenu-residencial-btn" data-target="18">Ver más</button>
             </div>
           </div>
 
