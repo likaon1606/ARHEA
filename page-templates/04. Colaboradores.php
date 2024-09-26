@@ -4,24 +4,25 @@
 */
 ?>
 
-<section class="collaborators__content">
   <?php get_header(); ?>
 
+<section class="collaborators__content">
+  
   <div class="container">
     <div class="row">
       <div class="col-12">
 
-      <div class="banner__collaborators-content">
+      <div class="banner__collaborators-content col-12 col-md-6 col-lg-4">
         <h1 class="banner__collaborators-title">COLABORADORES</h1>
-        <p class="banner__collaborators-subtitle">Seleccionamos a colaboradores altamente cualificados que <br>compartan y respalden nuestra visión y misión para fomentar la <br>excelencia en cada uno de nuestros proyectos.</p>
+        <p class="banner__collaborators-subtitle">Seleccionamos a colaboradores altamente cualificados que compartan y respalden nuestra visión y misión para fomentar la excelencia en cada uno de nuestros proyectos.</p>
         <button class="collaborators__btn__info">MÁS INFORMACIÓN</button>
+        <?php echo siteImage("projects_img", "collaborators__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
       </div>
 
       </div>
     </div>
   </div>
 
-  <?php echo siteImage("projects_img", "collaborators__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
 </section>
 
 <section class="logos__colaborators">

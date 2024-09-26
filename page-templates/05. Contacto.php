@@ -7,8 +7,14 @@
 <?php get_header(); ?>
 
 
-<div>
-  CONTACTO
-</div>
+<section class="contact__banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <?php echo siteImage("contacto__banner", "contact__img-principal", "Fondo de la pestaña contacto"); ?>
+      </div>
+    </div>
+  </div>
+</section>
 
 <?php get_footer(); ?>
