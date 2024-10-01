@@ -77,8 +77,8 @@
     max-width: 400px
     height: auto
 
-  .sordo
-    margin-top: 500px // Esto está causando un desajuste visual. Es mejor quitarlo o ajustar el valor a algo más pequeño.
+  // .sordo
+  //   margin-top: 500px 
 
 .logos__colaborators-txt
   text-align: start
@@ -113,8 +113,141 @@
     padding: 0
 
 
+//** MODALES DE ICONOS **
 
 
+.modal__colaborators
+  display: none
+  z-index: 1
+  background: #fff
+  top: 0
+  left: 0
+  width: 100%            
+  height: 100%  
+  padding: 0% 3% 3% 3%
 
+.modal__colaborators-columns
+  display: flex
+  justify-content: space-between
 
+.modal__colaborators__scrollable-section 
+  background-color: transparent
+  padding: 20px
+  width: 50% 
+  max-height: 300px   
+  overflow-y: auto    /* Habilita la barra de desplazamiento vertical */
+  padding: 10px
+  z-index: 5  
+
+  & p
+    color: #272424  
+
+.modal__colaborators-title
+  display: flex
+  justify-content: space-between
+
+  & a
+    color: #272424
+
+.modal__colaborators__scrollable-img
+  display: flex
+  justify-content: end
+  width: 50%
+
+.modal__colaborators-awards p
+  margin-top: 20px
+  color: #272424
+
+.__content-colaborators-txt
+  display: flex
+  justify-content: center
+  padding: 50px
+
+/**--------- slider modal
+
+.modal__colaborators-slider-dwon
+  margin-top: 30px
+  background-color: #ECEFF3
+
+.slider-item
+  flex: 0 0 100% 
+  scroll-snap-align: start
+  padding: 20px
+  box-sizing: border-box
+  margin-right: 10px
+  border-radius: 10px
+  text-align: center
+
+.slider-btn
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  color: white
+  border: none
+  padding: 10px
+  cursor: pointer
+  z-index: 1
+  font-size: 18px
+  border-radius: 50%
+  transition: background-color 0.3s ease
+  &.left
+    left: 10px
+
+  &.right
+    right: 10px
+
+.slick-next-icon
+  color: white
+  border: none
+  width: 4%          
+  height: 100%      
+  background-color: #153B67CC    
+  display: flex        
+  justify-content: center  
+  align-items: center   
+  cursor: pointer
+  position: absolute    
+  right: 0              
+  top: 50%              
+  transform: translateY(-50%) 
+
+  &:hover
+    background-color: #153B67
+    &:hover i
+      color: #fff
+
+.slick-next-icon:before
+  margin-left: 100%
+
+.slick-next-icon i
+  font-size: 24px     
+  color: #272424     
+
+.__colaborators-slider-columns
+  display: flex !important
+  flex-direction: row
+  justify-content: center
+  padding: 20px
+
+.__colaborators-slider-award-img
+  margin: 5px
+  width: 24px
+  height: 24px
+
+.__colaborators-columns-txt 
+  width: 300px
+
+  & h4, p
+    text-align: start
+    color: #272424
+
+.close-modal-colaborators
+
+  & button
+    margin-top: 40px
+    color: #272424
+    padding: 16px
+    border: none
+    background-color: transparent
+    border-bottom: 1px solid #153B67
 

@@ -5,6 +5,7 @@ function homeFunctions() {
   effectMenu();
   switchSection();
   showModal();
+  modalsColaborators()
 }
 
 function homeIntro() {
@@ -153,34 +154,52 @@ window.onload = function() {
 
 // ** show MODAL **
 
-// document.addEventListener('DOMContentLoaded', showModal);
+document.addEventListener('DOMContentLoaded', showModal);
 
 function showModal() {
-  const buttons = document.querySelectorAll('.submenu-residencial-btn');
-  const closeButtons = document.querySelectorAll('.close-modal');
+  // Seleccionamos los botones de ambos tipos
+  const buttonsResidencial = document.querySelectorAll('.submenu-residencial-btn');
+  const buttonsColaborators = document.querySelectorAll('.logos__colaboratos-btn');
+  
+  // Seleccionamos los botones de cerrar para ambos tipos de modales
+  const closeButtonsResidencial = document.querySelectorAll('.close-modal');
+  const closeButtonsColaborators = document.querySelectorAll('.close-modal-colaborators');
 
-  function openModal(id) {
-    const modal = document.querySelector(`.modal-residencial[data-id="${id}"]`);
+  // Función para abrir modal
+  function openModal(modalClass, id) {
+    const modal = document.querySelector(`.${modalClass}[data-id="${id}"]`);
     if (modal) {
       modal.style.display = 'flex'; // Mostrar modal
     }
   }
 
+  // Función para cerrar modal
   function closeModal(modal) {
     if (modal) {
       modal.style.display = 'none'; // Ocultar modal
     }
   }
 
-  buttons.forEach(button => {
+  // Asociar evento de click a los botones de "residencial"
+  buttonsResidencial.forEach(button => {
     button.addEventListener('click', function () {
       const targetId = this.getAttribute('data-target');
-      console.log(`Abriendo modal con ID: ${targetId}`);
-      openModal(targetId);
+      console.log(`Abriendo modal de residencial con ID: ${targetId}`);
+      openModal('modal-residencial', targetId);
     });
   });
 
-  closeButtons.forEach(button => {
+  // Asociar evento de click a los botones de "colaborators"
+  buttonsColaborators.forEach(button => {
+    button.addEventListener('click', function () {
+      const targetId = this.getAttribute('data-target');
+      console.log(`Abriendo modal de colaborators con ID: ${targetId}`);
+      openModal('modal__colaborators', targetId);
+    });
+  });
+
+  // Asociar evento de cerrar para modales de "residencial"
+  closeButtonsResidencial.forEach(button => {
     button.addEventListener('click', function () {
       const modal = this.closest('.modal-residencial');
       if (modal) {
@@ -188,5 +207,41 @@ function showModal() {
       }
     });
   });
+
+  // Asociar evento de cerrar para modales de "colaborators"
+  closeButtonsColaborators.forEach(button => {
+    button.addEventListener('click', function () {
+      const modal = this.closest('.modal__colaborators');
+      if (modal) {
+        closeModal(modal);
+      }
+    });
+  });
 }
 
+
+//** */ SLIDER MODALS COLABORATORS
+document.addEventListener('DOMContentLoaded', modalsColaborators);
+
+function modalsColaborators() {
+$(document).ready(function(){
+  $('.modal__colaborators-slider-dwon').slick({
+    dots: false,
+    arrows: true,
+    prevArrow: false,  // Ocultar la flecha izquierda
+    nextArrow: '<button type="button" class="slick-next-icon"><i class="fa-solid fa-arrow-right"></i></button>',  // Usamos el icono de Font Awesome
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});
+}

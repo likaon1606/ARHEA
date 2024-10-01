@@ -18,6 +18,11 @@ $(window).on("load", () => {
     showModal();
     switchSection();
   }
+
+  if (currentNamespace == "colaboradores") {
+    showModal();
+    modalsColaborators();
+  }
 });
 
 // Passive event listener

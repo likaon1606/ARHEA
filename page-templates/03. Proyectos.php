@@ -4,11 +4,12 @@
 */
 ?>
 
-<section class="projects__content">
-  <?php get_header(); ?>
+<?php get_header(); ?>
 
-  <!--** MODALS PROJECTS **-->
-  <?php include get_template_directory() . '/includes/modalProjects.php'; ?>
+<!--** MODALS PROJECTS **-->
+<?php include get_template_directory() . '/includes/modalProjects.php'; ?>
+<section class="projects__content">
+
 
   <div class="container">
     <div class="row">
