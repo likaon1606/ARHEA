@@ -5,51 +5,62 @@
 ?>
 
 
-<section class="landing__content">
-  <?php get_header(); ?>
+<?php get_header(); ?>
 
-      <div class="banner__content">
-        <h1 class="banner__title">DESARROLLOS <br> INMOBILIARIOS <br> DE VALOR</h1>
-        <p class="banner__subtitle">Creamos espacios que eleven la manera de vivir de sus <br> habitantes en colaboración con las <strong>firmas de arquitectura <br> líderes a nivel mundial.</strong></p>
-        <button class="contact-btn">CONTÁCTANOS</button>
+<section class="home__content__principal">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
 
-        <div class="submenu-link">
-          <ul class="banner__links">
+        <div class="home__content col-12 col-md-6 col-lg-4">
+          <h1 class="home__title">DESARROLLOS <br> INMOBILIARIOS <br> DE VALOR</h1>
+          <p class="home__subtitle">Creamos espacios que eleven la manera de vivir de sus habitantes en colaboración con las <strong>firmas de arquitectura líderes a nivel mundial.</strong></p>
+          <button class="home__contact-btn">CONTÁCTANOS</button>
+          <?php echo siteImage("banner_principal", "home__banner__image", "Banner Principal"); ?>
+        </div>
+        
+        <div class="home__submenu-link">
+          <ul class="home__banner__links">
             <li><a href="#">RESIDENCIAL</a></li>
             <li class="pl__links"><a href="#">COMERCIAL</a></li>
             <li class="pl__links"><a href="#">EL CARIBE</a></li>
           </ul>
         </div>
-        
-      </div>
 
-  <?php echo siteImage("banner_principal", "banner__image", "Banner Principal"); ?>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="about">
-    <div class="about-content">
-      <p class="about-title">Acerca de Nosotros</p>
-      <div class="left-section">
-            <h1>ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
-            <p>
-                Con más de 25 años de experiencia en el sector inmobiliario y una profunda comprensión de la diversidad de cada proyecto, 
-                nuestra prioridad es conformar el equipo perfecto para cada desarrollo.
-            </p>
-          </div>
-          <div class="right-section">
-            <button href="#" class="button-about">Conoce más</button>
-            <div class="line">
-              <a href="#" class="brochure-link">Descarga nuestro brochure</a>
-              <hr>
-            </div>
+  <div class="container">
+    <div class="row d-flex align-items-end justify-content-center">
+
+      <div class="left-section col-12 col-md-6">
+        <p class="about-title">Acerca de Nosotros</p>
+        <h1>ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
+        <button class="button-about">Conoce más</button>
+      </div>
+
+      <div class="right-section col-12 col-md-6">
+        <div class="line mt-3">
+          <p>
+            Con más de 25 años de experiencia en el sector inmobiliario y una profunda comprensión de la diversidad de cada proyecto, nuestra prioridad es conformar el equipo perfecto para cada desarrollo.
+          </p>
+          <a href="#" class="brochure-link">
+            <button class="about__btn-brochure">
+              Descarga nuestro brochure
+            </button>
+          </a>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="section__development">
-  <?php echo siteImage("img-developmente", "development__image", "development fondo"); ?>
-
   <div class="development__container">
+    <?php echo siteImage("img-developmente", "development__image", "development fondo"); ?>
     <div class="development__contain">
       <div>
         <h1>ARHEA PROPERTY DEVELOPMENT<br>EN NÚMEROS</h1>
@@ -59,21 +70,21 @@
       </div>
     </div>
 
-      <div class="development-nums">
+      <div class="development-nums d-flex">
         <div>
-          <h3 id="num1" class="animate-on-scroll">+0</h3>
+          <h3 id="num1" class="animate-on-scroll col-12">+0</h3>
           <p>Proyectos creados</p>
         </div>
         <div>
-          <h3 id="num2" class="animate-on-scroll">+0</h3>
+          <h3 id="num2" class="animate-on-scroll col-12">+0</h3>
           <p>Desarrollo en construcción</p>
         </div>
         <div>
-          <h3 id="num3" class="animate-on-scroll">+0</h3>
+          <h3 id="num3" class="animate-on-scroll col-12">+0</h3>
           <p>Años de experiencia</p>
         </div>
         <div>
-          <h3 id="num4" class="animate-on-scroll">+0</h3>
+          <h3 id="num4" class="animate-on-scroll col-12">+0</h3>
           <p>Colaboradores</p>
         </div>
       </div>
@@ -87,11 +98,20 @@
 </section>
 
 <section class="inovation">
-  <h1>INNOVACIÓN EN CONSTRUCCIÓN</h1>
-  <p>Conoce nuestra cartera de <strong>desarrollos inmobiliarios</strong> de tipo residencial, comercial y en el Caribe.</p>
-  <button class="btn-inovation">VER MÁS PROYECTOS</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="inovation__txt">
+          <h1>INNOVACIÓN EN CONSTRUCCIÓN</h1>
+          <p>Conoce nuestra cartera de <strong>desarrollos inmobiliarios</strong> de tipo residencial, comercial y en el Caribe.</p>
+          <button class="btn-inovation">VER MÁS PROYECTOS</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- 
 <section id="carousel">
   <div class="container">
     <div class="row clasesdes">
@@ -199,7 +219,7 @@
       <p>+</p>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <?php get_footer(); ?>

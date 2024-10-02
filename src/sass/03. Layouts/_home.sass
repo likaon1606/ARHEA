@@ -1,48 +1,97 @@
 body
   background: #FFFFFF
+
+h1, h2, h3, h4
+  font-family: "Belleza", sans-serif
+  font-weight: 400
   
-p
+p, button
   font-size: 16px
+  font-family: "Quattrocento", serif
+  font-weight: 400
+
+.home__content__principal
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  min-height: 800px
+  margin-bottom: 50px
+
+  @include media-breakpoint-down(lg)
+    min-height: 600px
+
+  @include media-breakpoint-down(sm)
+    min-height: 500px
+
+.home__content
+  margin: 0px 0px 0px 3%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: start
+  text-align: start
+  z-index: 2
   
-.banner__image
+.home__banner__image
   position: absolute
   top: 0
   left: 0
   width: 100%
-  height: auto
+  height: 100%
+  min-height: 800px
   filter: brightness(50%)
   z-index: -1
 
-.banner__content
-  margin-top: 150px
-  z-index: 2
-  padding: 50px 100px
+  @include media-breakpoint-down(lg)
+    min-height: 600px
 
-.banner__title
+  @include media-breakpoint-down(sm)
+    min-height: 500px
+
+.home__title
+  margin-top: 20%
   font-size: 52px
-  font-weight: normal
+  color: #fff
 
-.banner__subtitle, .contact-btn
+  @include media-breakpoint-down(lg)
+    font-size: 34px
+
+  @include media-breakpoint-down(sm)
+    font-size: 34px
+
+.home__subtitle, .home__contact-btn
   margin-top: 40px
-  font-weight: normal
 
-.contact-btn
+  @include media-breakpoint-down(sm)
+    margin-top: 20px
+
+.home__subtitle
+  @include media-breakpoint-down(sm)
+    padding: 0% 3% 0% 0%
+
+.home__contact-btn
   padding: 16px 32px
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
   border: 1px solid white
   transition: all 0.3s ease-in-out
 
-.contact-btn:hover, .btn__development button:hover,
+  @include media-breakpoint-down(sm)
+  padding: 12px 28px
+
+.home__contact-btn:hover, .btn__development button:hover,
 .button-about:hover
   background: #153B67
   transition: all 0.3s ease-in-out
 
-.submenu-link
-  margin-top: 100px
-  font-weight: normal
+.home__submenu-link
+  margin: 7% 0% 0% 3%
 
-.banner__links
+  @include media-breakpoint-down(sm)
+    margin: 7% 0% 0% 3%
+
+.home__banner__links
   display: flex
   flex-direction: row
   list-style: none
@@ -52,131 +101,193 @@ p
     color: white
     text-decoration: none
 
+.home__banner__links li
+
+  @include media-breakpoint-down(sm)
+    font-size: 14px
+
+
 .pl__links
   margin-left: 20px
 
-//******************S
-  
-.about
-  width: 100%
+//******************ABOUT
+.about 
+  display: flex
+  justify-content: center
   padding: 50px 0
 
-.about p, .about h1, .about button, .brochure-link
+  @include media-breakpoint-down(sm)
+    padding: 0
+
+.about .row
+  padding: 0px 10%
+
+  @include media-breakpoint-down(lg)
+    padding: 0px
+
+.left-section
+
+  & h1 
+    font-size: 48px
+    margin-top: 20px
+    margin-bottom: 50px
+
+    @include media-breakpoint-down(sm)
+      font-size: 38px
+
+  & p 
+    color: #272424 
+
+
+.button-about 
+  padding: 10px 20px
+  border: 2px solid  #153B67
   color: #272424
-  
-.about-content
-  margin: 0 auto
+  background-color: transparent
+  cursor: pointer
 
-.left-section, .right-section
-  display: flex
-  justify-content: space-between
-
-.left-section, .right-section
-  align-items: flex-end
-
-.left-section p, .left-section h1, .about p
-  padding-left: 15%
-
-.about p
-  margin-top: 3%
-
-.left-section h1, .development h1
-  font-size: 48px
-
-.left-section p
-  padding-right: 15%
-
-.right-section
-  margin-top: 3%
-
-.button-about
-  margin-left: 15%
-  padding: 16px 32px
-  background: #ECEFF3
   &:hover
-    color: #FFFFFF
+    color: #fff
+  
+  @include media-breakpoint-down(sm)
+    margin-bottom: 30px
 
-.line a
+.right-section p
+  margin-bottom: 40px
+  color: #272424  
+
+.line a.brochure-link 
   text-decoration: none
+  color: #272424 
+  font-size: 1rem
 
-.line
-  padding-right: 35%
+.about__btn-brochure
+  color: #272424 
+  border: none
+  border-bottom: 1px solid #153B67
+  padding: 16px 0px
+  background-color: transparent
 
-.right-section hr
-  margin-top: 10px
-  width: auto
-  border: 1px solid #272424
-
-// ********************
+// ******************** section__development
 
 .section__development
   position: relative
-
-.development__image
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: auto
-  filter: brightness(50%)
-  z-index: -1
-
-.section__development h1, h3, p, button
-  color: #fff
-
-.development__contain h1
-  padding-top: 5%
-  text-align: center
-
-.development__contain p
-  padding-top: 1%
-  text-align: center
-
-.development-nums
-  padding-top: 2%
   display: flex
-  justify-content: space-evenly
-  text-align: center
-
-.development-nums h3
-  font-size: 64px
-
-.btn__development
-  display: flex
-  justify-content: center
-  margin-top: 3%
-
-.btn__development button
-  font-size: 16px
-  padding: 16px 32px
-  background: transparent
-  border: 1px solid #ECEFF3
-  display: flex
-  justify-content: center
   align-items: center
+  justify-content: center
+  min-height: 500px
+  margin-top: 50px
+  margin-bottom: 50px
+  padding: 0 20px 
+
+  @include media-breakpoint-down(sm)
+    min-height: 600px
+
+
+  .development__image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    min-height: 500px
+    filter: brightness(50%)
+    z-index: -1
+
+    @include media-breakpoint-down(sm)
+      min-height: 600px
+
+  & h1, h3, p, button
+    color: #fff
+
+  .development__contain
+    & h1
+      padding-top: 5%
+      text-align: center
+    & p
+      padding-top: 1%
+      text-align: center
+
+  .development-nums
+    padding-top: 2%
+    display: flex
+    justify-content: space-evenly
+    text-align: center
+    flex-wrap: wrap 
+    gap: 10px 
+
+    & div
+      flex: 1 1 calc(25% - 20px) 
+      max-width: calc(25% - 20px)
+
+    & h3
+      font-size: 48px
+      margin-bottom: 10px
+
+    @include media-breakpoint-down(lg)
+      none
+
+    @include media-breakpoint-down(sm)
+      & div
+        flex: 1 1 calc(50% - 10px) 
+        max-width: calc(50% - 10px)
+
+      & h3
+        font-size: 36px 
+
+  .btn__development
+    display: flex
+    justify-content: center
+    margin-top: 3%
+
+    & button
+      font-size: 16px
+      padding: 16px 32px
+      background: transparent
+      border: 1px solid #ECEFF3
+      display: flex
+      justify-content: center
+      align-items: center
+
+      @include media-breakpoint-down(sm)
+        padding: 12px 24px 
+        font-size: 14px
+
+//****************** inovation
 
 .inovation
   text-align: center
-  margin-top: 18%
+  margin-top: 50px
 
-.inovation h1
-  color: #153B67
+  & h1
+    font-size: 48px
+    color: #153B67
 
-.inovation p, .btn-inovation
-  color: #000
+    @include media-breakpoint-down(sm)
+      font-size: 38px
 
-.inovation p, .btn-inovation
-  margin-top: 2%
+  p, .btn-inovation
+    color: #272424
+    margin-top: 2%
 
-.btn-inovation 
-  padding: 16px 32px
-  border: 1px solid #153B67
-  background: transparent
+  .inovation__txt
+    padding: 50px 0px
+  
+    @include media-breakpoint-down(sm)
+      padding: 0px 10px 50px
 
-.btn-inovation:hover
-  color: #fff
-  background: #153B67
-  transition: all 0.3s ease-in-out
+  .btn-inovation
+    padding: 16px 32px
+    border: 1px solid #153B67
+    background: transparent
+
+    @include media-breakpoint-down(sm)
+      padding: 10px 20px
+
+    &:hover
+      color: #fff
+      background: #153B67
+      transition: all 0.3s ease-in-out
 
 
 //** slider **
@@ -240,7 +351,6 @@ p
 .red__inmob h2
   font-size: 48px
   text-transform: uppercase
-  font-weight: normal
 
 .p__inmob
   margin-top: 30px
