@@ -117,7 +117,7 @@
 
 
 .modal__colaborators
-  display: none
+  display: none // mostrar/ocultar modal
   z-index: 1
   background: #fff
   top: 0
@@ -130,6 +130,9 @@
   display: flex
   justify-content: space-between
 
+  @include media-breakpoint-down(md)
+    display: block
+
 .modal__colaborators__scrollable-section 
   background-color: transparent
   padding: 20px
@@ -137,14 +140,26 @@
   max-height: 300px   
   overflow-y: auto    /* Habilita la barra de desplazamiento vertical */
   padding: 10px
-  z-index: 5  
+  z-index: 5
 
   & p
-    color: #272424  
+    color: #272424
+
+  @include media-breakpoint-down(lg)
+    &::-webkit-scrollbar
+      width: 12px  // Aumenta el ancho de la barra a 12px en pantallas pequeñas
+    &::-webkit-scrollbar-thumb
+      background-color: #888 
+      border-radius: 5px
+
+  @include media-breakpoint-down(md)
+    width: 100%
+    margin-bottom: 50px
 
 .modal__colaborators-title
   display: flex
   justify-content: space-between
+  margin-bottom: 20px
 
   & a
     color: #272424
@@ -199,7 +214,7 @@
 .slick-next-icon
   color: white
   border: none
-  width: 4%          
+  width: 5%          
   height: 100%      
   background-color: #153B67CC    
   display: flex        
@@ -211,10 +226,20 @@
   top: 50%              
   transform: translateY(-50%) 
 
+  @include media-breakpoint-down(lg)
+    width: 5%
+  @include media-breakpoint-down(md)
+    background-color: #4a7394   
+    width: 15%
+
   &:hover
     background-color: #153B67
     &:hover i
       color: #fff
+
+    @include media-breakpoint-down(md)
+      &:hover
+      background-color: #153B67CC   
 
 .slick-next-icon:before
   margin-left: 100%
@@ -251,3 +276,5 @@
     background-color: transparent
     border-bottom: 1px solid #153B67
 
+  @include media-breakpoint-down(lg)
+    margin-bottom: 50px

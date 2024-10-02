@@ -49,20 +49,20 @@
             <div class="col-12">
               <div class="modal__colaborators-columns">
                 <div class="modal__colaborators__scrollable-section">
-                <div class="modal__colaborators-title">
-                  <h2>HKS</h2>
-                  <a href="https://www.hksinc.com/">SITIO WEB</a>
-                </div>
-                <p>
-                  HKS fue fundada en 1939 por Harwood K. Smith, plasmando sus sueños artísticos como esencia de lo que crea: “inspirar a través del diseño”.
-                </p>
-                <p>
-                  En HKS se cree que el diseño debe generar confianza entre colaboradores, clientes y residentes de los lugares que se diseñan. Siendo el principal objetivo inspirar y empoderar a las personas y comunidades que se rodean de su trabajo. Para preservar y respetar los recursos naturales, también crean lugares que conservan y rejuvenecen al planeta.
-                </p>
-                <p>
-                  “El diseño es una forma de pensar. Puede descubrir oportunidades ocultas y crear un cambio drástico. Un diseño bien hecho ofrece lo extraordinario.”
-                </p>
-                <blockquote>Dan Noble (CEO)</blockquote>
+                  <div class="modal__colaborators-title">
+                    <h2>HKS</h2>
+                    <a href="https://www.hksinc.com/">SITIO WEB</a>
+                  </div>
+                  <p>
+                    HKS fue fundada en 1939 por Harwood K. Smith, plasmando sus sueños artísticos como esencia de lo que crea: “inspirar a través del diseño”.
+                  </p>
+                  <p>
+                    En HKS se cree que el diseño debe generar confianza entre colaboradores, clientes y residentes de los lugares que se diseñan. Siendo el principal objetivo inspirar y empoderar a las personas y comunidades que se rodean de su trabajo. Para preservar y respetar los recursos naturales, también crean lugares que conservan y rejuvenecen al planeta.
+                  </p>
+                  <p>
+                    “El diseño es una forma de pensar. Puede descubrir oportunidades ocultas y crear un cambio drástico. Un diseño bien hecho ofrece lo extraordinario.”
+                  </p>
+                  <blockquote>Dan Noble (CEO)</blockquote>
               </div>
 
               <div class="modal__colaborators__scrollable-img">
