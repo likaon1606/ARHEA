@@ -61,6 +61,7 @@ p, button
     font-size: 34px
 
 .home__subtitle, .home__contact-btn
+  color: #fff
   margin-top: 40px
 
   @include media-breakpoint-down(sm)
@@ -292,31 +293,93 @@ p, button
 
 //** slider **
 #carousel
-  margin-top: 7%
+  margin-bottom: 150px
 
-.slick-next, .slick-prev
-  top: 110% 
-
-.slick-next:before, .slick-prev:before
-  font-size: 60px
+.slick-next__home, .slick-prev__home
+  border: 1px solid #153B67
+  border-radius: 50%
+  position: sticky
+  top: 110%
+  width: 50px
+  height: 50px
   color: #153B67
+  z-index: 1
+  background: none
+  cursor: pointer  
+  display: flex
+  justify-content: center
+  align-items: center 
 
-.slick-next:before
-  margin-left: 40%
 
-.slick-prev:before
-  margin-left: 35%
+.slick-next__home
+  margin-left: 73%
+
+  @include media-breakpoint-down(lg)
+    margin-left: 70%
+
+  @include media-breakpoint-down(sm)
+    margin-left: 80%
+
+.slick-prev__home
+  margin-left: 68%
+
+  @include media-breakpoint-down(lg)
+    margin-left: 60%
+
+  @include media-breakpoint-down(sm)
+    margin-left: 63%
+
+.slick-prev__home p,
+.slick-next__home p 
+  margin: 5px
+  color: #153B67
+  font-size: 30px
 
 .img__carousel
   position: absolute
 
+  @include media-breakpoint-down(lg)
+    width: 700px
+    height: 300px
+    min-height: 300px
+
+.slick__img
+  width: 750px
+  height: 500px
+  min-height: 300px
+  object-fit: cover
+  object-position: center
+
+  @include media-breakpoint-down(lg)
+    width: 400px
+    height: 450px
+    min-height: 450px
+
+  @include media-breakpoint-down(sm)
+    width: 450px
+    height: 450px
+    min-height: 450px
+    object-fit: contain
+    object-position: center
+
 .carousel__content
   position: absolute
-  margin-left: 50px
+  margin-left: 4.5%
   margin-top: .7%
-  width: 4%
+  width: 350px
   background-color: #ECEFF3
   padding: 40px
+
+  @include media-breakpoint-down(lg)
+    margin-left: 4.7%
+    margin-top: 0.7%
+    width: 200px
+    padding: 10px
+
+  @include media-breakpoint-down(sm)
+    margin-left: 3.8%
+    margin-top: 1%
+    width: 220px
 
 .carousel__content h3, .carousel__content p, 
 .btn__cardcarousel button
@@ -334,10 +397,59 @@ p, button
   padding: 16px 32px
   background: transparent
 
+  @include media-breakpoint-down(lg)
+    margin-top: 20px
+    padding: 12px 24px
+
 .btn__cardcarousel button:hover, .btn__form:hover
   color: #fff
   background: #153B67
-  transition: all 0.3s ease-in-out 
+  transition: all 0.3s ease-in-out
+
+// .slick-next, .slick-prev
+//   top: 110% 
+
+// .slick-next:before, .slick-prev:before
+//   font-size: 60px
+//   color: #153B67
+
+// .slick-next:before
+//   margin-left: 40%
+
+// .slick-prev:before
+//   margin-left: 35%
+
+// .img__carousel
+//   position: absolute
+
+// .carousel__content
+//   position: absolute
+//   margin-left: 50px
+//   margin-top: .7%
+//   width: 4%
+//   background-color: #ECEFF3
+//   padding: 40px
+
+// .carousel__content h3, .carousel__content p, 
+// .btn__cardcarousel button
+//   color: #272424 
+
+// .carousel__content h3
+//   font-size: 28px
+
+// .p__carousel
+//   margin-top: 30px
+
+// .btn__cardcarousel button
+//   margin-top: 40px
+//   border: 1px solid #272424
+//   padding: 16px 32px
+//   background: transparent
+
+// .btn__cardcarousel button:hover, .btn__form:hover
+//   color: #fff
+//   background: #153B67
+//   transition: all 0.3s ease-in-out 
 
 // ***********
 

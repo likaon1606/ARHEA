@@ -111,11 +111,11 @@
   </div>
 </section>
 
-<!-- 
+
 <section id="carousel">
   <div class="container">
-    <div class="row clasesdes">
-    <div class="img__carousel">
+    <div class="row carousel__home">
+      <div class="img__carousel">
         <div class="carousel__content">
           <h3>WOHA</h3>
           <p>PUERTO CANCÚN</p>
@@ -123,7 +123,7 @@
           <a class="btn__cardcarousel" href="#">
             <button>VER MÁS</button>
           </a>
-      </div>
+        </div>
         <?php echo siteImage("woha", "slick__img", "en venta woha"); ?>
       </div>
 
@@ -135,7 +135,7 @@
           <a class="btn__cardcarousel" href="#">
             <button>VER MÁS</button>
           </a>
-      </div>
+        </div>
         <?php echo siteImage("lomas", "slick__img", "en venta lomas"); ?>
       </div>
 
@@ -147,26 +147,26 @@
           <a class="btn__cardcarousel" href="#">
             <button>VER MÁS</button>
           </a>
-      </div>
+        </div>
         <?php echo siteImage("parque", "slick__img", "en venta casa del parque"); ?>
       </div>
 
       <div>
-      <div class="carousel__content">
-        <h3>KABEEK MARINA & CONDOS</h3>
-        <p>CANCÚN</p>
-        <p class="p__carousel">Departamentos con eficiente diseño y funcionalidad en Puerto Cancún, desde 115 m².</p>
-        <a class="btn__cardcarousel" href="#">
-          <button>VER MÁS</button>
-        </a>
-      </div>
+        <div class="carousel__content">
+          <h3>KABEEK MARINA & CONDOS</h3>
+          <p>CANCÚN</p>
+          <p class="p__carousel">Departamentos con eficiente diseño y funcionalidad en Puerto Cancún, desde 115 m².</p>
+          <a class="btn__cardcarousel" href="#">
+            <button>VER MÁS</button>
+          </a>
+        </div>
         <?php echo siteImage("kabeek", "slick__img", "en venta kabeek"); ?>
       </div>
     </div>
     </div>
   </div>
 </section>
-
+<!-- 
 <section class="red__inmob">
   <h2>Una red inmobiliaria<br>con alcance global</h2>
   <p class="p__inmob">Establecemos alianzas estratégicas con los <strong>estudios de arquitectura de mayor prestigio</strong>, garantizando así<br>la excelencia en todos nuestros proyectos.</p>

@@ -14,26 +14,28 @@ function homeIntro() {
 
 //** carousel */
 function sliderHome() {
-  $('.clasesdes').slick({
+  $('.carousel__home').slick({
     centerMode: true,
     centerPadding: '250px',
     slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev__home"><p>←</p></button>',
+    nextArrow: '<button type="button" class="slick-next__home"><p>→</p></button>',
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
-          centerPadding: '80px',
+          centerPadding: '150px',
           slidesToShow: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           centerMode: true,
-          centerPadding: '60px',
+          centerPadding: '0px',
           slidesToShow: 1
         }
       }
