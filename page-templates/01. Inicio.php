@@ -166,7 +166,7 @@
     </div>
   </div>
 </section>
-<!-- 
+
 <section class="red__inmob">
   <h2>Una red inmobiliaria<br>con alcance global</h2>
   <p class="p__inmob">Establecemos alianzas estratégicas con los <strong>estudios de arquitectura de mayor prestigio</strong>, garantizando así<br>la excelencia en todos nuestros proyectos.</p>
@@ -219,7 +219,7 @@
       <p>+</p>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <?php get_footer(); ?>

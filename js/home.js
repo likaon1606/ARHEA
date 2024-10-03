@@ -22,7 +22,7 @@ function sliderHome() {
     nextArrow: '<button type="button" class="slick-next__home"><p>→</p></button>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           arrows: true,
           centerMode: true,

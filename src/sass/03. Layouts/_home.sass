@@ -406,52 +406,7 @@ p, button
   background: #153B67
   transition: all 0.3s ease-in-out
 
-// .slick-next, .slick-prev
-//   top: 110% 
-
-// .slick-next:before, .slick-prev:before
-//   font-size: 60px
-//   color: #153B67
-
-// .slick-next:before
-//   margin-left: 40%
-
-// .slick-prev:before
-//   margin-left: 35%
-
-// .img__carousel
-//   position: absolute
-
-// .carousel__content
-//   position: absolute
-//   margin-left: 50px
-//   margin-top: .7%
-//   width: 4%
-//   background-color: #ECEFF3
-//   padding: 40px
-
-// .carousel__content h3, .carousel__content p, 
-// .btn__cardcarousel button
-//   color: #272424 
-
-// .carousel__content h3
-//   font-size: 28px
-
-// .p__carousel
-//   margin-top: 30px
-
-// .btn__cardcarousel button
-//   margin-top: 40px
-//   border: 1px solid #272424
-//   padding: 16px 32px
-//   background: transparent
-
-// .btn__cardcarousel button:hover, .btn__form:hover
-//   color: #fff
-//   background: #153B67
-//   transition: all 0.3s ease-in-out 
-
-// ***********
+// *********** red__inmob
 
 .red__inmob
   margin-top: 15%
@@ -460,23 +415,54 @@ p, button
   color: #fff
   padding: 120px 20px
 
-.red__inmob h2
-  font-size: 48px
-  text-transform: uppercase
+  @include media-breakpoint-down(sm)
+    padding: 60px 20px
 
-.p__inmob
-  margin-top: 30px
+  h2
+    font-size: 48px
+    text-transform: uppercase
 
-.grid
-  display: grid
-  grid-template-columns: repeat(4, 1fr) /* 4 columnas para mantener una estructura alineada */
-  gap: 50px
-  max-width: 1200px
-  margin: 0 auto
-  padding-top: 7%
+    @include media-breakpoint-down(sm)
+      font-size: 34px
 
+  
 
-.grid__box
-  display: flex
-  justify-content: space-between
-  align-items: center
+  .p__inmob
+    margin-top: 30px
+
+  .grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr) 
+    gap: 50px
+    max-width: 1200px
+    margin: 0 auto
+    padding-top: 7%
+
+    @include media-breakpoint-down(lg)
+      grid-template-columns: repeat(3, 1fr)
+
+    @include media-breakpoint-down(md)
+      grid-template-columns: repeat(2, 1fr) 
+
+    @include media-breakpoint-down(sm)
+      grid-template-columns: 1fr 
+      gap: 10px
+
+  .grid__box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px
+    color: #fff
+    border-radius: 8px
+    flex-wrap: wrap 
+
+    p
+      margin: 0
+
+      @include media-breakpoint-down(lg)
+        font-size: 12px
+
+    @include media-breakpoint-down(sm)
+      flex-direction: row 
+      gap: 10px
