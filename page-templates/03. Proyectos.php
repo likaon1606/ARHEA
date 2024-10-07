@@ -8,42 +8,49 @@
 
 <!--** MODALS PROJECTS **-->
 <?php include get_template_directory() . '/includes/modalProjects.php'; ?>
+
 <section class="projects__content">
-
-
   <div class="container">
     <div class="row">
       <div class="col-12">
-      <div class="banner__project-content">
-        <h1 class="banner__project-title">CARTERA DE<br>PROYECTOS<br>INMOBILIARIOS</h1>
-        <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos <br>residenciales, comerciales y mixtos</strong> a través de una efectiva <br>coordinación de equipos de trabajo multidisciplinarios.</p>
-        <button class="projects__btn__info">MÁS INFORMACIÓN</button>
+        <div class="banner__project-content">
+          <h1 class="banner__project-title">CARTERA DE<br>PROYECTOS<br>INMOBILIARIOS</h1>
+          <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos <br>residenciales, comerciales y mixtos</strong> a través de una efectiva <br>coordinación de equipos de trabajo multidisciplinarios.</p>
+          <button class="projects__btn__info">MÁS INFORMACIÓN</button>
 
-        <div class="banner__project-submenu">
-          <ul class="banner__project-links">
-            <li><a href="#">RESIDENCIAL</a></li>
-            <li class="project__links"><a href="#">COMERCIAL</a></li>
-            <li class="project__links"><a href="#">EL CARIBE</a></li>
-          </ul>
-        </div>       
-      </div>
+          <div class="banner__project-submenu">
+            <ul class="banner__project-links">
+              <li><a href="#">RESIDENCIAL</a></li>
+              <li class="project__links"><a href="#">COMERCIAL</a></li>
+              <li class="project__links"><a href="#">EL CARIBE</a></li>
+            </ul>
+          </div>       
+          <?php echo siteImage("projects_img", "project__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-  <?php echo siteImage("projects_img", "project__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
+<section class="projects__title_banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="projects__section-title">
+          <h1><span>Explora nuestra oferta </span>residencial, comercial y en El Caribe</h1>
+          <p>
+            Cada espacio busca alcanzar la completa satisfacción de nuestros socios, clientes, proveedores y asociados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="projects__section">
   <div class="container">
     <div class="row">
       <div class="col-12">
-
-        <div class="projects__section-title">
-          <h1><span>Explora nuestra oferta</span><br>residencial, comercial y en <br>El Caribe</h1>
-          <p>Cada espacio busca alcanzar la completa satisfacción de <br>nuestros socios, clientes, proveedores y asociados.
-          </p>
-        </div>
 
         <div class="projects__submenu">
           <a href="#" id="residencialBtn" class="active__projects"><button>RESIDENCIAL</button></a>
@@ -54,7 +61,7 @@
         <!-- Imágenes de RESIDENCIAL -->
         <div class="projects__img__submenu" id="residencialSection" style="display: flex;">
 
-          <div class="__images__submenu-residencial" data-id="1">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="1">
             <?php echo siteImage("ALTHAUS_SAN_ÁNGEL", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
             <div class="submenu-residencial-txt">
               <h2>ALTAHUS SAN ÁNGEL</h2>
@@ -67,7 +74,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="2">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="2">
             <?php echo siteImage("ALTHAUS_PEDREGAL", "project__residencial-img", "ALTHAUS_PEDREGAL"); ?>
             <div class="submenu-residencial-txt">
               <h2>ALTHAUS PEDREGAL</h2>
@@ -80,7 +87,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="3">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="3">
             <?php echo siteImage("NUBE_52", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
             <div class="submenu-residencial-txt">
               <h2>NUVE 52</h2>
@@ -93,7 +100,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="4">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="4">
             <?php echo siteImage("ARUNA_RESIDENCIAL", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
             <div class="submenu-residencial-txt">
               <h2>ARUNA RESIDENCIAL</h2>
@@ -107,7 +114,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="5">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="5">
             <?php echo siteImage("LOMAS_ALTAS_247", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
             <div class="submenu-residencial-txt">
               <h2>LOMAS ALTAS 247</h2>
@@ -120,7 +127,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="6">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="6">
             <?php echo siteImage("LOMAS_ALTAS_253", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
             <div class="submenu-residencial-txt">
               <h2>LOMAS ALTAS 253</h2>
@@ -133,7 +140,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="7">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="7">
             <?php echo siteImage("TIRO_PICHON_60", "project__residencial-img", "TIRO_PICHON_60"); ?>
             <div class="submenu-residencial-txt">
               <h2>TIRO AL PICHÓN 60</h2>
@@ -146,7 +153,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="8">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="8">
             <?php echo siteImage("HAMBURGO_14", "project__residencial-img", "HAMBURGO_14"); ?>
             <div class="submenu-residencial-txt">
               <h2>HAMBURGO 14</h2>
@@ -160,7 +167,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="9">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="9">
             <?php echo siteImage("CAÑADA_VISTA_HERMOSA", "project__residencial-img", "CAÑADA_VISTA_HERMOSA"); ?>
             <div class="submenu-residencial-txt">
               <h2>CAÑADA DE VISTA HERMOSA</h2>
@@ -173,7 +180,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-residencial" data-id="10">
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="10">
             <?php echo siteImage("DR_ATL_225", "project__residencial-img", "DR_ATL_225"); ?>
             <div class="submenu-residencial-txt">
               <h2>DOCTOR ATL 225</h2>
@@ -192,7 +199,7 @@
 
         <div class="projects__img__submenu" id="comercialSection" style="display: none;">
 
-          <div class="__images__submenu-comercial" data-id="11">
+          <div class="__images__submenu-comercial col-12 col-md-6 col-lg-4" data-id="11">
             <?php echo siteImage("PASEO_MOLINO", "project__residencial-img", "PASEO_MOLINO"); ?>
             <div class="submenu-residencial-txt">
               <h2>PASEO EL MOLINO</h2>
@@ -205,7 +212,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-comercial">
+          <div class="__images__submenu-comercial col-12 col-md-6 col-lg-4">
             <?php echo siteImage("DEL_PARQUE", "project__residencial-img", "DEL_PARQUE"); ?>
             <div class="submenu-residencial-txt" data-id="12">
               <h2>CASA DEL PARQUE</h2>
@@ -218,7 +225,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-comercial">
+          <div class="__images__submenu-comercial col-12 col-md-6 col-lg-4">
             <?php echo siteImage("JUNIOR_CLUB", "project__residencial-img", "JUNIOR_CLUB"); ?>
             <div class="submenu-residencial-txt" data-id="13">
               <h2>JUNIOR CLUB</h2>
@@ -236,7 +243,7 @@
 
         <div class="projects__img__submenu" id="caribeSection" style="display: none;">
           
-          <div class="__images__submenu-caribe">
+          <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
             <?php echo siteImage("caribeSection_WOHA", "project__residencial-img", "caribeSection_WOHA"); ?>
             <div class="submenu-residencial-txt" data-id="14">
               <h2>WOHA</h2>
@@ -249,7 +256,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-caribe">
+          <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
             <?php echo siteImage("caribeSection_KABEEK", "project__residencial-img", "caribeSection_KABEEK"); ?>
             <div class="submenu-residencial-txt" data-id="15">
               <h2>KABEEK MARINA & CONDOS</h2>
@@ -262,7 +269,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-caribe">
+          <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
             <?php echo siteImage("caribeSection_KAB_RESIDENCIAL", "project__kab-img", "caribeSection_KAB_RESIDENCIAL"); ?>
             <div class="submenu-residencial-txt" data-id="16">
               <h2>KABEEK RESIDENCIAL – PUERTO CANCÚN</h2>
@@ -275,7 +282,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-caribe">
+          <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
             <?php echo siteImage("caribeSection_PUNTA", "project__residencial-img", "caribeSection_PUNTA"); ?>
             <div class="submenu-residencial-txt" data-id="17">
               <h2>LA PUNTA</h2>
@@ -288,7 +295,7 @@
             </div>
           </div>
 
-          <div class="__images__submenu-caribe">
+          <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
             <?php echo siteImage("caribeSection_NYZUC", "project__residencial-img", "PASEO_MOLINO"); ?>
             <div class="submenu-residencial-txt" data-id="18">
               <h2>ALDEA NIZUC</h2>
@@ -305,7 +312,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> 
 
 
 
