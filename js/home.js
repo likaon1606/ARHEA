@@ -1,15 +1,50 @@
 function homeFunctions() {
-  homeIntro();
-  sliderHome();
-  sliderProjects();
   effectMenu();
-  switchSection();
+  sliderHome();
+  switchSection('residencialBtn', 'residencialSection');
+  sliderProjects();
   showModal();
   modalsColaborators()
 }
 
-function homeIntro() {
-  //
+// ** effect menu *
+
+function effectMenu() {
+  // Select icons hamburguer/close
+  const hamburguerIcon = document.querySelector('.img-hamburguer');
+  const closeIcon = document.querySelector('.close__menu');
+  const menuOverlay = document.querySelector('.menu-overlay');
+
+  // Event click show/hide menu
+  hamburguerIcon.addEventListener('click', function() {
+    menuOverlay.classList.toggle('active');
+    
+    // show/hide icon hamburguer/close
+    if (menuOverlay.classList.contains('active')) {
+      hamburguerIcon.style.display = 'none';
+      closeIcon.style.display = 'block'; // show icon close
+    } else {
+      hamburguerIcon.style.display = 'block';
+      closeIcon.style.display = 'none'; // hide icons close
+    }
+  });
+
+  // Event click to close with icon Close
+  closeIcon.addEventListener('click', function() {
+    menuOverlay.classList.remove('active');
+    closeIcon.style.display = 'none'; // hide icon Close
+    hamburguerIcon.style.display = 'block'; // Show icon hamburguer
+  });
+
+  window.addEventListener('scroll', function() {
+    var menu = document.querySelector('.landing__menu');
+    if (window.scrollY > 100) {
+      menu.classList.add('sticky');
+    } else {
+      menu.classList.remove('sticky');
+    }
+  });
+  
 }
 
 //** carousel */
@@ -81,36 +116,6 @@ function sliderProjects() {
   });
 }
 
-// ** effect menu *
-
-function effectMenu() {
-  // Select icons hamburguer/close
-  const hamburguerIcon = document.querySelector('.img-hamburguer');
-  const closeIcon = document.querySelector('.close__menu');
-  const menuOverlay = document.querySelector('.menu-overlay');
-
-  // Event click show/hide menu
-  hamburguerIcon.addEventListener('click', function() {
-    menuOverlay.classList.toggle('active');
-    
-    // show/hide icon hamburguer/close
-    if (menuOverlay.classList.contains('active')) {
-      hamburguerIcon.style.display = 'none';
-      closeIcon.style.display = 'block'; // show icon close
-    } else {
-      hamburguerIcon.style.display = 'block';
-      closeIcon.style.display = 'none'; // hide icons close
-    }
-  });
-
-  // Event click to close with icon Close
-  closeIcon.addEventListener('click', function() {
-    menuOverlay.classList.remove('active');
-    closeIcon.style.display = 'none'; // hide icon Close
-    hamburguerIcon.style.display = 'block'; // Show icon hamburguer
-  });
-}
-
 // ** active section projects*
 
 function switchSection(activeBtnId, activeSectionId) {
@@ -131,12 +136,10 @@ function switchSection(activeBtnId, activeSectionId) {
   document.getElementById(activeBtnId).classList.add('active__projects');
 }
 
-// Función que se ejecuta al cargar la página
 window.onload = function() {
   // Activar Residencial al cargar la página
   switchSection('residencialBtn', 'residencialSection');
 
-  // Añadir eventos de clic para cambiar de sección
   document.getElementById('residencialBtn').addEventListener('click', function(e) {
     e.preventDefault();
     switchSection('residencialBtn', 'residencialSection');
@@ -154,9 +157,10 @@ window.onload = function() {
 };
 
 
-// ** show MODAL **
 
-document.addEventListener('DOMContentLoaded', showModal);
+// ** show MODAL PROJECTS AND COLABORATORS**
+
+// document.addEventListener('DOMContentLoaded', showModal);
 
 function showModal() {
   // Seleccionamos los botones de ambos tipos

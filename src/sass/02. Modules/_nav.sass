@@ -1,6 +1,6 @@
 .container__menu
   position: relative
-  
+
 .menu-overlay
   position: fixed
   top: 0
@@ -22,12 +22,18 @@
     opacity: 1
 
 .menu-list
-  list-style: none
+  list-style: none // quitar a none
   text-align: start
   padding: 0
 
+  @include media-breakpoint-down(sm)
+    margin-left: -50px
+
   li
-    margin: 20px 0
+    margin: 40px 0
+
+    @include media-breakpoint-down(lg)
+      margin: 30px 0px
 
     a
       color: #fff
@@ -36,6 +42,12 @@
       border-bottom: 1px solid #fff
       padding-bottom: 10px
       transition: color 0.3s ease-in-out
+
+      @include media-breakpoint-down(lg)
+        font-size: 28px
+
+      @include media-breakpoint-down(sm)
+        font-size: 20px
 
       &:hover
         color: #000
@@ -50,6 +62,18 @@
   top: 0
   left: 0
   z-index: 4
+  transition: background-color 0.3s ease-in-out
+
+  &.sticky
+    position: fixed
+    top: 0
+    left: 0
+    background-color: black
+    padding: 50px 7% 10px 7%
+    transition: background-color 0.3s ease-in-out
+
+    @include media-breakpoint-down(sm)
+    padding: 20px 7% 10px 7%
 
 .img-banner-left
   width: 250px
@@ -58,7 +82,10 @@
 
   @include media-breakpoint-down(sm)
     width: 100px
-  
+
+  &.sticky
+    width: 150px
+
 .img-hamburguer
   cursor: pointer
   @include media-breakpoint-down(lg)
@@ -67,5 +94,62 @@
   @include media-breakpoint-down(sm)
     width: 120px
 
+  &.sticky
+    width: 150px
+
 .close__menu
   display: none
+
+
+// ****** section submenus
+
+.nav__submenu-colaborators
+  color: #fff
+  position: relative
+
+  &:hover .nav__submenu__elements-colaboratos
+    display: grid 
+
+.nav__submenu__elements-colaboratos
+  position: absolute 
+  top: 0
+  left: 80% 
+  margin: -200px 0px 0px 50px 
+  color: #fff
+  display: none
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(3, 10px)
+  grid-gap: 50px
+  background-color: transparent
+
+  & li
+    width: 180px
+    text-decoration: none
+    list-style: none
+    padding: 10px
+
+.nav__submenu-projects
+  color: #fff
+  position: relative
+
+  &:hover .nav__submenu__elements-projects
+    display: grid 
+
+.nav__submenu__elements-projects
+  position: absolute 
+  top: 0
+  left: 80% 
+  margin: -40px 0px 0px 50px 
+  color: #fff
+  display: none
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(3, 10px)
+  grid-gap: 0px
+  padding: 30px
+
+  & li
+    width: 150px
+    text-decoration: none
+    list-style: none
+    cursor: pointer
+

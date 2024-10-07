@@ -5,7 +5,7 @@ $(window).on("load", () => {
   currentNamespace = $(".global__wrapper").data("namespace");
 
   if (currentNamespace == "inicio") {
-    homeFunctions();
+    // homeFunctions();
     sliderHome();
   } 
 
@@ -16,7 +16,7 @@ $(window).on("load", () => {
   if (currentNamespace == "proyectos") {
     sliderProjects();
     showModal();
-    switchSection();
+    switchSection('residencialBtn', 'residencialSection');
   }
 
   if (currentNamespace == "colaboradores") {
