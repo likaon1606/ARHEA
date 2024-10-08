@@ -5,7 +5,8 @@ $(window).on("load", () => {
   currentNamespace = $(".global__wrapper").data("namespace");
 
   if (currentNamespace == "inicio") {
-    homeFunctions();
+    // homeFunctions();
+    effectMenu();
     sliderHome();
     sliderBannerHome();
   } 

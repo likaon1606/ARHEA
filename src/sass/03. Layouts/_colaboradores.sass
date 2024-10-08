@@ -178,6 +178,7 @@
 /**--------- slider modal
 
 .modal__colaborators-slider-dwon
+  display: flex // mostrar slider slick
   margin-top: 30px
   background-color: #ECEFF3
 
@@ -275,3 +276,8 @@
 
   @include media-breakpoint-down(lg)
     margin-bottom: 50px
+
+.carousel-inner
+  display: flex
+  flex-wrap: wrap // Para asegurar que los items estén en filas
+  justify-content: flex-start // Alineación de los elementos

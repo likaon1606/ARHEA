@@ -15,7 +15,7 @@
       <div class="col-12">
 
        <!-- Carrusel de Imágenes -->
-       <div class="home__carousel">
+       <div class="home__carousel projects__carousel">
           <?php echo siteImage("projects_banner__first", "home__banner__image", "Banner Principal"); ?>
           <?php echo siteImage("projects_banner__second", "home__banner__image", "Banner Secundario"); ?>
           <?php echo siteImage("projects_banner__tird", "home__banner__image", "Banner Tercero"); ?>

@@ -74,7 +74,8 @@
               <p >
               PREMIOS
               </p>
-            </div>  
+            </div>
+              
               <div class="modal__colaborators-slider-dwon">
 
                 <div class="slider-item __colaborators-slider-columns">
@@ -162,6 +163,7 @@
                 </div>
 
               </div>
+       
               <div class="close-modal-colaborators">
                 <button>
                   Cerrar

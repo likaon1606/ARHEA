@@ -3,9 +3,9 @@ function homeFunctions() {
   sliderBannerHome();
   sliderHome();
   switchSection('residencialBtn', 'residencialSection');
-  sliderProjects();
   showModal();
-  modalsColaborators()
+  sliderProjects();
+  modalsColaborators();
 }
 
 // ** effect menu *
@@ -72,43 +72,83 @@ $(document).ready(function(){
 });
 
 
-
-
-
-//** carousel */
+//** carousel middle home */
 function sliderHome() {
-  $('.carousel__home').slick({
-    centerMode: true,
-    centerPadding: '250px',
-    slidesToShow: 1,
-    prevArrow: '<button type="button" class="slick-prev__home"><p>←</p></button>',
-    nextArrow: '<button type="button" class="slick-next__home"><p>→</p></button>',
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '150px',
-          slidesToShow: 1
+
+  if (!$('.carousel__home').hasClass('slick-initialized')) {
+    $('.carousel__home').slick({
+      centerMode: true,
+      centerPadding: '250px',
+      slidesToShow: 1,
+      prevArrow: '<button type="button" class="slick-prev__home"><p>←</p></button>',
+      nextArrow: '<button type="button" class="slick-next__home"><p>→</p></button>',
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '150px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1
+          }
         }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: '0px',
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
+      ]
+    });
+  }
 }
+
+
+// ** active section projects*
+
+function switchSection(activeBtnId, activeSectionId) {
+  
+  const buttons = document.querySelectorAll('.projects__submenu a');
+  const sections = document.querySelectorAll('.projects__img__submenu');
+
+  // Quitar la clase 'active__projects' de todos los botones
+  buttons.forEach(button => button.classList.remove('active__projects'));
+
+  // Ocultar todas las secciones
+  sections.forEach(section => section.style.display = 'none');
+
+  // Mostrar la sección activa
+  document.getElementById(activeSectionId).style.display = 'flex';
+
+  // Añadir la clase 'active__projects' al botón correspondiente
+  document.getElementById(activeBtnId).classList.add('active__projects');
+
+  document.getElementById('residencialBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    switchSection('residencialBtn', 'residencialSection');
+  });
+
+  document.getElementById('comercialBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    switchSection('comercialBtn', 'comercialSection');
+  });
+
+  document.getElementById('caribeBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    switchSection('caribeBtn', 'caribeSection');
+  });
+  
+}
+
+
+//** SLIDER SECTION MODAL PROJECTS */
 
 function sliderProjects() {
   $('.slider-projects').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -137,59 +177,12 @@ function sliderProjects() {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 }
 
-// ** active section projects*
-
-function switchSection(activeBtnId, activeSectionId) {
-  
-  const buttons = document.querySelectorAll('.projects__submenu a');
-  const sections = document.querySelectorAll('.projects__img__submenu');
-
-  // Quitar la clase 'active__projects' de todos los botones
-  buttons.forEach(button => button.classList.remove('active__projects'));
-
-  // Ocultar todas las secciones
-  sections.forEach(section => section.style.display = 'none');
-
-  // Mostrar la sección activa
-  document.getElementById(activeSectionId).style.display = 'flex';
-
-  // Añadir la clase 'active__projects' al botón correspondiente
-  document.getElementById(activeBtnId).classList.add('active__projects');
-  
-}
-
-window.onload = function() {
-  // Activar Residencial al cargar la página
-  switchSection('residencialBtn', 'residencialSection');
-
-  document.getElementById('residencialBtn').addEventListener('click', function(e) {
-    e.preventDefault();
-    switchSection('residencialBtn', 'residencialSection');
-  });
-
-  document.getElementById('comercialBtn').addEventListener('click', function(e) {
-    e.preventDefault();
-    switchSection('comercialBtn', 'comercialSection');
-  });
-
-  document.getElementById('caribeBtn').addEventListener('click', function(e) {
-    e.preventDefault();
-    switchSection('caribeBtn', 'caribeSection');
-  });
-};
-
-
 
 // ** show MODAL PROJECTS AND COLABORATORS**
-
-// document.addEventListener('DOMContentLoaded', showModal);
 
 function showModal() {
   // Seleccionamos los botones de ambos tipos
@@ -263,7 +256,7 @@ $(document).ready(function(){
     dots: false,
     arrows: true,
     prevArrow: false,  // Ocultar la flecha izquierda
-    nextArrow: '<button type="button" class="slick-next-icon"><i class="fa-solid fa-arrow-right"></i></button>',  // Usamos el icono de Font Awesome
+    nextArrow: '<button type="button" class="slick-next-icon"><i class="fa-solid fa-arrow-right"></i></button>',  
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -279,4 +272,9 @@ $(document).ready(function(){
   });
 });
 }
+
+
+
+
+
 
