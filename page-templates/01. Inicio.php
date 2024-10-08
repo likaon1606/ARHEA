@@ -11,19 +11,26 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        
+        <!-- Carrusel de Imágenes -->
+        <div class="home__carousel">
+          <?php echo siteImage("banner_principal", "home__banner__image", "Banner Principal"); ?>
+          <?php echo siteImage("banner__principal_second", "home__banner__image", "Banner Secundario"); ?>
+          <?php echo siteImage("banner__principal_three", "home__banner__image", "Banner Tercero"); ?>
+        </div>
 
         <div class="home__content col-12 col-md-6 col-lg-4">
           <h1 class="home__title">DESARROLLOS <br> INMOBILIARIOS <br> DE VALOR</h1>
           <p class="home__subtitle">Creamos espacios que eleven la manera de vivir de sus habitantes en colaboración con las <strong>firmas de arquitectura líderes a nivel mundial.</strong></p>
           <button class="home__contact-btn">CONTÁCTANOS</button>
-          <?php echo siteImage("banner_principal", "home__banner__image", "Banner Principal"); ?>
         </div>
-        
+
+        <!-- Submenú -->
         <div class="home__submenu-link">
           <ul class="home__banner__links">
-            <li><a href="#">RESIDENCIAL</a></li>
-            <li class="pl__links"><a href="#">COMERCIAL</a></li>
-            <li class="pl__links"><a href="#">EL CARIBE</a></li>
+            <li><button class="carousel__button active">RESIDENCIAL</button></li>
+            <li class="pl__links"><button class="carousel__button">COMERCIAL</button></li>
+            <li class="pl__links"><button class="carousel__button">EL CARIBE</button></li>
           </ul>
         </div>
 
@@ -31,6 +38,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="about">
   <div class="container">

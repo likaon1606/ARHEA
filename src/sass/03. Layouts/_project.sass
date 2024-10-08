@@ -26,11 +26,11 @@
     min-height: 600px
 
 .banner__project-content
-  margin-top: 100px
+  margin-top: 200px
   z-index: 2
 
-  @include media-breakpoint-down(sm)
-    margin-top: 50px
+  @include media-breakpoint-down(lg)
+    margin-top: 100px
 
 .banner__project-title
   font-size: 48px
@@ -75,6 +75,11 @@
 .project__links
   margin-left: 20px
 
+.pl__links__projects
+  margin-left: 20px
+
+  @include media-breakpoint-down(sm)
+    margin-left: 0
 
 //*** projects__title_banner ***
 

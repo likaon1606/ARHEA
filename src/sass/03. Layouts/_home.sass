@@ -33,7 +33,7 @@ p, button
   text-align: start
   z-index: 2
   
-.home__banner__image
+.home__banner__image, .home__carousel
   position: absolute
   top: 0
   left: 0
@@ -98,18 +98,30 @@ p, button
   list-style: none
   padding-left: 0
 
-  & a
-    color: white
-    text-decoration: none
-
 .home__banner__links li
 
   @include media-breakpoint-down(sm)
-    font-size: 14px
+    margin-left: 0
 
 
 .pl__links
   margin-left: 20px
+
+.carousel__button 
+  background: transparent
+  border: none
+  color: white
+  font-size: 16px
+  padding-bottom: 10px
+  transition: border-bottom 0.3s ease
+
+  @include media-breakpoint-down(sm)
+    font-size: 14px
+
+  &.active 
+    border-bottom: 2px solid white
+
+
 
 //******************ABOUT
 .about 

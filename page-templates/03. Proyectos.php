@@ -13,6 +13,14 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+
+       <!-- Carrusel de Imágenes -->
+       <div class="home__carousel">
+          <?php echo siteImage("projects_banner__first", "home__banner__image", "Banner Principal"); ?>
+          <?php echo siteImage("projects_banner__second", "home__banner__image", "Banner Secundario"); ?>
+          <?php echo siteImage("projects_banner__tird", "home__banner__image", "Banner Tercero"); ?>
+        </div>
+
         <div class="banner__project-content">
           <h1 class="banner__project-title">CARTERA DE<br>PROYECTOS<br>INMOBILIARIOS</h1>
           <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos <br>residenciales, comerciales y mixtos</strong> a través de una efectiva <br>coordinación de equipos de trabajo multidisciplinarios.</p>
@@ -20,12 +28,11 @@
 
           <div class="banner__project-submenu">
             <ul class="banner__project-links">
-              <li><a href="#">RESIDENCIAL</a></li>
-              <li class="project__links"><a href="#">COMERCIAL</a></li>
-              <li class="project__links"><a href="#">EL CARIBE</a></li>
+            <li><button class="carousel__button active">RESIDENCIAL</button></li>
+            <li class="pl__links__projects"><button class="carousel__button">COMERCIAL</button></li>
+            <li class="pl__links__projects"><button class="carousel__button">EL CARIBE</button></li>
             </ul>
           </div>       
-          <?php echo siteImage("projects_img", "project__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
         </div>
       </div>
     </div>

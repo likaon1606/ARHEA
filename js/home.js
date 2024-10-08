@@ -1,5 +1,6 @@
 function homeFunctions() {
   effectMenu();
+  sliderBannerHome();
   sliderHome();
   switchSection('residencialBtn', 'residencialSection');
   sliderProjects();
@@ -46,6 +47,33 @@ function effectMenu() {
   });
   
 }
+
+function sliderBannerHome() {
+  $('.home__carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    fade: true,
+    speed: 1000,
+  });
+
+  // Actualizar la franja blanca en los botones del carrusel
+  $('.home__carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.carousel__button').removeClass('active');
+    $('.carousel__button').eq(nextSlide).addClass('active');
+  });
+}
+
+$(document).ready(function(){
+  sliderBannerHome();
+});
+
+
+
+
 
 //** carousel */
 function sliderHome() {
@@ -134,6 +162,7 @@ function switchSection(activeBtnId, activeSectionId) {
 
   // Añadir la clase 'active__projects' al botón correspondiente
   document.getElementById(activeBtnId).classList.add('active__projects');
+  
 }
 
 window.onload = function() {
@@ -227,7 +256,6 @@ function showModal() {
 
 
 //** */ SLIDER MODALS COLABORATORS
-document.addEventListener('DOMContentLoaded', modalsColaborators);
 
 function modalsColaborators() {
 $(document).ready(function(){
@@ -251,3 +279,4 @@ $(document).ready(function(){
   });
 });
 }
+

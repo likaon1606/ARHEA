@@ -5,8 +5,9 @@ $(window).on("load", () => {
   currentNamespace = $(".global__wrapper").data("namespace");
 
   if (currentNamespace == "inicio") {
-    // homeFunctions();
+    homeFunctions();
     sliderHome();
+    sliderBannerHome();
   } 
 
   if (["inicio", "acerca-de", "proyectos", "colaboradores", "contacto"].includes(currentNamespace)) {
