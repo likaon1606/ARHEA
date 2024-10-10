@@ -5,7 +5,7 @@ h1, h2, h3, h4
   font-family: "Belleza", sans-serif
   font-weight: 400
   
-p, button
+p, button, label, input, li
   font-size: 16px
   font-family: "Quattrocento", serif
   font-weight: 400
@@ -150,8 +150,8 @@ p, button
   justify-content: center
   padding: 100px 0
 
-  @include media-breakpoint-down(sm)
-    padding: 0
+  // @include media-breakpoint-down(sm)
+  //   padding: 0
 
 .about .row
   padding: 0px 10%
@@ -167,7 +167,7 @@ p, button
     margin-bottom: 50px
 
     @include media-breakpoint-down(sm)
-      font-size: 38px
+      font-size: 30px
 
   & p 
     text-transform: uppercase
@@ -221,7 +221,7 @@ p, button
   color: #fff 
 
   @include media-breakpoint-down(sm)
-    min-height: 600px
+    min-height: 700px
 
 
 .development__image
@@ -235,7 +235,7 @@ p, button
   z-index: -1
 
   @include media-breakpoint-down(sm)
-    min-height: 600px
+    min-height: 700px
     
 
 .development__contain
@@ -245,6 +245,10 @@ p, button
     font-size: 48px
     padding-top: 5%
     text-align: center
+
+    @include media-breakpoint-down(sm)
+      font-size: 30px
+
   & p
     padding-top: 1%
     text-align: center
@@ -275,8 +279,8 @@ p, button
   display: inline-block
   position: relative
   overflow: hidden
-  height: 64px  // Altura de un solo número (misma que el font-size)
-  line-height: 64px  // Centrado vertical
+  height: 64px  
+  line-height: 64px  
 
   span 
     display: block
@@ -287,7 +291,7 @@ p, button
   &.animate-wheel 
     span 
       position: relative
-      transform: translateY(0)
+      transform: translateY(100)
 
   @include media-breakpoint-down(sm)
     font-size: 36px 
@@ -570,16 +574,33 @@ p, button
     padding: 60px 20px
 
   h2
+    margin: auto
+    width: 40%
     font-size: 48px
     text-transform: uppercase
 
+    @include media-breakpoint-down(lg)
+      width: 60%
+      font-size: 40px
+
     @include media-breakpoint-down(sm)
+      width: 100%
       font-size: 34px
 
   
 
   .p__inmob
+    margin: auto
+    width: 51%
     margin-top: 30px
+
+    @include media-breakpoint-down(lg)
+      margin: auto
+      margin-top: 30px
+      width: 100%
+
+    @include media-breakpoint-down(lg)
+      width: 95%
 
   .grid
     display: grid
@@ -603,10 +624,11 @@ p, button
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 15px
     color: #fff
     border-radius: 8px
     flex-wrap: wrap 
+    position: relative
+    cursor: pointer
 
     p
       margin: 0
@@ -617,3 +639,20 @@ p, button
     @include media-breakpoint-down(sm)
       flex-direction: row 
       gap: 10px
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #fff
+      transform: scaleX(0) // Inicia invisible con un tamaño de 0 en el eje X
+      transform-origin: left // La animación comienza desde la izquierda
+      transition: transform 0.5s ease // Duración de la animación y su suavidad
+
+    &:hover::after
+      transform: scaleX(1) // Escala la línea al 100% de su ancho
+
+

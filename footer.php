@@ -7,24 +7,26 @@
           <div class="form__left d-flex flex-column">
             <h2>BIENVENIDO A TU<br>HOGAR IDEAL</h2>
             <p class="p__left">Escríbenos y en breve nos pondremos en contacto contigo.</p>
+
             <div class="form__info">
               <div class="info__item">
-                <p>UBICACIÓN</p>
-                <p id="pipe__form1">|</p>
-                <p id="p__left">Paseo de Los Tamarindos 90, Torre 1 Piso 5,<br>Bosques de las Lomas,<br>
+                <p class="info__item-title">UBICACIÓN</p>
+                <p class="pipe"><?php echo siteImage("pipe_large", "pipe-large", "pipe largo para separar direcciones"); ?></p>
+                <p class="info__item-txt">Paseo de Los Tamarindos 90, Torre 1 Piso 5,<br> Bosques de las Lomas,<br> 
                 Ciudad de México, CDMX 05110</p>
               </div>
               <div class="info__item">
-                <p>TELÉFONO</p>
-                <p id="pipe__form2">|</p>
-                <p id="p__left">55 2167 9575 / 77</p>
+                <p class="info__item-title">TELÉFONO</p>
+                <p class="pipe"><?php echo siteImage("pipe_small", "pipe-small", "pipe corto para separar direcciones"); ?></p>
+                <p class="info__item-txt">55 2167 9575 / 77</p>
               </div>
               <div class="info__item">
-                <p>EMAIL</p>
-                <p id="pipe__form3">|</p>
-                <p id="p__left">info@arhea.mx</p>
+                <p class="info__item-title">EMAIL</p>
+                <p class="pipe"><?php echo siteImage("pipe_small", "pipe-small", "pipe corto para separar direcciones"); ?></p>
+                <p class="info__item-txt">info@arhea.mx</p>
               </div>
             </div>
+            
           </div>
 
           <div class="form__right">
@@ -55,7 +57,7 @@
 <footer class="footer">
   <div class="footer__columns d-flex flex-wrap justify-content-between">
     <div class="footer__logo">
-      <?php siteImage("banner-left", "img-footer", "logo footer ARHEA"); ?>
+      <?php siteImage("arhea_footer", "img-footer", "logo footer ARHEA"); ?>
       <p>Aviso de privacidad</p>
     </div>
 

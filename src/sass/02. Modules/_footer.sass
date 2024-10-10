@@ -35,32 +35,27 @@
   margin-top: 5%
 
 .form__info
-  margin-top: 18%
+  margin-top: 16%
       
 .info__item
   display: flex
   justify-content: stretch
 
-#p__left
-  margin-left: 3%
+.info__item-title
+  width: 100px
 
-#pipe__form1, #pipe__form2, #pipe__form3
-  color: #153B67
-  line-height: 1
+  @include media-breakpoint-down(sm)
+    width: 140px
+    font-size: 14px
 
-#pipe__form1
-  font-size: 58px
-  margin-left: 3%
+.info__item-txt
+  width: 310px
 
-#pipe__form2
-  margin-left: 4.5%
+  @include media-breakpoint-down(sm)
+    font-size: 14px
 
-#pipe__form3
-  margin-left: 9.5%
-
-#pipe__form2, #pipe__form3
-  font-weight: 900
-
+.pipe
+  padding-right: 20px
 
 .form__right
   margin-top: 5%
@@ -72,15 +67,18 @@
 
   & label
     color: #272424
-    margin-top: 20px
+    margin-top: 20px 
+    margin-bottom: 1px 
 
   & input, select, textarea
     border: none
+    padding: 0
     border-bottom: 2px solid #153B67
-    font-size: 16px
+    font-size: 14px
     color: #272424
     background-color: transparent
     outline: none  
+  
     &:focus
       border-bottom-color: #5a799b
 
@@ -94,7 +92,8 @@
   border: 2px solid #153B67
   cursor: pointer
   transition: background-color 0.3s, color 0.3s
-  width: auto 
+  width: auto
+
   
 
 // ******  
@@ -109,14 +108,18 @@ footer
   display: flex
   flex-direction: column
   justify-content: space-between
-  margin-right: 250px
+  margin-right: 50px
 
   @include media-breakpoint-down(lg)
     align-items: flex-start
 
+  & p
+    padding-left: 10px
+
   .img-footer
-    width: 200px
+    width: 300px
     text-align: start
+    margin-top: -30px
 
     @include media-breakpoint-down(lg)
       width: 150px    
@@ -130,9 +133,7 @@ footer
     justify-content: start
 
 .footer__columns
-  display: flex
-  justify-content: space-between
-  margin: 0px 50px 0px 50px
+  margin: 0px 80px
 
   @include media-breakpoint-down(sm)
     align-items: center

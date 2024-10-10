@@ -96,7 +96,7 @@ function animatedNumsDevelopment() {
             span.style.transform = `translateY(-${currentIndex * 100}%)`;
           });
         }
-      }, 500); // Controla la velocidad del cambio de número
+      }, 500); 
     }
 
     // Verifica si el usuario ha hecho scroll hasta la sección
