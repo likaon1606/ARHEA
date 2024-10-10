@@ -46,8 +46,8 @@
 
       <div class="left-section col-12 col-md-6">
         <p class="about-title">Acerca de Nosotros</p>
-        <h1>ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
-        <button class="button-about">Conoce más</button>
+        <h1>A R H E A<br>P R O P E R T Y<br>D E V E L O P M E N T</h1>
+        <button class="button-about">CONOCE MÁS</button>
       </div>
 
       <div class="right-section col-12 col-md-6">
@@ -78,24 +78,53 @@
       </div>
     </div>
 
-      <div class="development-nums d-flex">
-        <div>
-          <h3 id="num1" class="animate-on-scroll col-12">+0</h3>
-          <p>Proyectos creados</p>
-        </div>
-        <div>
-          <h3 id="num2" class="animate-on-scroll col-12">+0</h3>
-          <p>Desarrollo en construcción</p>
-        </div>
-        <div>
-          <h3 id="num3" class="animate-on-scroll col-12">+0</h3>
-          <p>Años de experiencia</p>
-        </div>
-        <div>
-          <h3 id="num4" class="animate-on-scroll col-12">+0</h3>
-          <p>Colaboradores</p>
-        </div>
+    <div class="development-nums d-flex">
+      <div>
+        <p id="num1" class="animate-on-scroll col-12">
+          <span>+0</span>
+          <span>+5</span>
+          <span>+10</span>
+          <span>+15</span>
+          <span>+20</span>
+          <span>+25</span>
+        </p>
+        <p>Proyectos creados</p>
       </div>
+      <div>
+        <p id="num2" class="animate-on-scroll col-12">
+          <span>+0</span>
+          <span>+5</span>
+          <span>+10</span>
+          <span>+15</span>
+          <span>+20</span>
+          <span>+25</span>
+        </p>
+        <p>Desarrollo en construcción</p>
+      </div>
+      <div>
+        <p id="num3" class="animate-on-scroll col-12">
+          <span>+0</span>
+          <span>+5</span>
+          <span>+10</span>
+          <span>+15</span>
+          <span>+20</span>
+          <span>+25</span>
+        </p>
+        <p>Años de experiencia</p>
+      </div>
+      <div>
+        <p id="num4" class="animate-on-scroll col-12">
+          <span>+0</span>
+          <span>+5</span>
+          <span>+10</span>
+          <span>+15</span>
+          <span>+20</span>
+          <span>+25</span>
+        </p>
+        <p>Colaboradores</p>
+      </div>
+    </div>
+
 
       <div class="btn__development">
         <button>
@@ -159,7 +188,7 @@
         <?php echo siteImage("parque", "slick__img", "en venta casa del parque"); ?>
       </div>
 
-      <div>
+      <div class="img__carousel">
         <div class="carousel__content">
           <h3>KABEEK MARINA & CONDOS</h3>
           <p>CANCÚN</p>
@@ -171,9 +200,9 @@
         <?php echo siteImage("kabeek", "slick__img", "en venta kabeek"); ?>
       </div>
     </div>
-    </div>
   </div>
 </section>
+
 
 <section class="red__inmob">
   <h2>Una red inmobiliaria<br>con alcance global</h2>

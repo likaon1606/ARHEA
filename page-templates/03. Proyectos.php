@@ -16,9 +16,9 @@
 
        <!-- Carrusel de Imágenes -->
        <div class="home__carousel projects__carousel">
-          <?php echo siteImage("projects_banner__first", "home__banner__image", "Banner Principal"); ?>
-          <?php echo siteImage("projects_banner__second", "home__banner__image", "Banner Secundario"); ?>
-          <?php echo siteImage("projects_banner__tird", "home__banner__image", "Banner Tercero"); ?>
+          <?php echo siteImage("projects_banner__first", "projects__banner__image", "Banner Principal"); ?>
+          <?php echo siteImage("projects_banner__second", "projects__banner__image", "Banner Secundario"); ?>
+          <?php echo siteImage("projects_banner__tird", "projects__banner__image", "Banner Tercero"); ?>
         </div>
 
         <div class="banner__project-content">

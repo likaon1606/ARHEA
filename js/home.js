@@ -1,6 +1,7 @@
 function homeFunctions() {
   effectMenu();
   sliderBannerHome();
+  animatedNumsDevelopment();
   sliderHome();
   switchSection('residencialBtn', 'residencialSection');
   showModal();
@@ -71,40 +72,87 @@ $(document).ready(function(){
   sliderBannerHome();
 });
 
+function animatedNumsDevelopment() {
+  const numsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+  numsToAnimate.forEach((numElement) => {
+    const spans = numElement.querySelectorAll('span');
+    let currentIndex = 0;
+
+    function animateNumber() {
+      // Resetea la posición al inicio para todos los spans
+      spans.forEach((span, index) => {
+        span.style.transform = `translateY(${index * 100}%)`;
+      });
+
+      // Inicia la animación de la rueda
+      const interval = setInterval(() => {
+        currentIndex++;
+        if (currentIndex >= spans.length) {
+          clearInterval(interval); // Detiene la animación al alcanzar el último número
+        } else {
+          // Desplaza los spans hacia abajo
+          spans.forEach((span, index) => {
+            span.style.transform = `translateY(-${currentIndex * 100}%)`;
+          });
+        }
+      }, 500); // Controla la velocidad del cambio de número
+    }
+
+    // Verifica si el usuario ha hecho scroll hasta la sección
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateNumber();
+          observer.unobserve(entry.target); // Desactiva el observer una vez animado
+        }
+      });
+    });
+
+    observer.observe(numElement);
+  });
+}
+
+window.onload = animatedNumsDevelopment;
 
 //** carousel middle home */
 function sliderHome() {
-
-  if (!$('.carousel__home').hasClass('slick-initialized')) {
-    $('.carousel__home').slick({
-      centerMode: true,
-      centerPadding: '250px',
-      slidesToShow: 1,
-      prevArrow: '<button type="button" class="slick-prev__home"><p>←</p></button>',
-      nextArrow: '<button type="button" class="slick-next__home"><p>→</p></button>',
-      responsive: [
-        {
-          breakpoint: 769,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '150px',
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '0px',
-            slidesToShow: 1
-          }
+  $('.carousel__home').slick({
+    centerMode: true,
+    dots: true,
+    centerPadding: '240px',
+    slidesToShow: 1,
+    nextArrow: '<button class="slick-next__home" aria-label="Next" type="button">→</button>',
+    prevArrow: '<button class="slick-prev__home" aria-label="Previous" type="button">←</button>',
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '80px',
+          slidesToShow: 1
         }
-      ]
-    });
-  }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '30px',
+          slidesToShow: 1
+        }
+      },
+    ]
+  });
 }
+
+
+// Inicializar el slider al cargar el documento
+$(document).ready(function() {
+  sliderHome();
+});
+
 
 
 // ** active section projects*
@@ -197,14 +245,14 @@ function showModal() {
   function openModal(modalClass, id) {
     const modal = document.querySelector(`.${modalClass}[data-id="${id}"]`);
     if (modal) {
-      modal.style.display = 'flex'; // Mostrar modal
+      modal.classList.add('is-visible'); // Mostrar modal usando clases
     }
   }
 
   // Función para cerrar modal
   function closeModal(modal) {
     if (modal) {
-      modal.style.display = 'none'; // Ocultar modal
+      modal.classList.remove('is-visible'); // Ocultar modal quitando la clase
     }
   }
 
@@ -246,6 +294,7 @@ function showModal() {
     });
   });
 }
+
 
 
 //** */ SLIDER MODALS COLABORATORS

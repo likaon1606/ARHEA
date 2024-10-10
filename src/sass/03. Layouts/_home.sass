@@ -1,5 +1,5 @@
 body
-  background: #FFFFFF
+  background: #ECEFF3
 
 h1, h2, h3, h4
   font-family: "Belleza", sans-serif
@@ -16,8 +16,6 @@ p, button
   align-items: center
   justify-content: center
   min-height: 800px
-  margin-bottom: 50px
-
   @include media-breakpoint-down(lg)
     min-height: 600px
 
@@ -38,16 +36,19 @@ p, button
   top: 0
   left: 0
   width: 100%
-  height: 100%
-  min-height: 800px
-  filter: brightness(80%)
+  height: 100% !important
+  min-height: 900px
+  filter: brightness(40%)
   z-index: -1
 
+.home__banner__image
+  height: 100%
+
   @include media-breakpoint-down(lg)
-    min-height: 600px
+    height: 600px
 
   @include media-breakpoint-down(sm)
-    min-height: 500px
+    height: 500px
 
 .home__title
   margin-top: 20%
@@ -72,19 +73,38 @@ p, button
     padding: 0% 3% 0% 0%
 
 .home__contact-btn
+  position: relative
   padding: 16px 32px
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
   border: 1px solid white
+  color: white
   transition: all 0.3s ease-in-out
+  overflow: hidden 
+
+  &::after
+    content: '' 
+    position: absolute 
+    left: 0 
+    bottom: 0 
+    width: 100% 
+    height: 1.1px 
+    background: white 
+    transform: translateX(-100%)
+    transition: transform 0.7s ease-in-out 
+
+  &:hover
+    border: none
+    border-bottom: 1px solid #fff 
+    background: #153B67
+    transition: all 0.6s ease-in-out
+
+    &::after
+      transform: translateX(0) 
+
 
   @include media-breakpoint-down(sm)
   padding: 12px 28px
-
-.home__contact-btn:hover, .btn__development button:hover,
-.button-about:hover
-  background: #153B67
-  transition: all 0.3s ease-in-out
 
 .home__submenu-link
   margin: 7% 0% 0% 3%
@@ -125,9 +145,10 @@ p, button
 
 //******************ABOUT
 .about 
+  background-color: #ECEFF3
   display: flex
   justify-content: center
-  padding: 50px 0
+  padding: 100px 0
 
   @include media-breakpoint-down(sm)
     padding: 0
@@ -149,17 +170,24 @@ p, button
       font-size: 38px
 
   & p 
+    text-transform: uppercase
     color: #272424 
 
 
 .button-about 
-  padding: 10px 20px
-  border: 2px solid  #153B67
+  padding: 16px 32px
+  border: none
+  border-top: 2px solid #153B67
+  border-right: 2px solid  #153B67
+  border-bottom: 2px solid  #153B67
+  border-left: 1px solid  #153B67
   color: #272424
   background-color: transparent
   cursor: pointer
 
   &:hover
+    background: #153B67
+    transition: all 0.6s ease-in-out
     color: #fff
   
   @include media-breakpoint-down(sm)
@@ -188,79 +216,122 @@ p, button
   display: flex
   align-items: center
   justify-content: center
-  min-height: 500px
-  margin-top: 50px
-  margin-bottom: 50px
-  padding: 0 20px 
+  min-height: 600px
+  padding: 0 20px
+  color: #fff 
 
   @include media-breakpoint-down(sm)
     min-height: 600px
 
 
-  .development__image
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    min-height: 500px
-    filter: brightness(50%)
-    z-index: -1
+.development__image
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  min-height: 600px
+  filter: brightness(30%)
+  z-index: -1
 
-    @include media-breakpoint-down(sm)
-      min-height: 600px
+  @include media-breakpoint-down(sm)
+    min-height: 600px
+    
 
-  & h1, h3, p, button
-    color: #fff
+.development__contain
 
-  .development__contain
-    & h1
-      padding-top: 5%
-      text-align: center
-    & p
-      padding-top: 1%
-      text-align: center
-
-  .development-nums
-    padding-top: 2%
-    display: flex
-    justify-content: space-evenly
+  & h1
+    letter-spacing: 0.2em
+    font-size: 48px
+    padding-top: 5%
     text-align: center
-    flex-wrap: wrap 
-    gap: 10px 
+  & p
+    padding-top: 1%
+    text-align: center
 
+.development-nums
+  padding-top: 2%
+  display: flex
+  justify-content: space-evenly
+  text-align: center
+  flex-wrap: wrap 
+  gap: 10px 
+
+  & div
+    flex: 1 1 calc(25% - 20px) 
+    max-width: calc(25% - 20px)
+
+  @include media-breakpoint-down(lg)
+    none
+
+  @include media-breakpoint-down(sm)
     & div
-      flex: 1 1 calc(25% - 20px) 
-      max-width: calc(25% - 20px)
+      flex: 1 1 calc(50% - 10px) 
+      max-width: calc(50% - 10px)
 
-    & h3
-      font-size: 48px
-      margin-bottom: 10px
+.animate-on-scroll 
+  font-size: 64px
+  margin-bottom: 10px
+  display: inline-block
+  position: relative
+  overflow: hidden
+  height: 64px  // Altura de un solo número (misma que el font-size)
+  line-height: 64px  // Centrado vertical
 
-    @include media-breakpoint-down(lg)
-      none
+  span 
+    display: block
+    width: 100%
+    text-align: center
+    transition: transform 0.5s ease-in-out  
 
-    @include media-breakpoint-down(sm)
-      & div
-        flex: 1 1 calc(50% - 10px) 
-        max-width: calc(50% - 10px)
+  &.animate-wheel 
+    span 
+      position: relative
+      transform: translateY(0)
 
-      & h3
-        font-size: 36px 
+  @include media-breakpoint-down(sm)
+    font-size: 36px 
 
-  .btn__development
+.btn__development
     display: flex
     justify-content: center
     margin-top: 3%
 
     & button
-      font-size: 16px
+      color: #fff
+      position: relative
       padding: 16px 32px
       background: transparent
-      border: 1px solid #ECEFF3
+      border-top: 1px solid #ECEFF3
+      border-right: 2px solid #ECEFF3
+      border-bottom: 2px solid #ECEFF3
+      border-left: 1px solid #ECEFF3
       display: flex
       justify-content: center
       align-items: center
+      transition: all 0.8s ease-in-out
+      overflow: hidden
+
+      &::after
+        content: '' 
+        position: absolute 
+        left: 0 
+        bottom: 0 
+        width: 100% 
+        height: 1.1px 
+        background: white 
+        transform: translateX(-100%)
+        transition: transform 0.7s ease-in-out 
+
+      &:hover
+        border: none
+        border-bottom: 1px solid #fff 
+        background: #153B67
+        transition: all 0.6s ease-in-out
+
+        &::after
+          transform: translateX(0) 
+
 
       @include media-breakpoint-down(sm)
         padding: 12px 24px 
@@ -269,8 +340,9 @@ p, button
 //****************** inovation
 
 .inovation
+  background-color: #ECEFF3
   text-align: center
-  margin-top: 50px
+  padding: 50px 0px
 
   & h1
     font-size: 48px
@@ -305,15 +377,83 @@ p, button
 
 //** slider **
 #carousel
-  margin-bottom: 150px
+  margin-bottom: 50px
+
+.carousel__home
+  display: flex
+  align-items: center
+  justify-content: center
+  max-height: 800px
+  max-width: 100% 
+  overflow: hidden
+
+  // @include media-breakpoint-down(lg)
+  //   max-height: 600px
+
+  .slick-dots
+    margin: 30px 0px
+    position: relative
+    text-align: start
+    margin-left: 35%
+    height: 50px
+    transition: transform 0.7s ease-in-out 
+
+    @include media-breakpoint-down(lg)
+      margin-left: 20%
+
+    @include media-breakpoint-down(sm)
+      margin: 0px
+      margin-left: 10%
+
+  & .slick-dots li
+    padding: 50px 20px
+
+    @include media-breakpoint-down(sm)
+      padding: 40px 0px
+
+  & .slick-dots li button:before
+    color: #153B67
+    opacity: 1 
+    font-size: 14px
+
+    @include media-breakpoint-down(sm)
+      font-size: 10px
+
+  & .slick-dots li.slick-active button:before 
+    margin-top: 10%
+    color: transparent
+    background: #153B67
+    width: 30px
+    height: 10px
+    border-radius: 30px
+    transition: all 0.3s ease-in-out
+
+    @include media-breakpoint-down(sm)
+      width: 20px
+
+.carousel__home img
+  height: 420px
+  width: 800px
+  // width: auto
+  // height: auto
+  display: block
+
+  @include media-breakpoint-down(lg)
+    height: 350px
+    width: 500px
+
+  @include media-breakpoint-down(sm)
+    height: 350px
+    width: 330px
 
 .slick-next__home, .slick-prev__home
   border: 1px solid #153B67
   border-radius: 50%
-  position: sticky
-  top: 110%
-  width: 50px
-  height: 50px
+  position: absolute  
+  top: 50%           
+  transform: translateY(-50%)
+  width: 70px
+  height: 70px
   color: #153B67
   z-index: 1
   background: none
@@ -322,90 +462,82 @@ p, button
   justify-content: center
   align-items: center 
 
-
 .slick-next__home
-  margin-left: 73%
+  font-size: 40px
+  margin-top: 17%
+  right: 23%
 
   @include media-breakpoint-down(lg)
-    margin-left: 70%
-
-  @include media-breakpoint-down(sm)
-    margin-left: 80%
-
+    margin-top: 26%
+    right: 18%
+  
 .slick-prev__home
-  margin-left: 68%
+  font-size: 40px
+  left: 63%
+  margin-top: 17%
 
   @include media-breakpoint-down(lg)
-    margin-left: 60%
-
-  @include media-breakpoint-down(sm)
-    margin-left: 63%
+    margin-top: 26%
+    left:  58%
 
 .slick-prev__home p,
 .slick-next__home p 
   margin: 5px
   color: #153B67
-  font-size: 30px
 
 .img__carousel
-  position: absolute
-
-  @include media-breakpoint-down(lg)
-    width: 700px
-    height: 300px
-    min-height: 300px
+  position: relative  
 
 .slick__img
-  width: 750px
-  height: 500px
-  min-height: 300px
+  width: 100%          
+  height: 100%          
   object-fit: cover
   object-position: center
 
-  @include media-breakpoint-down(lg)
-    width: 400px
-    height: 450px
-    min-height: 450px
-
-  @include media-breakpoint-down(sm)
-    width: 450px
-    height: 450px
-    min-height: 450px
-    object-fit: contain
-    object-position: center
-
 .carousel__content
   position: absolute
-  margin-left: 4.5%
-  margin-top: .7%
-  width: 350px
+  top: 20px
+  left: 20px
+  width: 320px
+  height: 370px
   background-color: #ECEFF3
   padding: 40px
 
   @include media-breakpoint-down(lg)
-    margin-left: 4.7%
-    margin-top: 0.7%
-    width: 200px
+    width: 300px
+    height: 300px
     padding: 10px
 
   @include media-breakpoint-down(sm)
-    margin-left: 3.8%
-    margin-top: 1%
-    width: 220px
+    top: 30px
+    left: 10px
+    width: 200px
+    height: 280px
+    padding: 5px 
 
-.carousel__content h3, .carousel__content p, 
-.btn__cardcarousel button
-  color: #272424 
+    & p
+      font-size: 14px
 
 .carousel__content h3
+  color: #272424
   font-size: 28px
+
+  @include media-breakpoint-down(sm)
+    font-size: 20px
 
 .p__carousel
   margin-top: 30px
 
+  @include media-breakpoint-down(sm)
+    margin-top: 10px
+
+
 .btn__cardcarousel button
   margin-top: 40px
-  border: 1px solid #272424
+  border-top: 1px solid #153B67
+  border-right: 2px solid #153B67
+  border-bottom: 2px solid #153B67
+  border-left: 1px solid #153B67
   padding: 16px 32px
   background: transparent
 
@@ -413,10 +545,17 @@ p, button
     margin-top: 20px
     padding: 12px 24px
 
-.btn__cardcarousel button:hover, .btn__form:hover
+  @include media-breakpoint-down(sm)
+    margin-top: 10px
+    padding: 10px 26px
+    font-size: 14px
+  
+
+.btn__cardcarousel button:hover
   color: #fff
   background: #153B67
   transition: all 0.3s ease-in-out
+
 
 // *********** red__inmob
 

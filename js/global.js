@@ -7,8 +7,9 @@ $(window).on("load", () => {
   if (currentNamespace == "inicio") {
     // homeFunctions();
     effectMenu();
-    sliderHome();
     sliderBannerHome();
+    animatedNumsDevelopment();
+    sliderHome();
   } 
 
   if (["inicio", "acerca-de", "proyectos", "colaboradores", "contacto"].includes(currentNamespace)) {

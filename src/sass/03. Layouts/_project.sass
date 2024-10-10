@@ -13,10 +13,16 @@
     min-height: 600px
   
 .projects__carousel
-  filter: brightness(40%)
+  filter: brightness(50%)
 
   @include media-breakpoint-down(sm)
     min-height: 600px
+
+.projects__banner__image
+  height: 100%
+
+  @include media-breakpoint-down(lg)
+    height: 700px
 
 .banner__project-content
   margin-top: 200px
@@ -223,7 +229,6 @@
 
 // ************ MODALS
 
-
 .slider-projects
   display: flex
   width: 80%
@@ -274,11 +279,11 @@
     display: none !important
 
 .slider__projects__img
-  // display: block
   width: 100%
   height: 100%
   z-index: 6
 
+// Modal genérico para residencial y comercial con visibilidad controlada
 .modal-residencial, .modal-comercial
   position: fixed
   z-index: 2
@@ -287,10 +292,39 @@
   width: 100% 
   height: 100%
   background-color: rgba(0, 0, 0, 0.5) 
-  display: none // mostrar u ocultar modal
+  display: flex
   justify-content: center
   align-items: center
   flex-direction: row 
+  opacity: 0
+  pointer-events: none
+  transition: opacity 0.3s ease, pointer-events 0.3s ease
+
+  &.is-visible
+    opacity: 1
+    pointer-events: all
+
+  @include media-breakpoint-down(sm)
+    flex-direction: column 
+
+// Para buttonsColaborators: mantener display: flex sin opacidad ni pointer-events
+.modal-buttonsColaborators
+  position: fixed
+  z-index: 2
+  left: 0
+  top: 0
+  width: 100% 
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5) 
+  display: none // Oculto por defecto
+  justify-content: center
+  align-items: center
+  flex-direction: row 
+
+  &.is-visible
+    display: flex // Se muestra al abrir
+    opacity: 1 // Si necesitas animación de opacidad adicional
+    transition: opacity 0.3s ease
 
   @include media-breakpoint-down(sm)
     flex-direction: column 
@@ -349,7 +383,7 @@
 
   & p
     @include media-breakpoint-down(lg)
-    font-size: 14px
+      font-size: 14px
 
 .close-modal
   position: absolute
