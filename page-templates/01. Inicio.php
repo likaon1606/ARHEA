@@ -5,8 +5,8 @@
 ?>
 
 
-<?php get_header(); ?>
 
+<?php get_header(); ?>
 <section class="home__content__principal">
   <div class="container">
     <div class="row">
@@ -46,12 +46,12 @@
 
       <div class="left-section col-12 col-md-6">
         <p class="about-title">Acerca de Nosotros</p>
-        <h1>A R H E A<br>P R O P E R T Y<br>D E V E L O P M E N T</h1>
+        <h1>ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
         <button class="button-about">CONOCE MÁS</button>
       </div>
 
       <div class="right-section col-12 col-md-6">
-        <div class="line mt-3">
+        <div class="line">
           <p>
             Con más de 25 años de experiencia en el sector inmobiliario y una profunda comprensión de la diversidad de cada proyecto, nuestra prioridad es conformar el equipo perfecto para cada desarrollo.
           </p>
@@ -93,11 +93,9 @@
       <div>
         <p id="num2" class="animate-on-scroll col-12">
           <span>+0</span>
-          <span>+5</span>
-          <span>+10</span>
-          <span>+15</span>
-          <span>+20</span>
-          <span>+25</span>
+          <span>+1</span>
+          <span>+2</span>
+          <span>+3</span>
         </p>
         <p>Desarrollo en construcción</p>
       </div>
@@ -199,8 +197,15 @@
         </div>
         <?php echo siteImage("kabeek", "slick__img", "en venta kabeek"); ?>
       </div>
+
+    </div>
+    <div class="slider__rows">
+      <?php siteImage('boton-izq.svg', 'arrow__left'); ?>
+      <?php siteImage('boton-der.svg', 'arrow__right'); ?>
+    </div>
     </div>
   </div>
+</div>
 </section>
 
 
@@ -211,49 +216,49 @@
   <div class="grid">
     <div class="grid__box">
       <p>HKS</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>GENSLER</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>EDSA</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>LEGORRETA + LEGORRETA</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     
     <div class="grid__box">
       <p>ARTIGAS ARQUITECTOS</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>SORDO MADALENO</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>ABAX ARQUITECTOS</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>ROTH ARCHITECTURE</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
 
     <div class="grid__box">
       <p>SANZPONT ARQUITECTURA</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
-      <p>SPRINGALL + MK</p>
-      <p>+</p>
+      <p>SPRINGALL class="p__grid" + MK</p>
+      <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
       <p>ARTCH</p>
-      <p>+</p>
+      <p class="p__grid">+</p>
     </div>
   </div>
 </section>

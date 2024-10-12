@@ -80,18 +80,15 @@ function animatedNumsDevelopment() {
     let currentIndex = 0;
 
     function animateNumber() {
-      // Resetea la posición al inicio para todos los spans
       spans.forEach((span, index) => {
         span.style.transform = `translateY(${index * 100}%)`;
       });
 
-      // Inicia la animación de la rueda
       const interval = setInterval(() => {
         currentIndex++;
         if (currentIndex >= spans.length) {
-          clearInterval(interval); // Detiene la animación al alcanzar el último número
+          clearInterval(interval); 
         } else {
-          // Desplaza los spans hacia abajo
           spans.forEach((span, index) => {
             span.style.transform = `translateY(-${currentIndex * 100}%)`;
           });
@@ -99,12 +96,11 @@ function animatedNumsDevelopment() {
       }, 500); 
     }
 
-    // Verifica si el usuario ha hecho scroll hasta la sección
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           animateNumber();
-          observer.unobserve(entry.target); // Desactiva el observer una vez animado
+          observer.unobserve(entry.target); 
         }
       });
     });
@@ -117,20 +113,25 @@ window.onload = animatedNumsDevelopment;
 
 //** carousel middle home */
 function sliderHome() {
+
+  const prevArrow = document.querySelector(".arrow__left");
+  const nextArrow = document.querySelector(".arrow__right");
+
   $('.carousel__home').slick({
     centerMode: true,
     dots: true,
+    // autoplay: true,
     centerPadding: '240px',
     slidesToShow: 1,
-    nextArrow: '<button class="slick-next__home" aria-label="Next" type="button">→</button>',
-    prevArrow: '<button class="slick-prev__home" aria-label="Previous" type="button">←</button>',
+    prevArrow: prevArrow,
+    nextArrow: nextArrow,
     responsive: [
       {
         breakpoint: 769,
         settings: {
           arrows: true,
           centerMode: true,
-          centerPadding: '80px',
+          centerPadding: '120px',
           slidesToShow: 1
         }
       },

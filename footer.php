@@ -37,9 +37,9 @@
               <input type="email" id="email" name="email" required>
               <label for="phone">Teléfono*</label>
               <input type="tel" id="phone" name="phone" required>
-              <label for="project">¿Qué proyecto te interesa conocer?</label>
               <select id="project" name="project">
-                <option value="value1">Woha</option>
+                <option value="" disabled selected hidden>¿Qué proyecto te interesa conocer?</option>
+                <option class="option__select" value="value1">Woha</option>
                 <option value="value2">Kabeek Marina & Condos</option>
                 <option value="value3">Aldea Nizuc</option>
               </select>
