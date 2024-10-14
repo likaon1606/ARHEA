@@ -437,7 +437,7 @@ p, button, label, input, li
     transition: transform 0.7s ease-in-out 
 
     @include media-breakpoint-down(lg)
-      margin-left: 40%
+      margin-left: 30%
 
     @include media-breakpoint-down(sm)
       margin: 0px
@@ -450,57 +450,60 @@ p, button, label, input, li
       padding: 40px 0px
 
   & .slick-dots li button:before
-    color: #153B67
     opacity: 1 
-    font-size: 14px
-
-    @include media-breakpoint-down(sm)
-      font-size: 10px
-
-  & .slick-dots li.slick-active button:before 
     margin-top: 3px
     color: transparent
     background: #153B67
-    width: 30px
+    width: 10px
     height: 10px
     border-radius: 30px
     transition: all 0.3s ease-in-out
 
     @include media-breakpoint-down(sm)
+      font-size: 10px
+
+  & .slick-dots li.slick-active button:before 
+    width: 30px
+    
+
+    @include media-breakpoint-down(sm)
       width: 20px
 
-.carousel__home .slick-initialized .slick-slide 
-  transform: scale(0.9)
+#carousel .slick-initialized .slick-slide
+  transform: scale(0.9) 
+  transition: transform 0.8s ease
 
-.carousel__home .slick-active
+#carousel .carousel__home .slick-active
   transform: scale(1)
 
-.carousel__home .slick__img
-  width: 100%
-  display: block
-
-  @include media-breakpoint-down(lg)
-    padding: 0px 30px
-    height: 400px
-    width: 500px
-
-  @include media-breakpoint-down(sm)
-    height: 350px
-    width: 330px
-
 .slider__rows
-  margin: -9.5% 0px 0px 56%
+  margin: -8% 0px 0px 880px
   position: absolute
 
   @include media-breakpoint-down(lg)
-    margin: -9.5% 0px 0px 50%
+    margin: -28% 0px 0px 52%
+
+  @media (max-width: 321px)
+    margin: -35% 0px 0px 52%
 
 .arrow__left
   cursor: pointer
   margin-right: 20px
 
+  @include media-breakpoint-down(sm)
+    width: 50px
+
+  @media (max-width: 376px)
+    width: 30px
+
 .arrow__right
   cursor: pointer
+
+  @include media-breakpoint-down(sm)
+    width: 50px
+
+  @media (max-width: 376px)
+    width: 30px
 
 .img__carousel
   position: relative  
@@ -520,33 +523,44 @@ p, button, label, input, li
   height: 370px
   background-color: #ECEFF3
   padding: 30px
+  opacity: 0
+  transition: opacity 0.8s ease
 
   @include media-breakpoint-down(lg)
-    top: 50px
-    left: 40px
-    width: 200px
-    height: 300px
-    padding: 10px
-
-  @include media-breakpoint-down(sm)
-    top: 30px
+    top: 10px
     left: 10px
-    width: 200px
-    height: 280px
-    padding: 5px 
+    width: 250px
+    height: 270px
+    padding: 10px
 
     & p
       font-size: 14px
+
+  @include media-breakpoint-down(sm)
+    top: 5px
+    left: 5px
+    width: 180px
+    height: 210px
+    padding: 5px 
+
+    & p
+      font-size: 12px
+
+.slick-active .carousel__content
+  opacity: 1 !important
 
 .carousel__content h3
   color: #272424
   font-size: 28px
 
+  @include media-breakpoint-down(lg)
+    font-size: 24px
+
   @include media-breakpoint-down(sm)
-    font-size: 20px
+    font-size: 18px  
 
 .p__carousel
-  margin-top: 30px
+  margin-top: 20px
 
   @include media-breakpoint-down(sm)
     margin-top: 10px
@@ -562,13 +576,14 @@ p, button, label, input, li
   background: transparent
 
   @include media-breakpoint-down(lg)
-    margin-top: 20px
-    padding: 12px 24px
+    margin-top: 10px
+    padding: 8px 14px
+    font-size: 14px
 
   @include media-breakpoint-down(sm)
-    margin-top: 10px
-    padding: 10px 26px
-    font-size: 14px
+    margin-top: 0px
+    padding: 6px 12px
+    font-size: 12px
   
 
 .btn__cardcarousel button:hover
