@@ -4,7 +4,7 @@
     <?php echo siteImage("modal-residencial/san_angel2", "slider__projects__img", "en venta Woha"); ?>
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>ALTHAUS SAN ÁNGEL</h3>
       <a href="https://www.springall-mk.com/copia-de-georgia-191" target="_blank" rel="noopener noreferrer">
@@ -29,7 +29,7 @@
     <?php echo siteImage("modal-residencial/pedregal-2", "slider__projects__img", "en venta Woha"); ?>
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>ALTHAUS SAN ÁNGEL</h3>
       <a href="https://www.springall-mk.com/copia-de-georgia-191" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@
     <?php echo siteImage("modal-residencial/nube3", "slider__projects__img", "en venta nube 52"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>NUBE 52</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -78,7 +78,7 @@
     <?php echo siteImage("modal-residencial/ARUNA3", "slider__projects__img", "en venta ARUNA RESIDENCIAL"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>ARUNA RESIDENCIAL</h3>
       <a href="https://www.arunahomes.com.mx/" target="_blank" rel="noopener noreferrer">
@@ -104,7 +104,7 @@
     <?php echo siteImage("modal-residencial/247_3", "slider__projects__img", "en venta LOMAS ALTAS 247"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>LOMAS ALTAS 247</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -127,7 +127,7 @@
     <?php echo siteImage("modal-residencial/253_3", "slider__projects__img", "en venta LOMAS ALTAS 253"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>LOMAS ALTAS 253</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -150,7 +150,7 @@
     <?php echo siteImage("modal-residencial/pichon_3", "slider__projects__img", "en venta TIRO AL PICHÓN 60"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>TIRO AL PICHÓN 60</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -173,7 +173,7 @@
     <?php echo siteImage("modal-residencial/hamburgo_3", "slider__projects__img", "en venta HAMBURGO 14"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>HAMBURGO 14</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -194,7 +194,7 @@
     <?php echo siteImage("modal-residencial/cañada", "slider__projects__img", "en venta CAÑADA DE VISTA HERMOSA"); ?>  
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>CAÑADA DE VISTA HERMOSA</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -216,7 +216,7 @@
     <?php echo siteImage("modal-residencial/atl_2", "slider__projects__img", "en venta DOCTOR ATL 225"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>DOCTOR ATL 225</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -241,7 +241,7 @@
     <?php echo siteImage("modal-comercial/molino_3", "slider__projects__img", "en venta PASEO EL MOLINO"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>PASEO EL MOLINO</h3>
       <a href="https://nuevomolino.mx/" target="_blank" rel="noopener noreferrer">
@@ -267,7 +267,7 @@
     <?php echo siteImage("modal-comercial/CASA_PARQUE_3", "slider__projects__img", "en venta CASA DEL PARQUE"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>CASA DEL PARQUE</h3>
       <a href="https://casadelparque.mx/" target="_blank" rel="noopener noreferrer">
@@ -292,7 +292,7 @@
     <?php echo siteImage("modal-comercial/junior_club_2", "slider__projects__img", "en venta JUNIOR CLUB"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>JUNIOR CLUB</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -317,7 +317,7 @@
     <?php echo siteImage("modal-caribe/woha_3", "slider__projects__img", "en venta WOHA"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>WOHA</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -340,7 +340,7 @@
     <?php echo siteImage("modal-caribe/Kabeek_Vis_03", "en venta KABEEK MARINA & CONDOS"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>KABEEK MARINA & CONDOS</h3>
       <a href="https://kabeek.mx/" target="_blank" rel="noopener noreferrer">
@@ -366,7 +366,7 @@
     <?php echo siteImage("modal-caribe/kr_puertocancun3", "slider__projects__img", "en venta KABEEK RESIDENCIAL – PUERTO CANCÚN"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>KABEEK RESIDENCIAL – PUERTO CANCÚN</h3>
       <h3 class="__modal_mt">UBICACIÓN</h3>
@@ -389,7 +389,7 @@
     <?php echo siteImage("modal-caribe/punta_3", "slider__projects__img", "en venta LA PUNTA"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>LA PUNTA</h3>
       <a href="https://nuevomolino.mx/" target="_blank" rel="noopener noreferrer">
@@ -415,7 +415,7 @@
     <?php echo siteImage("modal-caribe/aldea_nyzuc_3", "slider__projects__img", "en venta ALDEA NYZUC"); ?> 
   </div>
   <div class="modal-content">
-    <span class="close-modal">X</span>
+    <span class="close-modal-projects">X</span>
     <div class="modal-text">
       <h3>ALDEA NYZUC</h3>
       <a href="https://aldeanizuc.mx/" target="_blank" rel="noopener noreferrer">

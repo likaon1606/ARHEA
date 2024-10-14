@@ -25,11 +25,11 @@
     height: 700px
 
 .banner__project-content
-  margin-top: 200px
+  margin-top: 50px
   z-index: 2
 
   @include media-breakpoint-down(lg)
-    margin-top: 100px
+    margin-top: 0px
 
 .banner__project-title
   font-size: 48px
@@ -37,8 +37,11 @@
   @include media-breakpoint-down(sm)
     font-size: 40px
 
-.banner__project-subtitle, .projects__btn__info
-  margin-top: 40px
+.banner__project-subtitle
+  margin: 30px 0px
+
+  @include media-breakpoint-down(lg)
+    margin: 10px 0px
 
 .projects__btn__info
   padding: 16px 32px
@@ -56,7 +59,7 @@
   transition: all 0.3s ease-in-out
 
 .banner__project-submenu
-  margin-top: 100px
+  margin-top: 30px
 
   @include media-breakpoint-down(sm)
     margin-top: 50px
@@ -85,7 +88,7 @@
 
 .projects__section-title
   text-align: center
-  margin-top: 50px
+  margin-top: 150px
   margin-bottom: 50px
 
   @include media-breakpoint-down(lg)
@@ -240,7 +243,7 @@
     width: 90%
 
   @include media-breakpoint-down(sm)
-    margin-top: 0px
+    margin-top: 300px
     position: relative 
     width: 100%
     height: auto
@@ -283,10 +286,47 @@
   height: 100%
   z-index: 6
 
+.slider__rows-projects
+  display: none // permanecen las flechas
+  top: 500px
+  left: 200px
+  position: fixed
+  z-index: 50
+
+  @include media-breakpoint-down(lg)
+    top: 450px
+    left: 50px
+
+  @include media-breakpoint-down(sm)
+    top: 530px
+    left: 20px
+
+.left__arrow__projects
+  cursor: pointer
+  width: 80px
+  margin-right: 5px
+
+  @include media-breakpoint-down(lg)
+    width: 50px
+
+  @include media-breakpoint-down(sm)
+    width: 30px
+
+.right__arrow__projects
+  cursor: pointer
+  width: 90px
+  margin-left: 5px
+
+  @include media-breakpoint-down(lg)
+    width: 55px
+
+  @include media-breakpoint-down(sm)
+    width: 34px
+
 // Modal genérico para residencial y comercial con visibilidad controlada
 .modal-residencial, .modal-comercial
   position: fixed
-  z-index: 2
+  z-index: 20
   left: 0
   top: 0
   width: 100% 
@@ -309,20 +349,21 @@
 
 // Para buttonsColaborators: mantener display: flex sin opacidad ni pointer-events
 .modal-buttonsColaborators
-  position: fixed
+  position: absolute
   z-index: 2
   left: 0
   top: 0
   width: 100% 
   height: 100%
   background-color: rgba(0, 0, 0, 0.5) 
-  display: none // Oculto por defecto
+  // display: none // Oculto por defecto
+  opacity: 0
   justify-content: center
   align-items: center
   flex-direction: row 
 
   &.is-visible
-    display: flex // Se muestra al abrir
+    // display: flex // Se muestra al abrir
     opacity: 1 // Si necesitas animación de opacidad adicional
     transition: opacity 0.3s ease
 
@@ -336,11 +377,11 @@
   max-width: 30% 
   max-height: 100%
   width: 100% 
-  left: 20%
+  left: 55%
   height: auto 
   display: flex
   flex-direction: row
-  position: relative
+  position: fixed
   overflow: hidden
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) 
   z-index: 6
@@ -349,11 +390,11 @@
     margin-top: 60px
     max-width: 40%
     padding: 0
-    left: 29%
+    left: 400px
 
   @include media-breakpoint-down(sm)
     max-width: 100%
-    margin-top: -40px 
+    margin-top: -200px
     padding: 0
     left: 0%
     order: 2 // Coloca el modal-content debajo del slider
@@ -372,6 +413,9 @@
   @include media-breakpoint-down(lg)
     padding: 10px
 
+  @include media-breakpoint-down(sm)
+    padding: 5px
+
   & h3, p, a 
     color: #272424
 
@@ -381,11 +425,17 @@
     @include media-breakpoint-down(lg)
       font-size: 18px
 
+    @include media-breakpoint-down(sm)
+      font-size: 14px
+
   & p
     @include media-breakpoint-down(lg)
       font-size: 14px
 
-.close-modal
+    @include media-breakpoint-down(sm)
+      font-size: 12px
+
+.close-modal-projects
   position: absolute
   top: 15px
   right: 15px

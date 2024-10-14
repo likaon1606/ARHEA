@@ -21,9 +21,9 @@
           <?php echo siteImage("projects_banner__tird", "projects__banner__image", "Banner Tercero"); ?>
         </div>
 
-        <div class="banner__project-content">
-          <h1 class="banner__project-title">CARTERA DE<br>PROYECTOS<br>INMOBILIARIOS</h1>
-          <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos <br>residenciales, comerciales y mixtos</strong> a través de una efectiva <br>coordinación de equipos de trabajo multidisciplinarios.</p>
+        <div class="banner__project-content col-12 col-md-6 col-lg-4">
+          <h1 class="banner__project-title">CARTERA DE PROYECTOS INMOBILIARIOS</h1>
+          <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos residenciales, comerciales y mixtos</strong> a través de una efectiva coordinación de equipos de trabajo multidisciplinarios.</p>
           <button class="projects__btn__info">MÁS INFORMACIÓN</button>
 
           <div class="banner__project-submenu">
@@ -66,7 +66,12 @@
         </div>
 
         <!-- Imágenes de RESIDENCIAL -->
+        <div class="slider__rows-projects">
+         <?php siteImage('flecha_iz.svg', 'left__arrow__projects'); ?>
+          <?php siteImage('flecha_der.svg', 'right__arrow__projects'); ?>
+        </div>
         <div class="projects__img__submenu" id="residencialSection" style="display: flex;">
+
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="1">
             <?php echo siteImage("ALTHAUS_SAN_ÁNGEL", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
@@ -80,6 +85,7 @@
               <button  class="submenu-residencial-btn" data-target="1">Ver más</button>
             </div>
           </div>
+
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="2">
             <?php echo siteImage("ALTHAUS_PEDREGAL", "project__residencial-img", "ALTHAUS_PEDREGAL"); ?>

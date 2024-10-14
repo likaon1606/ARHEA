@@ -4,9 +4,10 @@ function homeFunctions() {
   animatedNumsDevelopment();
   sliderHome();
   switchSection('residencialBtn', 'residencialSection');
-  showModal();
+  showModalProjects();
   sliderProjects();
   modalsColaborators();
+  arrowsProjects();
 }
 
 // ** effect menu *
@@ -120,7 +121,7 @@ function sliderHome() {
   $('.carousel__home').slick({
     centerMode: true,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     centerPadding: '240px',
     slidesToShow: 1,
     prevArrow: prevArrow,
@@ -196,12 +197,15 @@ function switchSection(activeBtnId, activeSectionId) {
 //** SLIDER SECTION MODAL PROJECTS */
 
 function sliderProjects() {
+  // Inicializa el slider
   $('.slider-projects').slick({
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: document.querySelector(".slider__rows-projects .left__arrow__projects"),
+    nextArrow: document.querySelector(".slider__rows-projects .right__arrow__projects"),
     responsive: [
       {
         breakpoint: 1024,
@@ -228,36 +232,68 @@ function sliderProjects() {
       }
     ]
   });
+
+  // Asignar funcionalidad a las flechas de navegación
+  const prevArrow = document.querySelector(".slider__rows-projects .left__arrow__projects");
+  const nextArrow = document.querySelector(".slider__rows-projects .right__arrow__projects");
+
+  if (prevArrow) {
+    prevArrow.addEventListener("click", function() {
+      $('.slider-projects').slick('slickPrev');
+    });
+  }
+
+  if (nextArrow) {
+    nextArrow.addEventListener("click", function() {
+      $('.slider-projects').slick('slickNext');
+    });
+  }
 }
 
+// Llamar a la función cuando el documento esté listo
+$(document).ready(function() {
+  sliderProjects();
+});
 
-// ** show MODAL PROJECTS AND COLABORATORS**
-
-function showModal() {
-  // Seleccionamos los botones de ambos tipos
-  const buttonsResidencial = document.querySelectorAll('.submenu-residencial-btn');
-  const buttonsColaborators = document.querySelectorAll('.logos__colaboratos-btn');
   
-  // Seleccionamos los botones de cerrar para ambos tipos de modales
-  const closeButtonsResidencial = document.querySelectorAll('.close-modal');
-  const closeButtonsColaborators = document.querySelectorAll('.close-modal-colaborators');
 
-  // Función para abrir modal
+
+// ** show MODAL PROJECTS**
+
+function showModalProjects() {
+  const buttonsResidencial = document.querySelectorAll('.submenu-residencial-btn');
+  const closeButtonsResidencial = document.querySelectorAll('.close-modal-projects');
+
   function openModal(modalClass, id) {
     const modal = document.querySelector(`.${modalClass}[data-id="${id}"]`);
     if (modal) {
       modal.classList.add('is-visible'); // Mostrar modal usando clases
+
+      // Mostrar las flechas de navegación
+      const sliderRows = document.querySelector(".slider__rows-projects");
+      if (sliderRows) {
+        sliderRows.style.display = "flex"; // Muestra las flechas
+      }
+      
+      // Inicializa el slider si no se ha hecho antes
+      if (!$(modal).data('slick-initialized')) {
+        sliderProjects(); // Llama a la función del slider
+      }
     }
   }
 
-  // Función para cerrar modal
   function closeModal(modal) {
     if (modal) {
       modal.classList.remove('is-visible'); // Ocultar modal quitando la clase
+      
+      // Ocultar las flechas de navegación al cerrar el modal
+      const sliderRows = document.querySelector(".slider__rows-projects");
+      if (sliderRows) {
+        sliderRows.style.display = "none"; // Oculta las flechas
+      }
     }
   }
 
-  // Asociar evento de click a los botones de "residencial"
   buttonsResidencial.forEach(button => {
     button.addEventListener('click', function () {
       const targetId = this.getAttribute('data-target');
@@ -266,16 +302,6 @@ function showModal() {
     });
   });
 
-  // Asociar evento de click a los botones de "colaborators"
-  buttonsColaborators.forEach(button => {
-    button.addEventListener('click', function () {
-      const targetId = this.getAttribute('data-target');
-      console.log(`Abriendo modal de colaborators con ID: ${targetId}`);
-      openModal('modal__colaborators', targetId);
-    });
-  });
-
-  // Asociar evento de cerrar para modales de "residencial"
   closeButtonsResidencial.forEach(button => {
     button.addEventListener('click', function () {
       const modal = this.closest('.modal-residencial');
@@ -284,18 +310,12 @@ function showModal() {
       }
     });
   });
-
-  // Asociar evento de cerrar para modales de "colaborators"
-  closeButtonsColaborators.forEach(button => {
-    button.addEventListener('click', function () {
-      const modal = this.closest('.modal__colaborators');
-      if (modal) {
-        closeModal(modal);
-      }
-    });
-  });
 }
 
+// Llamar a la función cuando el documento esté listo
+$(document).ready(function() {
+  showModalProjects(); // Inicializar la función
+});
 
 
 //** */ SLIDER MODALS COLABORATORS
@@ -322,6 +342,9 @@ $(document).ready(function(){
   });
 });
 }
+
+
+
 
 
 

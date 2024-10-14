@@ -17,9 +17,9 @@ $(window).on("load", () => {
   }
 
   if (currentNamespace == "proyectos") {
-    sliderProjects();
-    showModal();
     switchSection('residencialBtn', 'residencialSection');
+    showModalProjects();
+    sliderProjects();
   }
 
   if (currentNamespace == "colaboradores") {
