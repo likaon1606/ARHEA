@@ -159,7 +159,7 @@
             <button>VER MÁS</button>
           </a>
         </div>
-        <?php echo siteImage("woha", "slick__img", "en venta woha"); ?>
+          <?php echo siteImage("woha", "slick__img", "en venta woha"); ?>
       </div>
 
       <div class="img__carousel">
@@ -171,7 +171,7 @@
             <button>VER MÁS</button>
           </a>
         </div>
-        <?php echo siteImage("lomas", "slick__img", "en venta lomas"); ?>
+          <?php echo siteImage("lomas", "slick__img", "en venta lomas"); ?>
       </div>
 
       <div class="img__carousel">
@@ -183,7 +183,7 @@
             <button>VER MÁS</button>
           </a>
         </div>
-        <?php echo siteImage("parque", "slick__img", "en venta casa del parque"); ?>
+          <?php echo siteImage("parque", "slick__img", "en venta casa del parque"); ?>
       </div>
 
       <div class="img__carousel">
@@ -195,14 +195,14 @@
             <button>VER MÁS</button>
           </a>
         </div>
-        <?php echo siteImage("kabeek", "slick__img", "en venta kabeek"); ?>
+          <?php echo siteImage("kabeek", "slick__img", "en venta kabeek"); ?>
       </div>
 
     </div>
-    <div class="slider__rows">
-      <?php siteImage('boton-izq.svg', 'arrow__left'); ?>
-      <?php siteImage('boton-der.svg', 'arrow__right'); ?>
-    </div>
+      <div class="slider__rows">
+        <?php siteImage('boton-izq.svg', 'arrow__left'); ?>
+        <?php siteImage('boton-der.svg', 'arrow__right'); ?>
+      </div>
     </div>
   </div>
 </div>

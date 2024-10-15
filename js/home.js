@@ -123,7 +123,7 @@ function sliderHome() {
     centerMode: true,
     dots: true,
     autoplay: true,
-    centerPadding: '240px',
+    centerPadding: '240px', //! cambios
     slidesToShow: 1,
     prevArrow: prevArrow,
     nextArrow: nextArrow,

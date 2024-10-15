@@ -420,6 +420,11 @@ p, button, label, input, li
 #carousel
   margin-bottom: 50px
 
+  & .container //! cambios
+    width: 100%
+    max-width: 100% 
+    padding: 0
+
 .carousel__home
   display: flex
   align-items: center
@@ -428,10 +433,9 @@ p, button, label, input, li
   overflow: hidden
 
   & .slick-dots
-    margin-top: 5px
     position: relative
     text-align: start
-    margin-left: 35%
+    margin-left: 33%
     height: 100px
     transition: transform 0.7s ease-in-out 
 
@@ -446,7 +450,7 @@ p, button, label, input, li
     padding: 0px 20px
 
     @include media-breakpoint-down(sm)
-      padding: 40px 0px
+      padding: 10px 0px
 
   & .slick-dots li button:before
     opacity: 1 
@@ -469,21 +473,21 @@ p, button, label, input, li
       width: 20px
 
 #carousel .slick-initialized .slick-slide
-  transform: scale(0.9) 
+  transform: scaleY(0.8) scalex(0.9)
   transition: transform 0.8s ease
 
 #carousel .carousel__home .slick-active
-  transform: scale(1)
+  transform: scaleY(0.9) scaleX(1)
 
 .slider__rows
   margin: -8% 0px 0px 880px
   position: absolute
 
   @include media-breakpoint-down(lg)
-    margin: -28% 0px 0px 52%
+    margin: -16% 0px 0px 63%
 
-  @media (max-width: 321px)
-    margin: -35% 0px 0px 52%
+  @include media-breakpoint-down(lg)
+    display: none
 
 .arrow__left
   cursor: pointer
