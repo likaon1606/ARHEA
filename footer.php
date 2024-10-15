@@ -1,4 +1,6 @@
-</div>
+</div> 
+
+<?php if (!is_page('contacto')): ?>
 <section class="section__form">
   <div class="container">
     <div class="row">
@@ -53,6 +55,7 @@
     </div>
   </div>
 </section>
+<?php endif; ?>
 
 <footer class="footer">
   <div class="footer__columns d-flex flex-wrap justify-content-between">
@@ -60,7 +63,6 @@
       <?php siteImage("arhea_footer", "img-footer", "logo footer ARHEA"); ?>
       <p>Aviso de privacidad</p>
     </div>
-
 
     <div class="footer__column">
       <h3>ACERCA DE ARHEA</h3>
@@ -95,8 +97,6 @@
   </div>
 </footer>
 
-
 <?php echo wp_footer(); ?>
 </body>
-
 </html>

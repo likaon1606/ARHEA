@@ -35,11 +35,13 @@
             <li><a href="<?php echo home_url('/contacto'); ?>">CONTACTO</a></li>
           </ul>
         </div>
+
         <div class="landing__menu">
           <?php siteImage("prueba2", "img-banner-left", "Banner-left"); ?> 
           <?php siteImage("hamburguer", "img-hamburguer", "Menú"); ?> 
           <?php siteImage("close", "close__menu", "close menu"); ?>
         </div>
+
       </div>
     </div>
   </div>

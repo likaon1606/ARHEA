@@ -1,6 +1,9 @@
 .container__menu
   position: relative
 
+  & .container
+    position: relative
+
 .menu-overlay
   position: fixed
   top: 0
@@ -60,11 +63,17 @@
   justify-content: space-between
   align-items: center
   width: 100%
-  padding: 2% 7% 0% 7%
+  padding: 30px 0px 0px 0px 
   top: 0
   left: 0
   z-index: 4
   transition: background-color 0.3s ease-in-out
+
+  @include media-breakpoint-down(lg)
+    padding: 20px 0px 0px 0px
+
+  @include media-breakpoint-down(sm)
+    padding: 10px 10px 0px 10px
 
   &.sticky
     position: fixed

@@ -6,7 +6,8 @@ function homeFunctions() {
   switchSection('residencialBtn', 'residencialSection');
   showModalProjects();
   sliderProjects();
-  modalsColaborators();
+  sliderModalsColaborators();
+  showModalColaborators();
   arrowsProjects();
 }
 
@@ -320,7 +321,7 @@ $(document).ready(function() {
 
 //** */ SLIDER MODALS COLABORATORS
 
-function modalsColaborators() {
+function sliderModalsColaborators() {
 $(document).ready(function(){
   $('.modal__colaborators-slider-dwon').slick({
     dots: false,
@@ -343,11 +344,46 @@ $(document).ready(function(){
 });
 }
 
+//** SHOW MODAL COLABORATORS */
+function showModalColaborators() {
+  // Seleccionamos los botones de ambos tipos
+  const buttonsColaborators = document.querySelectorAll('.logos__colaboratos-btn');
+  
+  // Seleccionamos los botones de cerrar para ambos tipos de modales
+  const closeButtonsColaborators = document.querySelectorAll('.close-modal-colaborators');
+
+  // Función para abrir modal
+  function openModal(modalClass, id) {
+    const modal = document.querySelector(`.${modalClass}[data-id="${id}"]`);
+    if (modal) {
+      modal.classList.add('is-visible'); // Mostrar modal usando clases
+    }
+  }
+
+  // Función para cerrar modal
+  function closeModal(modal) {
+    if (modal) {
+      modal.classList.remove('is-visible'); // Ocultar modal quitando la clase
+    }
+  }
 
 
+  // Asociar evento de click a los botones de "colaborators"
+  buttonsColaborators.forEach(button => {
+    button.addEventListener('click', function () {
+      const targetId = this.getAttribute('data-target');
+      openModal('modal__colaborators', targetId);
+    });
+  });
 
 
-
-
-
-
+  // Asociar evento de cerrar para modales de "colaborators"
+  closeButtonsColaborators.forEach(button => {
+    button.addEventListener('click', function () {
+      const modal = this.closest('.modal__colaborators');
+      if (modal) {
+        closeModal(modal);
+      }
+    });
+  });
+}  

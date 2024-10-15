@@ -23,8 +23,8 @@ $(window).on("load", () => {
   }
 
   if (currentNamespace == "colaboradores") {
-    showModal();
-    modalsColaborators();
+    showModalColaborators();
+    sliderModalsColaborators();
   }
 });
 

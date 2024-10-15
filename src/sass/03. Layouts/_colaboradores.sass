@@ -3,8 +3,7 @@
   display: flex
   align-items: center
   justify-content: center
-  min-height: 700px
-  margin-bottom: 100px
+  min-height: 650px
   color: #fff
 
   @include media-breakpoint-down(lg)
@@ -27,8 +26,8 @@
   left: 0
   width: 100%
   height: 100%
-  min-height: 700px
-  filter: brightness(50%)
+  min-height: 650px
+  filter: brightness(30%)
   z-index: -1
 
   @include media-breakpoint-down(lg)
@@ -38,6 +37,7 @@
     min-height: 500px
 
 .banner__collaborators-title
+  letter-spacing: 0.1em
   font-size: 52px
 
   @include media-breakpoint-down(lg)
@@ -46,25 +46,45 @@
   @include media-breakpoint-down(sm)
     font-size: 34px
 
-.banner__collaborators-subtitle, .collaborators__btn__info
-  margin-top: 10%
+.banner__collaborators-subtitle
+  padding: 10px 0px 50px 0px
   font-weight: normal
 
 .collaborators__btn__info
+  position: relative
   color: #fff
   font-size: 16px
   padding: 16px 32px
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
   border: 1px solid white
+  overflow: hidden
   transition: all 0.3s ease-in-out
 
-.collaborators__btn__info:hover
-  background: #153B67
-  transition: all 0.3s ease-in-out
+  &::after
+    content: '' 
+    position: absolute 
+    left: 0 
+    bottom: 0 
+    width: 100% 
+    height: 1px 
+    background: white 
+    transform: translateX(-100%)
+    transition: transform 0.7s ease-in-out 
+
+  &:hover
+    border-bottom: 1px solid #fff 
+    background: #153B67
+    transition: all 0.6s ease-in-out
+
+    &::after
+      transform: translateX(0) 
 
 
 // COLABORATORS SECTION LOGOS
+.logos__colaborators
+  padding-top: 150px
+  background-color: #fff !important
 
 .logos__colaborators-img
   display: flex
@@ -93,18 +113,43 @@
 
   & button
     color: #272424
-    margin-top: auto 
+    margin-top: 20px 
     background-color: transparent
     text-align: start
     border: none
     border-bottom: 1px solid #272424
+    padding-top: 10px
     padding-bottom: 10px  
     width: max-content
     margin-bottom: 100px
+    position: relative
+    overflow: hidden
+    z-index: 1
+    transition: color 0.8s ease
+
+    &:after
+      content: ''
+      position: absolute
+      top: 100%
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #153B67
+      z-index: -1
+      transition: top 0.6s ease
+
+    &:hover
+      color: #fff
+
+    &:hover:after
+      top: 0
+
+
 
   @include media-breakpoint-down(lg)
     text-align: center
     padding: 0
+
   @include media-breakpoint-down(sm)
     text-align: center
     padding: 0
@@ -112,21 +157,19 @@
 
 //** MODALES DE ICONOS **
 
-
 .modal__colaborators
-  display: flex // mostrar/ocultar modal
+  position: absolute
+  z-index: -1
   opacity: 0
-  z-index: 1
-  background: #fff
-  top: 0
-  left: 0
-  width: 100%            
-  height: 100%  
-  padding: 0% 3% 3% 3%
 
-  & .is-visible
+  &.is-visible
     opacity: 1
-
+    position: relative 
+    top: 0
+    background: #fff
+    left: 0
+    z-index: 40
+    
 .modal__colaborators-columns
   display: flex
   justify-content: space-between
@@ -170,6 +213,9 @@
   justify-content: end
   width: 50%
 
+  @include media-breakpoint-down(sm)
+    display: none
+
 .modal__colaborators-awards p
   margin-top: 20px
   color: #272424
@@ -179,20 +225,9 @@
   justify-content: center
   padding: 50px
 
-.modal__colaborators
-  display: none // Asegúrate de que esté oculto por defecto
-
-  &.is-visible
-    display: flex // Muestra el modal
-    position: fixed // Para que cubra toda la pantalla
-    top: 0
-    left: 0
-    z-index: 4
-
 /**--------- slider modal
 
 .modal__colaborators-slider-dwon
-  margin-top: 30px
   background-color: #ECEFF3
 
 .slider-item
@@ -239,9 +274,10 @@
 
   @include media-breakpoint-down(lg)
     width: 5%
-  @include media-breakpoint-down(md)
+
+  @include media-breakpoint-down(sm)
     background-color: #4a7394   
-    width: 15%
+    width: 10%
 
   &:hover
     background-color: #153B67
@@ -270,25 +306,51 @@
   width: 24px
   height: 24px
 
+  @include media-breakpoint-down(lg)
+    width: 20px
+    height: 20px
+
 .__colaborators-columns-txt 
   width: 300px
 
-  & h4, p
+  & h4
+    font-size: 28px
     text-align: start
     color: #272424
+
+    @include media-breakpoint-down(lg)
+      font-size: 22px
+
+    @include media-breakpoint-down(sm)
+      font-size: 16px
+  
+  & p
+    text-align: start
+    color: #272424
+
+    @include media-breakpoint-down(sm)
+      font-size: 12px
+
+  
+
 
 .close-modal-colaborators
 
   & button
-    margin-top: 40px
+    margin: 10px 0px 10px 0px
     color: #272424
     padding: 16px
     border: none
+    font-size: 16px
     background-color: transparent
     border-bottom: 1px solid #153B67
 
+    @include media-breakpoint-down(sm)
+      font-size: 14px
+
   @include media-breakpoint-down(lg)
     margin-bottom: 50px
+
 
 .carousel-inner
   display: flex
