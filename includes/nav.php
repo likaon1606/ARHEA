@@ -37,7 +37,7 @@
         </div>
 
         <div class="landing__menu">
-          <?php siteImage("prueba2", "img-banner-left", "Banner-left"); ?> 
+          <?php siteImage("logo_le", "img-banner-left", "Banner-left"); ?> 
           <?php siteImage("hamburguer", "img-hamburguer", "Menú"); ?> 
           <?php siteImage("close", "close__menu", "close menu"); ?>
         </div>

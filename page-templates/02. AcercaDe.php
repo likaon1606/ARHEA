@@ -62,7 +62,7 @@
           <div class="about__values-content">
             <h1>¿QUÉ NOS HACE DIFERENTES?</h1>
             <p class="about__values-subtitle">En <strong>Arhea Property Development</strong> trabajamos todos los días para que encuentres el <br>hogar de tus sueños.
-            <div class="about__mision-vision">
+            <div class="about__mision-vision col-lg-7 col-sm-12">
               <div class="about__mision">
                 <h3>MISIÓN</h3>
                 <p>Diseñar y construir <strong>ambientes acogedores y de calidad.</strong> Con atención meticulosa al detalle y pasión por el diseño, ofrecemos hogares funcionales y estéticamente inspiradores que reflejan los valores y aspiraciones de sus habitantes.
@@ -106,8 +106,8 @@
       <p class="__about__blue-subtitle">Poseemos más de dos <strong>décadas de conocimiento en el ámbito de bienes raíces,</strong> respaldados por un grupo de profesionales enfocados en los proyectos y sus residentes.
       </p>
       
-      <div class="__blue-content">
-        <div class="__blue-content-ganem">
+      <div class="__blue-content col-lg-12 d-flex justify-content-center">
+        <div class="__blue-content-ganem col-lg-4">
           <?php echo siteImage("ganem", "__ganem", "Imagen de HECTOR AREHIGA GANEM"); ?>
           <div class="__ganem-description">
             <h4>HÉCTOR AÉCHIGA GANEM</h4>
@@ -116,7 +116,7 @@
           </div>
         </div>
 
-        <div class="__blue-content-saiz">
+        <div class="__blue-content-saiz col-lg-4">
           <?php echo siteImage("saiz", "__saiz", "Imagen de JOSÉ LUIS SAÍZ FERNÁNDEZ"); ?>
           <div class="__saiz-description">
             <h4>JOSÉ LUIS SAÍZ FERNÁNDEZ</h4>

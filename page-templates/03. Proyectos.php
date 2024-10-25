@@ -70,6 +70,7 @@
          <?php siteImage('flecha_iz.svg', 'left__arrow__projects'); ?>
           <?php siteImage('flecha_der.svg', 'right__arrow__projects'); ?>
         </div>
+        
         <div class="projects__img__submenu" id="residencialSection" style="display: flex;">
 
 

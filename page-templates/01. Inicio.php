@@ -253,7 +253,7 @@
       <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
-      <p>SPRINGALL class="p__grid" + MK</p>
+      <p>SPRINGALL + MK</p>
       <p class="p__grid">+</p>
     </div>
     <div class="grid__box">
