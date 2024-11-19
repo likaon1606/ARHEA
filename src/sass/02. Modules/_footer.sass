@@ -1,7 +1,7 @@
 //** form ****
 
 .section__form
-  padding: 3% 0% 7% 0%
+  padding: 0% 0% 5% 0%
   background: #ECEFF3
 
   @include media-breakpoint-down(lg)
@@ -24,6 +24,9 @@
   color: #272424
 
 .section__form h2
+  letter-spacing: 0.1em
+  line-height: 1
+  width: 72%
   color: #153B67
   font-size: 48px
 
@@ -45,6 +48,7 @@
   margin-top: 16%
       
 .info__item
+  padding: 5px 0px
   display: flex
   justify-content: stretch
 
@@ -74,10 +78,11 @@
 
   & label
     color: #272424
-    margin-top: 30px 
+    margin-top: 20px 
     margin-bottom: 1px 
 
-  & input, select, textarea
+  & input, textarea
+    height: 15px
     border: none
     padding: 0
     border-bottom: 2px solid #153B67
@@ -89,18 +94,32 @@
     &:focus
       border-bottom-color: #5a799b
 
-.form__right select
-  margin: 20px 0px
-  padding: 20px 0px
+  & select
+    height: 50px
+    border: none
+    padding: 0
+    margin: 0
+    border-bottom: 2px solid #153B67
+    font-size: 14px
+    color: #272424
+    background-color: transparent
+    outline: none
+
+  & textarea
+    height: 20px
 
 .btn__form 
+  width: 127px
+  height: 49px
+  display: flex
+  align-items: center
   align-self: flex-end 
   margin-top: 5%
   padding: 16px 32px
   font-size: 16px
   background-color: transparent
   color: #272424
-  border-top: 2px solid #153B67
+  border-top: 1px solid #153B67
   border-right: 2px solid #153B67
   border-bottom: 2px solid #153B67
   border-left: 1px solid #153B67
@@ -123,7 +142,7 @@ footer
   text-align: center
   background-color: #272424
   color: #fff
-  padding: 60px 0px
+  padding: 100px 0px 80px 0px
   
 .footer__logo
   display: flex

@@ -7,7 +7,7 @@
       <div class="col-12">
         <div class="section__form-columns">
           <div class="form__left d-flex flex-column">
-            <h2>BIENVENIDO A TU<br>HOGAR IDEAL</h2>
+            <h2>BIENVENIDO A TU HOGAR IDEAL</h2>
             <p class="p__left">Escríbenos y en breve nos pondremos en contacto contigo.</p>
 
             <div class="form__info">
@@ -39,12 +39,14 @@
               <input type="email" id="email" name="email" required>
               <label for="phone">Teléfono*</label>
               <input type="tel" id="phone" name="phone" required>
-              <select id="project" name="project">
-                <option value="" disabled selected hidden>¿Qué proyecto te interesa conocer?</option>
-                <option class="option__select" value="value1">Woha</option>
-                <option value="value2">Kabeek Marina & Condos</option>
-                <option value="value3">Aldea Nizuc</option>
+
+              <select name="form1">
+                <option value="value1">¿Qué proyecto te interesa conocer?</option>
+                <option class="option__select" value="value2">Woha</option>
+                <option value="value3">Kabeek Marina & Condos</option>
+                <option value="value4">Aldea Nizuc</option>
               </select>
+
               <label for="message">Mensaje (Opcional)</label>
               <textarea id="message" name="message"></textarea>
               <button class="btn__form" type="submit">ENVIAR</button>
@@ -60,7 +62,7 @@
 <footer class="footer">
   <div class="footer__columns d-flex flex-wrap justify-content-between">
     <div class="footer__logo">
-      <?php siteImage("arhea_footer", "img-footer", "logo footer ARHEA"); ?>
+      <?php siteImage("arhea_footer.svg", "img-footer", "logo footer ARHEA"); ?>
       <p>Aviso de privacidad</p>
     </div>
 

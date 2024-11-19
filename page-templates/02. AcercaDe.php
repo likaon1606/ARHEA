@@ -62,14 +62,14 @@
           <div class="about__values-content">
             <h1>¿QUÉ NOS HACE DIFERENTES?</h1>
             <p class="about__values-subtitle">En <strong>Arhea Property Development</strong> trabajamos todos los días para que encuentres el <br>hogar de tus sueños.
-            <div class="about__mision-vision col-lg-7 col-sm-12">
+            <div class="about__mision-vision col-sm-12">
               <div class="about__mision">
-                <h3>MISIÓN</h3>
+                <h3 class="__mision">MISIÓN</h3>
                 <p>Diseñar y construir <strong>ambientes acogedores y de calidad.</strong> Con atención meticulosa al detalle y pasión por el diseño, ofrecemos hogares funcionales y estéticamente inspiradores que reflejan los valores y aspiraciones de sus habitantes.
                 </p>
               </div>
               <div class="about__vision">
-                <h3>VISIÓN</h3>
+                <h3 class="__vision">VISIÓN</h3>
                 <p>Crear <strong>residencias que establezcan una conexión profunda con su entorno,</strong> donde cada hogar trasciende su función como lugar de residencia para reflejar los deseos, valores y aspiraciones de cada individuo.
                 </p>
               </div>

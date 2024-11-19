@@ -20,17 +20,29 @@
         </div>
 
         <div class="home__content col-12 col-md-6 col-lg-4">
-          <h1 class="home__title">DESARROLLOS <br> INMOBILIARIOS <br> DE VALOR</h1>
+          <h1 class="home__title">DESARROLLOS INMOBILIARIOS DE VALOR</h1>
           <p class="home__subtitle">Creamos espacios que eleven la manera de vivir de sus habitantes en colaboración con las <strong>firmas de arquitectura líderes a nivel mundial.</strong></p>
           <button class="home__contact-btn">CONTÁCTANOS</button>
         </div>
 
         <!-- Submenú -->
-        <div class="home__submenu-link">
+        <div class="home__submenu-link col-lg-4">
           <ul class="home__banner__links">
-            <li><button class="carousel__button active">RESIDENCIAL</button></li>
-            <li class="pl__links"><button class="carousel__button">COMERCIAL</button></li>
-            <li class="pl__links"><button class="carousel__button">EL CARIBE</button></li>
+            <li>
+              <button class="carousel__button active">RESIDENCIAL</button>
+            </li>
+            <li>
+              <?php echo siteImage("pipe_blue.svg", "pipe__blue"); ?>
+            </li>
+            <li>
+              <button class="carousel__button">COMERCIAL</button>
+            <li>
+              <?php echo siteImage("pipe_blue.svg", "pipe__blue"); ?>
+            </li>
+            </li>
+            <li>
+              <button class="carousel__button">EL CARIBE</button>
+            </li>
           </ul>
         </div>
 
@@ -44,13 +56,13 @@
   <div class="container">
     <div class="row d-flex align-items-end justify-content-center">
 
-      <div class="left-section col-12 col-md-6">
+      <div class="left-section col-12 col-lg-5 col-md-6">
         <p class="about-title">Acerca de Nosotros</p>
-        <h1>ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
+        <h1>ARHEA PROPERTY DEVELOPMENT</h1>
         <button class="button-about">CONOCE MÁS</button>
       </div>
 
-      <div class="right-section col-12 col-md-6">
+      <div class="right-section col-12 col-lg-6 col-md-6">
         <div class="line">
           <p>
             Con más de 25 años de experiencia en el sector inmobiliario y una profunda comprensión de la diversidad de cada proyecto, nuestra prioridad es conformar el equipo perfecto para cada desarrollo.

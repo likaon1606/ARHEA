@@ -2,12 +2,12 @@ body
   background: #ECEFF3
 
 h1, h2, h3, h4
-  font-family: "Belleza", sans-serif
+  font-family: 'Belleza'
   font-weight: 400
   
 p, button, label, input, li
   font-size: 16px
-  font-family: "Quattrocento", serif
+  font-family: 'Quattrocento'
   font-weight: 400
 
 .home__content__principal
@@ -23,6 +23,9 @@ p, button, label, input, li
   @include media-breakpoint-down(sm)
     min-height: 500px
 
+  & .col-12
+    padding: 0
+
 .home__content
   display: flex
   flex-direction: column
@@ -33,9 +36,6 @@ p, button, label, input, li
 
   @include media-breakpoint-down(lg)
     margin-top: 50px
-
-  // @include media-breakpoint-down(sm)
-  //   margin-top: 30px
   
 .home__carousel
   position: absolute
@@ -57,6 +57,9 @@ p, button, label, input, li
     height: 500px
 
 .home__title
+  margin-top: -50px
+  letter-spacing: 0.1em
+  line-height: 1
   font-size: 52px
   color: #fff
 
@@ -67,10 +70,15 @@ p, button, label, input, li
     font-size: 34px
 
 .home__subtitle
+  padding: 10px 0px 30px 0px
   color: #fff
 
 .home__contact-btn
+  width: 189px
+  height: 49px
   position: relative
+  display: flex
+  align-items: center
   padding: 16px 32px
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
@@ -103,7 +111,7 @@ p, button, label, input, li
     padding: 12px 28px
 
 .home__submenu-link
-  margin: 4% 0% 0% 0%
+  margin: 100px 0px 0px 0px
 
   @include media-breakpoint-down(lg)
     margin: 7% 0% 0% 0%
@@ -113,18 +121,13 @@ p, button, label, input, li
 
 .home__banner__links
   display: flex
-  flex-direction: row
   list-style: none
-  padding-left: 0
+  justify-content: space-between
 
 .home__banner__links li
 
   @include media-breakpoint-down(sm)
     margin-left: 0
-
-
-.pl__links
-  margin-left: 20px
 
 .carousel__button 
   background: transparent
@@ -149,9 +152,6 @@ p, button, label, input, li
   justify-content: center
   padding: 100px 0
 
-  // @include media-breakpoint-down(sm)
-  //   padding: 0
-
 .about .row
   padding: 0px 10%
 
@@ -162,6 +162,7 @@ p, button, label, input, li
 
   & h1 
     letter-spacing: 0.1em
+    line-height: 1.1
     font-size: 48px
     margin-top: 20px
     margin-bottom: 50px
@@ -199,7 +200,10 @@ p, button, label, input, li
 
 .right-section p
   margin-bottom: 57px
-  color: #272424  
+  color: #272424 
+
+.line
+  margin-left: 60px 
 
 .line a.brochure-link 
   text-decoration: none
@@ -223,7 +227,7 @@ p, button, label, input, li
     width: 0
     height: 0.02px 
     background-color: #153B67
-    transition: width 0.9s ease-in-out
+    transition: width 0.3s ease-in-out
 
   &:hover
     &::after
@@ -266,6 +270,7 @@ p, button, label, input, li
 
   & h1
     letter-spacing: 0.1em
+    line-height: 1.1
     font-size: 48px
     text-align: center
 
@@ -320,44 +325,47 @@ p, button, label, input, li
     font-size: 36px 
 
 .btn__development
+  width: 279px
+  height: 49px
+  display: flex
+  justify-content: center
+  margin: auto
+  margin-top: 3%
+
+  & button
+    color: #fff
+    position: relative
+    padding: 16px 32px
+    background: transparent
+    border-top: 1px solid #ECEFF3
+    border-right: 2px solid #ECEFF3
+    border-bottom: 2px solid #ECEFF3
+    border-left: 1px solid #ECEFF3
     display: flex
     justify-content: center
-    margin-top: 3%
+    align-items: center
+    transition: all 0.8s ease-in-out
+    overflow: hidden
 
-    & button
-      color: #fff
-      position: relative
-      padding: 16px 32px
-      background: transparent
-      border-top: 1px solid #ECEFF3
-      border-right: 2px solid #ECEFF3
-      border-bottom: 2px solid #ECEFF3
-      border-left: 1px solid #ECEFF3
-      display: flex
-      justify-content: center
-      align-items: center
-      transition: all 0.8s ease-in-out
-      overflow: hidden
+    &::after
+      content: '' 
+      position: absolute 
+      left: 0 
+      bottom: 0 
+      width: 100% 
+      height: 1.1px 
+      background: white 
+      transform: translateX(-100%)
+      transition: transform 0.7s ease-in-out 
+
+    &:hover
+      border: none
+      border-bottom: 1px solid #fff 
+      background: #153B67
+      transition: all 0.7s ease-in-out
 
       &::after
-        content: '' 
-        position: absolute 
-        left: 0 
-        bottom: 0 
-        width: 100% 
-        height: 1.1px 
-        background: white 
-        transform: translateX(-100%)
-        transition: transform 0.7s ease-in-out 
-
-      &:hover
-        border: none
-        border-bottom: 1px solid #fff 
-        background: #153B67
-        transition: all 0.7s ease-in-out
-
-        &::after
-          transform: translateX(0) 
+        transform: translateX(0) 
 
 
       @include media-breakpoint-down(sm)
@@ -372,6 +380,7 @@ p, button, label, input, li
   padding: 50px 0px
 
   & h1
+    letter-spacing: 0.1em
     font-size: 48px
     color: #153B67
 
@@ -428,6 +437,7 @@ p, button, label, input, li
     position: relative
     text-align: start
     margin-left: 33%
+    margin-top: -2%
     height: 100px
     transition: transform 0.7s ease-in-out 
 
@@ -472,7 +482,7 @@ p, button, label, input, li
   transform: scaleY(0.9) scaleX(1)
 
 .slider__rows
-  margin: -8% 0px 0px 880px
+  margin: -8% 0px 0px 1110px
   position: absolute
 
   @include media-breakpoint-down(lg)
@@ -505,7 +515,7 @@ p, button, label, input, li
 
 .slick__img
   width: 100%          
-  height: 100%          
+  height: 550px        
   object-fit: cover
   object-position: center
 
@@ -542,7 +552,7 @@ p, button, label, input, li
       font-size: 12px
 
 .slick-active .carousel__content
-  opacity: 1 !important
+  opacity: 1
 
 .carousel__content h3
   color: #272424
@@ -590,7 +600,7 @@ p, button, label, input, li
 // *********** red__inmob
 
 .red__inmob
-  margin-top: 100px
+  margin-top: 80px
   margin-bottom: 50px
   text-align: center
   background-color:  #153B67
@@ -601,8 +611,10 @@ p, button, label, input, li
     padding: 60px 20px
 
   h2
+    letter-spacing: 0.1em
+    line-height: 1
     margin: auto
-    width: 40%
+    width: 45%
     font-size: 48px
     text-transform: uppercase
 
@@ -633,7 +645,7 @@ p, button, label, input, li
     gap: 50px
     max-width: 1200px
     margin: 0 auto
-    padding-top: 7%
+    padding-top: 60px
 
     @include media-breakpoint-down(lg)
       grid-template-columns: repeat(3, 1fr)
@@ -655,6 +667,7 @@ p, button, label, input, li
     flex-wrap: wrap 
     position: relative
     cursor: pointer
+    width: 90%
 
     p
       margin: 0
