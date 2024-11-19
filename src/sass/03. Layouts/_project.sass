@@ -1,4 +1,4 @@
-//projects__content
+//* projects__content
   
 .projects__content
   position: relative
@@ -7,12 +7,12 @@
   justify-content: center
   color: #fff
   min-height: 700px
-  margin-bottom: 50px
 
   @include media-breakpoint-down(sm)
     min-height: 600px
   
 .projects__carousel
+  min-height: 700px
   filter: brightness(50%)
 
   @include media-breakpoint-down(sm)
@@ -32,23 +32,32 @@
     margin-top: 0px
 
 .banner__project-title
+  letter-spacing: 0.1em
+  line-height: 1
   font-size: 48px
 
   @include media-breakpoint-down(sm)
     font-size: 40px
 
 .banner__project-subtitle
-  margin: 30px 0px
+  margin: 20px 0px 40px 0px
 
   @include media-breakpoint-down(lg)
     margin: 10px 0px
 
 .projects__btn__info
+  display: flex
+  align-items: center
+  width: 226px
+  height: 49px
   padding: 16px 32px
   color: #fff
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
-  border: 1px solid white
+  border-top: 1px solid white
+  border-right: 2px solid white
+  border-bottom: 2px solid white
+  border-top: 1px solid white
   transition: all 0.3s ease-in-out
 
   @include media-breakpoint-down(sm)
@@ -59,10 +68,10 @@
   transition: all 0.3s ease-in-out
 
 .banner__project-submenu
-  margin-top: 30px
+  margin-top: 80px
 
   @include media-breakpoint-down(sm)
-    margin-top: 50px
+    margpin-top: 50px
 
 .banner__project-links
   display: flex
@@ -88,8 +97,7 @@
 
 .projects__section-title
   text-align: center
-  margin-top: 150px
-  margin-bottom: 50px
+  margin-top: 100px
 
   @include media-breakpoint-down(lg)
     margin-top: 0px
@@ -97,7 +105,7 @@
   & p
     width: 35%
     margin: auto
-    margin-top: 20px
+    margin-top: 30px
     color: #272424
 
     @include media-breakpoint-down(lg)
@@ -108,7 +116,9 @@
       width: 95%
 
   & h1
-    width: 50%
+    letter-spacing: 0.1em
+    line-height: 1
+    width: 65%
     margin: auto
     font-size: 48px
     text-transform: uppercase
@@ -153,7 +163,10 @@
   & button
     width: 100%
     background-color: transparent
-    border: solid 2px #153B67
+    border-top: solid 1px #153B67
+    border-right: solid 2px #153B67
+    border-bottom: solid 2px #153B67
+    border-left: solid 1px #153B67
     padding: 10px 32px
     color: #272424
     transition: all 0.3s ease-in-out
@@ -173,12 +186,12 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  margin-bottom: 50px
 
   .project__residencial-img
     flex: 0 1 calc(33.33% - 1rem)
     box-sizing: border-box 
     overflow: hidden
+    padding: 0px 15px 0px 15px
 
     img 
       width: 100% 
@@ -195,26 +208,22 @@
   margin: auto
   margin-top: 50px
 
-  & img
-    max-width: 450px
-    height: auto
-    padding: 0px 5px 0px 5px
-
-.__images__submenu-comercial
-  margin-bottom: 50px
-
 .submenu-residencial-txt
-  width: 90%
+  width: 73%
   margin: 0 auto
   padding-top: 20px
   
   & h2
+    letter-spacing: 0.1em
     text-transform: uppercase
     text-align: start
     font-size: 28px
   
   & p
     text-align: start
+
+    &:first-of-type
+      letter-spacing: 0.05em
 
   & h2, p, button
     color: #272424
@@ -229,6 +238,10 @@
     border: none
     background: transparent
     border-bottom: 1px solid black
+
+.project__location-img
+  margin-top: -5px
+  padding: 0
 
 .submenu-residencial-btn
   display: flex

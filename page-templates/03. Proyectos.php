@@ -73,7 +73,6 @@
         
         <div class="projects__img__submenu" id="residencialSection" style="display: flex;">
 
-
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="1">
             <?php echo siteImage("ALTHAUS_SAN_ÁNGEL", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
             <div class="submenu-residencial-txt">
@@ -86,7 +85,6 @@
               <button  class="submenu-residencial-btn" data-target="1">Ver más</button>
             </div>
           </div>
-
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="2">
             <?php echo siteImage("ALTHAUS_PEDREGAL", "project__residencial-img", "ALTHAUS_PEDREGAL"); ?>
@@ -102,9 +100,9 @@
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="3">
-            <?php echo siteImage("NUBE_52", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
+            <?php echo siteImage("NUBE_52", "project__residencial-img", "NUBE 52"); ?>
             <div class="submenu-residencial-txt">
-              <h2>NUVE 52</h2>
+              <h2>NUBE 52</h2>
               <p class="residencial__gps">
                 <?php echo siteImage("location.svg", "project__location-img", "icono de GPS"); ?>
                 San Jerónimo, Ciudad de México
@@ -284,7 +282,7 @@
           </div>
 
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("caribeSection_KAB_RESIDENCIAL", "project__kab-img", "caribeSection_KAB_RESIDENCIAL"); ?>
+            <?php echo siteImage("caribeSection_KAB_RESIDENCIAL", "project__residencial-img", "caribeSection_KAB_RESIDENCIAL"); ?>
             <div class="submenu-residencial-txt" data-id="16">
               <h2>KABEEK RESIDENCIAL – PUERTO CANCÚN</h2>
               <p class="residencial__gps">
