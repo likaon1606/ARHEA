@@ -251,12 +251,12 @@
   overflow: hidden
   position: relative
   color: #fff
+  padding-bottom: 100px
 
 .about__image-half
   position: relative
   width: 100%  
-  height: 1400px  
-  max-height: 1400px
+  height: 1650px  
 
   @include media-breakpoint-down(lg)
     max-height: 1100px
@@ -296,6 +296,7 @@
     width: 95%
 
   & h1
+    letter-spacing: 0.1em
     font-size: 48px
 
     @include media-breakpoint-down(lg)
@@ -311,7 +312,11 @@
 
 
 .__black-description-btn
-  margin-top: 30px
+  display: flex
+  align-items: center
+  width: 198px
+  height: 49px
+  margin-top: 50px
   padding: 16px 32px
   background: rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(8px)
@@ -334,6 +339,8 @@
     margin: 30px 0px 0px 20px
   
   & h2
+    position: relative
+    cursor: pointer
     font-size: 28px
 
     @include media-breakpoint-down(lg)
@@ -342,6 +349,21 @@
     @include media-breakpoint-down(md)
       padding-top: 10px
       font-size: 20px
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: -10px
+      left: 0
+      width: 100%
+      height: 1px
+      background-color: #fff
+      transform: scaleX(0)
+      transform-origin: left
+      transition: transform 0.5s ease
+
+    &:hover::after
+      transform: scaleX(1)
 
 
 .__black-separator
@@ -364,7 +386,9 @@
     height: 65%
 
   & h1
-    margin-top: 15%
+    letter-spacing: 0.1em
+    line-height: 1.1
+    margin-top: 300px
     text-align: center
     font-size: 48px
 
@@ -415,6 +439,7 @@
     height: 100%
     transition: transform 0.3s ease
     z-index: 2
+    object-fit: cover
 
     &:hover
       transform: scale(1.1)
@@ -429,6 +454,7 @@
   position: relative
   overflow: hidden
   z-index: 1
+  padding-left: 20px
 
   @include media-breakpoint-down(lg)
     width: 53%
@@ -438,9 +464,11 @@
     width: 100%
 
   & h4
+    letter-spacing: 0.1em
     font-size: 28px
     position: relative
     transition: color 0.3s ease
+    width: 50%
 
     @include media-breakpoint-down(lg)
       font-size: 24px
@@ -472,6 +500,10 @@
     &:before
       left: 0 
 
+.__property
+  width: 50%
+  letter-spacing: 0.1em
+
 .__saiz
   position: relative
   z-index: 1
@@ -499,6 +531,7 @@
   position: relative
   overflow: hidden
   z-index: 1
+  padding: 0px 0px 0px 20px
 
   @include media-breakpoint-down(lg)
     width: 53%
@@ -512,6 +545,7 @@
     font-size: 28px
     position: relative
     transition: color 0.3s ease
+    width: 80%
 
     @include media-breakpoint-down(lg)
       font-size: 24px
@@ -544,10 +578,10 @@
 
 .about__image-in-half
   position: absolute
-  top: 45%
+  top: 43%
   left: 50%
   width: 90%
-  height: 25%
+  height: 29%
   object-fit: cover
   transform: translate(-50%, -50%)  
   z-index: 2

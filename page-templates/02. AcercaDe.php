@@ -107,20 +107,20 @@
       </p>
       
       <div class="__blue-content col-lg-12 d-flex justify-content-center">
-        <div class="__blue-content-ganem col-lg-4">
+        <div class="__blue-content-ganem">
           <?php echo siteImage("ganem", "__ganem", "Imagen de HECTOR AREHIGA GANEM"); ?>
           <div class="__ganem-description">
             <h4>HÉCTOR AÉCHIGA GANEM</h4>
-            <p>Arhea Property Development</p>
+            <p class="__property">ARHEA PROPERTY DEVELOPMENT</p>
             <p>Fundador, Presidente y Consejero Delegado</p>
           </div>
         </div>
 
-        <div class="__blue-content-saiz col-lg-4">
+        <div class="__blue-content-saiz">
           <?php echo siteImage("saiz", "__saiz", "Imagen de JOSÉ LUIS SAÍZ FERNÁNDEZ"); ?>
           <div class="__saiz-description">
             <h4>JOSÉ LUIS SAÍZ FERNÁNDEZ</h4>
-            <p>Arhea Property Development</p>
+            <p class="__property">ARHEA PROPERTY DEVELOPMENT</p>
             <p>VP - Unidad de Negocio Multifamiliar</p>
           </div>
         </div>
