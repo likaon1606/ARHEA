@@ -73,8 +73,12 @@
         
         <div class="projects__img__submenu" id="residencialSection" style="display: flex;">
 
-          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="1">
-            <?php echo siteImage("ALTHAUS_SAN_ÁNGEL", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
+          <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="1"> 
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("ALTHAUS_SAN_ÁNGEL", "project__residencial-img", "ALTHAUS_SAN_ÁNGEL"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>ALTAHUS SAN ÁNGEL</h2>
               <p class="residencial__gps">
@@ -82,12 +86,22 @@
                 SAN ÁNGEL CIUDAD DE MÉXICO
               </p>
               <p>Edificio de vivienda en renta con 26 niveles y 242 unidades desde 42 m².</p>
-              <button  class="submenu-residencial-btn" data-target="1">Ver más</button>
+              <button class="submenu-residencial-btn" data-target="1">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
+
+            <div class="submenu-residencial-line"></div>
           </div>
 
+
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="2">
-            <?php echo siteImage("ALTHAUS_PEDREGAL", "project__residencial-img", "ALTHAUS_PEDREGAL"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("ALTHAUS_PEDREGAL", "project__residencial-img", "ALTHAUS_PEDREGAL"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>ALTHAUS PEDREGAL</h2>
               <p class="residencial__gps">
@@ -97,10 +111,17 @@
               <p>Edificio de vivienda en renta con 29 niveles y 361 unidades desde 42 m².</p>
               <button class="submenu-residencial-btn" data-target="2">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="3">
-            <?php echo siteImage("NUBE_52", "project__residencial-img", "NUBE 52"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("NUBE_52", "project__residencial-img", "NUBE 52"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>NUBE 52</h2>
               <p class="residencial__gps">
@@ -110,10 +131,17 @@
               <p>Único complejo en San Jerónimo con 13 apartamentos de lujo desde 250 m².</p>
               <button class="submenu-residencial-btn" data-target="3">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="4">
-            <?php echo siteImage("ARUNA_RESIDENCIAL", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("ARUNA_RESIDENCIAL", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>ARUNA RESIDENCIAL</h2>
               <p class="residencial__gps">
@@ -124,10 +152,16 @@
               cada una.</p>
               <button class="submenu-residencial-btn" data-target="4">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="5">
-            <?php echo siteImage("LOMAS_ALTAS_247", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("LOMAS_ALTAS_247", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
+            </div>
             <div class="submenu-residencial-txt">
               <h2>LOMAS ALTAS 247</h2>
               <p class="residencial__gps">
@@ -137,10 +171,17 @@
               <p>Residencial exclusivo en las Lomas con 3 departamentos de alto lujo desde 700 m².</p>
               <button class="submenu-residencial-btn" data-target="5">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="6">
-            <?php echo siteImage("LOMAS_ALTAS_253", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("LOMAS_ALTAS_253", "project__residencial-img", "LOMAS_ALTAS_253"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>LOMAS ALTAS 253</h2>
               <p class="residencial__gps">
@@ -150,10 +191,17 @@
               <p>Tres grandes departamentos con acabados de alta gama desde 1300 m².</p>
               <button class="submenu-residencial-btn" data-target="6">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="7">
-            <?php echo siteImage("TIRO_PICHON_60", "project__residencial-img", "TIRO_PICHON_60"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("TIRO_PICHON_60", "project__residencial-img", "TIRO_PICHON_60"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>TIRO AL PICHÓN 60</h2>
               <p class="residencial__gps">
@@ -163,10 +211,17 @@
               <p>Dos casas de diseño vanguardista y acabados de primer nivel desde 1000 m².</p>
               <button class="submenu-residencial-btn" data-target="7">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="8">
-            <?php echo siteImage("HAMBURGO_14", "project__residencial-img", "HAMBURGO_14"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("HAMBURGO_14", "project__residencial-img", "HAMBURGO_14"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>HAMBURGO 14</h2>
               <p class="residencial__gps">
@@ -177,10 +232,17 @@
               90 m².</p>
               <button class="submenu-residencial-btn" data-target="8">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="9">
-            <?php echo siteImage("CAÑADA_VISTA_HERMOSA", "project__residencial-img", "CAÑADA_VISTA_HERMOSA"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("CAÑADA_VISTA_HERMOSA", "project__residencial-img", "CAÑADA_VISTA_HERMOSA"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>CAÑADA DE VISTA HERMOSA</h2>
               <p class="residencial__gps">
@@ -190,10 +252,17 @@
               <p>...</p>
               <button class="submenu-residencial-btn" data-target="9">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-residencial col-12 col-md-6 col-lg-4" data-id="10">
-            <?php echo siteImage("DR_ATL_225", "project__residencial-img", "DR_ATL_225"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("DR_ATL_225", "project__residencial-img", "DR_ATL_225"); ?>
+            </div>
+
             <div class="submenu-residencial-txt">
               <h2>DOCTOR ATL 225</h2>
               <p class="residencial__gps">
@@ -203,6 +272,9 @@
               <p>...</p>
               <button class="submenu-residencial-btn" data-target="10">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
         </div>
 
@@ -212,7 +284,11 @@
         <div class="projects__img__submenu" id="comercialSection" style="display: none;">
 
           <div class="__images__submenu-comercial col-12 col-md-6 col-lg-4" data-id="11">
-            <?php echo siteImage("PASEO_MOLINO", "project__residencial-img", "PASEO_MOLINO"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("PASEO_MOLINO", "project__residencial-img", "PASEO_MOLINO"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt">
               <h2>PASEO EL MOLINO</h2>
               <p class="residencial__gps">
@@ -222,10 +298,17 @@
               <p>Proyecto de usos mixtos con departamentos desde 70 m², oficinas y centro comercial.</p>
               <button class="submenu-residencial-btn" data-target="11">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-comercial col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("DEL_PARQUE", "project__residencial-img", "DEL_PARQUE"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("DEL_PARQUE", "project__residencial-img", "DEL_PARQUE"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="12">
               <h2>CASA DEL PARQUE</h2>
               <p class="residencial__gps">
@@ -235,10 +318,17 @@
               <p>Proyecto de retiro para adultos mayores al sur de la Ciudad de México con 49 departamentos.</p>
               <button class="submenu-residencial-btn" data-target="12">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-comercial col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("JUNIOR_CLUB", "project__residencial-img", "JUNIOR_CLUB"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("JUNIOR_CLUB", "project__residencial-img", "JUNIOR_CLUB"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="13">
               <h2>JUNIOR CLUB</h2>
               <p class="residencial__gps">
@@ -248,6 +338,9 @@
               <p>Complejo de usos mixtos con 1,900 m² de área comercial y casi 8,000 m²de construcción.</p>
               <button class="submenu-residencial-btn" data-target="13">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
         </div>
 
@@ -256,7 +349,11 @@
         <div class="projects__img__submenu" id="caribeSection" style="display: none;">
           
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("caribeSection_WOHA", "project__residencial-img", "caribeSection_WOHA"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("caribeSection_WOHA", "project__residencial-img", "caribeSection_WOHA"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="14">
               <h2>WOHA</h2>
               <p class="residencial__gps">
@@ -266,10 +363,17 @@
               <p>Residencial High-End de departamentos con diseño y funcionalidad eficientes desde 115 m².</p>
               <button class="submenu-residencial-btn" data-target="14">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("caribeSection_KABEEK", "project__residencial-img", "caribeSection_KABEEK"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("caribeSection_KABEEK", "project__residencial-img", "caribeSection_KABEEK"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="15">
               <h2>KABEEK MARINA & CONDOS</h2>
               <p class="residencial__gps">
@@ -279,10 +383,17 @@
               <p>Condos diseñados bajo un exclusivo concepto de vida náutica de alto lujo de 500 m² cada uno.</p>
               <button class="submenu-residencial-btn" data-target="15">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("caribeSection_KAB_RESIDENCIAL", "project__residencial-img", "caribeSection_KAB_RESIDENCIAL"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("caribeSection_KAB_RESIDENCIAL", "project__residencial-img", "caribeSection_KAB_RESIDENCIAL"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="16">
               <h2>KABEEK RESIDENCIAL – PUERTO CANCÚN</h2>
               <p class="residencial__gps">
@@ -292,10 +403,17 @@
               <p>30 amplios apartamentos con diseño atemporal de 450 m² cada uno.</p>
               <button class="submenu-residencial-btn" data-target="16">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("caribeSection_PUNTA", "project__residencial-img", "caribeSection_PUNTA"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("caribeSection_PUNTA", "project__residencial-img", "caribeSection_PUNTA"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="17">
               <h2>LA PUNTA</h2>
               <p class="residencial__gps">
@@ -305,10 +423,17 @@
               <p>Residencial náutico con 13 casas con acabados de máxima calidad y extraordinarias vistas a Los Canales de Puerto Cancún.</p>
               <button class="submenu-residencial-btn" data-target="17">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
-            <?php echo siteImage("caribeSection_NYZUC", "project__residencial-img", "PASEO_MOLINO"); ?>
+
+            <div class="project__residencial-img-wrapper">
+              <?php echo siteImage("caribeSection_NYZUC", "project__residencial-img", "PASEO_MOLINO"); ?>
+            </div>
+          
             <div class="submenu-residencial-txt" data-id="18">
               <h2>ALDEA NIZUC</h2>
               <p class="residencial__gps">
@@ -318,6 +443,9 @@
               <p>Proyecto residencial donde la arquitectura y la madre naturaleza se unen para crear un lugar nunca antes visto.</p>
               <button class="submenu-residencial-btn" data-target="18">Ver más</button>
             </div>
+
+            <div class="submenu-residencial-line"></div>
+            
           </div>
 
         </div>

@@ -186,20 +186,84 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  padding-bottom: 50px
 
-  .project__residencial-img
+  .__images__submenu-residencial, .__images__submenu-comercial, .__images__submenu-caribe
+    position: relative
+
+    &:hover
+      .project__residencial-img-wrapper img
+        transform: scale(1.1)
+
+      .submenu-residencial-txt
+        background-color: #ECEFF3
+        transition: background-color 0.6s ease
+
+      .submenu-residencial-line
+        width: 93%
+
+  .project__residencial-img-wrapper
     flex: 0 1 calc(33.33% - 1rem)
     box-sizing: border-box 
     overflow: hidden
-    padding: 0px 15px 0px 15px
+    margin: 0px 15px 0px 15px
+    position: relative
 
-    img 
-      width: 100% 
+    .project__residencial-img
+      width: 100%
       height: auto
-      transition: transform 0.3s ease-in-out
 
-      &:hover
-        transform: scale(1.1) 
+      img 
+        width: 100% 
+        height: auto
+        display: block
+        transition: transform 0.3s ease-in-out
+        transform-origin: center center
+
+  .submenu-residencial-txt
+    position: relative
+    width: 93%
+    margin: 0 auto
+    padding: 20px 25px 30px 25px 
+    
+    & h2
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      text-align: start
+      font-size: 28px
+    
+    & p
+      text-align: start
+  
+      &:first-of-type
+        letter-spacing: 0.05em
+  
+      &:nth-of-type(2)
+        width: 90%
+  
+    & h2, p, button
+      color: #272424
+    
+    & .residencial__gps
+      text-align: start
+      text-transform: uppercase
+    
+    & button
+      width: 80px
+      padding: 10px 0px
+      border: none
+      background: transparent
+      border-bottom: 1px solid black
+
+  .submenu-residencial-line
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 0
+    height: 2px
+    margin-left: 3.5%
+    background-color: #272424
+    transition: width 0.5s ease-in-out
 
 .__images__submenu-residencial, .__images__submenu-comercial, .__images__submenu-caribe
   display: flex
@@ -207,37 +271,6 @@
   justify-content: center
   margin: auto
   margin-top: 50px
-
-.submenu-residencial-txt
-  width: 73%
-  margin: 0 auto
-  padding-top: 20px
-  
-  & h2
-    letter-spacing: 0.1em
-    text-transform: uppercase
-    text-align: start
-    font-size: 28px
-  
-  & p
-    text-align: start
-
-    &:first-of-type
-      letter-spacing: 0.05em
-
-  & h2, p, button
-    color: #272424
-  
-  & .residencial__gps
-    text-align: start
-    text-transform: uppercase
-  
-  & button
-    width: 80px
-    padding: 10px 0px
-    border: none
-    background: transparent
-    border-bottom: 1px solid black
 
 .project__location-img
   margin-top: -5px
