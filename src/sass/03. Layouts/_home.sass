@@ -1,5 +1,3 @@
-body
-  // background: #fff
 
 h1, h2, h3, h4
   font-family: 'Belleza'
@@ -86,6 +84,7 @@ p, button, label, input, li
   color: white
   transition: all 0.3s ease-in-out
   overflow: hidden 
+  text-decoration: none
 
   &::after
     content: '' 
@@ -143,9 +142,15 @@ p, button, label, input, li
   &.active 
     border-bottom: 2px solid white
 
+#links__page
+  text-decoration: none
+
 
 
 //******************ABOUT
+
+
+
 .about 
   background-color: #ECEFF3
   display: flex
@@ -205,33 +210,33 @@ p, button, label, input, li
 .line
   margin-left: 60px 
 
-.line a.brochure-link 
-  text-decoration: none
-  color: #272424 
-  font-size: 1rem
+// .line a.brochure-link 
+//   text-decoration: none
+//   color: #272424 
+//   font-size: 1rem
 
-.about__btn-brochure
-  position: relative
-  color: #272424
-  padding: 16px 0
-  background-color: transparent
-  border: none
-  border-bottom: 1px solid #153B67 
-  cursor: pointer
+// .about__btn-brochure
+//   position: relative
+//   color: #272424
+//   padding: 16px 0
+//   background-color: transparent
+//   border: none
+//   border-bottom: 1px solid #153B67 
+//   cursor: pointer
 
-  &::after
-    content: ''
-    position: absolute
-    left: 0
-    bottom: 0
-    width: 0
-    height: 0.02px 
-    background-color: #153B67
-    transition: width 0.3s ease-in-out
+//   &::after
+//     content: ''
+//     position: absolute
+//     left: 0
+//     bottom: 0
+//     width: 0
+//     height: 0.02px 
+//     background-color: #153B67
+//     transition: width 0.3s ease-in-out
 
-  &:hover
-    &::after
-      width: 100% 
+//   &:hover
+//     &::after
+//       width: 100% 
 
 
 
@@ -419,9 +424,10 @@ p, button, label, input, li
 //** slider middle **
 
 #carousel
-  margin-bottom: 50px
+  background-color: #ECEFF3
+  padding-bottom: 100px
 
-  & .container //! cambios
+  & .container
     width: 100%
     max-width: 100% 
     padding: 0
@@ -600,8 +606,6 @@ p, button, label, input, li
 // *********** red__inmob
 
 .red__inmob
-  margin-top: 80px
-  margin-bottom: 50px
   text-align: center
   background-color:  #153B67
   color: #fff

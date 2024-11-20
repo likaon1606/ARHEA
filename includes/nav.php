@@ -37,7 +37,9 @@
         </div>
 
         <div class="landing__menu">
-          <?php siteImage("logo_arhea.svg", "img-banner-left", "Banner-left"); ?> 
+          <a href="<?php echo home_url(); ?>">
+            <?php siteImage("logo_arhea.svg", "img-banner-left", "Banner-left"); ?> 
+          </a>
           <?php siteImage("hamburguer.svg", "img-hamburguer", "Menú"); ?> 
           <?php siteImage("close.svg", "close__menu", "close menu"); ?>
         </div>

@@ -37,6 +37,7 @@
     min-height: 500px
 
 .banner__collaborators-title
+  margin-top: 50px
   letter-spacing: 0.1em
   font-size: 52px
 
@@ -47,11 +48,17 @@
     font-size: 34px
 
 .banner__collaborators-subtitle
-  padding: 10px 0px 50px 0px
+  width: 85%
+  padding-top: 10px
   font-weight: normal
 
 .collaborators__btn__info
   position: relative
+  display: flex
+  align-items: center
+  width: 226px
+  height: 49px
+  margin-top: 40px
   color: #fff
   font-size: 16px
   padding: 16px 32px
@@ -81,20 +88,29 @@
       transform: translateX(0) 
 
 
-// COLABORATORS SECTION LOGOS
+
+
+//* COLABORATORS SECTION LOGOS
+
+
+
+
 .logos__colaborators
-  padding-top: 150px
+  padding: 100px 0px
   background-color: #fff !important
+
+  .row
+    justify-content: center
 
 .logos__colaborators-img
   display: flex
   flex-direction: column
   text-align: center
   justify-content: center
-  margin: 0 auto
+  width: 30%
 
   & img
-    max-width: 400px
+    width: 100%
     height: auto
 
 .logos__colaborators-txt
@@ -113,15 +129,14 @@
 
   & button
     color: #272424
-    margin-top: 20px 
+    margin-top: 30px 
     background-color: transparent
     text-align: start
     border: none
     border-bottom: 1px solid #272424
-    padding-top: 10px
     padding-bottom: 10px  
     width: max-content
-    margin-bottom: 100px
+    margin-bottom: 50px
     position: relative
     overflow: hidden
     z-index: 1
@@ -158,6 +173,7 @@
 //** MODALES DE ICONOS **
 
 .modal__colaborators
+  left: 0
   position: absolute
   z-index: -1
   opacity: 0
@@ -179,7 +195,6 @@
 
 .modal__colaborators__scrollable-section 
   background-color: transparent
-  padding: 20px
   width: 50% 
   max-height: 300px   
   overflow-y: auto    /* Habilita la barra de desplazamiento vertical */
@@ -331,10 +346,11 @@
     @include media-breakpoint-down(sm)
       font-size: 12px
 
-  
-
+.modal__colaborators.is-visible  
+  width: 90%
 
 .close-modal-colaborators
+  margin-bottom: 50px
 
   & button
     margin: 10px 0px 10px 0px
@@ -354,5 +370,5 @@
 
 .carousel-inner
   display: flex
-  flex-wrap: wrap // Para asegurar que los items estén en filas
-  justify-content: flex-start // Alineación de los elementos
+  flex-wrap: wrap 
+  justify-content: flex-start 

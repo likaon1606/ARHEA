@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-12">
         <div class="section__form-columns">
-          <div class="form__left d-flex flex-column">
+          <div class="form__left d-flex flex-column"  id="form__footer">
             <h2>BIENVENIDO A TU HOGAR IDEAL</h2>
             <p class="p__left">Escríbenos y en breve nos pondremos en contacto contigo.</p>
 

@@ -22,7 +22,9 @@
         <div class="home__content col-12 col-md-6 col-lg-4">
           <h1 class="home__title">DESARROLLOS INMOBILIARIOS DE VALOR</h1>
           <p class="home__subtitle">Creamos espacios que eleven la manera de vivir de sus habitantes en colaboración con las <strong>firmas de arquitectura líderes a nivel mundial.</strong></p>
-          <button class="home__contact-btn">CONTÁCTANOS</button>
+          <a id="links__page" href="#form__footer">
+            <button class="home__contact-btn">CONTÁCTANOS</button>
+          </a>
         </div>
 
         <!-- Submenú -->
@@ -54,12 +56,14 @@
 
 <section class="about">
   <div class="container">
-    <div class="row d-flex align-items-end justify-content-center">
+    <div class="row d-flex align-items-center justify-content-center">
 
       <div class="left-section col-12 col-lg-5 col-md-6">
         <p class="about-title">Acerca de Nosotros</p>
         <h1>ARHEA PROPERTY DEVELOPMENT</h1>
-        <button class="button-about">CONOCE MÁS</button>
+        <a href="<?php echo home_url('/acerca-de'); ?>">
+          <button class="button-about">CONOCE MÁS</button>
+        </a>
       </div>
 
       <div class="right-section col-12 col-lg-6 col-md-6">
@@ -67,11 +71,11 @@
           <p>
             Con más de 25 años de experiencia en el sector inmobiliario y una profunda comprensión de la diversidad de cada proyecto, nuestra prioridad es conformar el equipo perfecto para cada desarrollo.
           </p>
-          <a href="#" class="brochure-link">
+          <!-- <a href="#" class="brochure-link">
             <button class="about__btn-brochure">
               Descarga nuestro brochure
             </button>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -137,9 +141,11 @@
 
 
       <div class="btn__development">
-        <button>
-          INVIERTE CON NOSOTROS
-        </button>
+        <a id="links__page" href="#form__footer">
+          <button>
+            INVIERTE CON NOSOTROS
+          </button>
+        </a>
       </div>
   </div>
 </section>
@@ -151,7 +157,11 @@
         <div class="inovation__txt">
           <h1>INNOVACIÓN EN CONSTRUCCIÓN</h1>
           <p>Conoce nuestra cartera de <strong>desarrollos inmobiliarios</strong> de tipo residencial, comercial y en el Caribe.</p>
-          <button class="btn-inovation">VER MÁS PROYECTOS</button>
+          <a href="<?php echo home_url('/proyectos'); ?>">
+            <button class="btn-inovation">
+              VER MÁS PROYECTOS
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -226,52 +236,72 @@
   <p class="p__inmob">Establecemos alianzas estratégicas con los <strong>estudios de arquitectura de mayor prestigio</strong>, garantizando así la excelencia en todos nuestros proyectos.</p>
 
   <div class="grid">
-    <div class="grid__box">
-      <p>HKS</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>GENSLER</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>EDSA</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>LEGORRETA + LEGORRETA</p>
-      <p class="p__grid">+</p>
-    </div>
-    
-    <div class="grid__box">
-      <p>ARTIGAS ARQUITECTOS</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>SORDO MADALENO</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>ABAX ARQUITECTOS</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>ROTH ARCHITECTURE</p>
-      <p class="p__grid">+</p>
-    </div>
-
-    <div class="grid__box">
-      <p>SANZPONT ARQUITECTURA</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>SPRINGALL + MK</p>
-      <p class="p__grid">+</p>
-    </div>
-    <div class="grid__box">
-      <p>ARTCH</p>
-      <p class="p__grid">+</p>
-    </div>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>HKS</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>GENSLER</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>EDSA</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>LEGORRETA + LEGORRETA</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>ARTIGAS ARQUITECTOS</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>SORDO MADALENO</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>ABAX ARQUITECTOS</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>ROTH ARCHITECTURE</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>SANZPONT ARQUITECTURA</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>SPRINGALL + MK</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
+    <a id="links__page" href="<?php echo home_url('/colaboradores'); ?>">
+      <div class="grid__box">
+        <p>ARTCH</p>
+        <p class="p__grid">+</p>
+      </div>
+    </a>
   </div>
 </section>
 

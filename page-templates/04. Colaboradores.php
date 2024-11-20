@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-12">
 
-      <div class="banner__collaborators-content col-12 col-md-6 col-lg-4">
+      <div class="banner__collaborators-content col-12 col-md-6 col-lg-5">
         <h1 class="banner__collaborators-title">COLABORADORES</h1>
         <p class="banner__collaborators-subtitle">Seleccionamos a colaboradores altamente cualificados que compartan y respalden nuestra visión y misión para fomentar la excelencia en cada uno de nuestros proyectos.</p>
         <button class="collaborators__btn__info">MÁS INFORMACIÓN</button>
