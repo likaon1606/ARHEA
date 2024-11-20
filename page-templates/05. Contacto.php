@@ -39,15 +39,15 @@
                   <input type="text" id="name" name="name" required>
                 </div>
                 <div>
-                  <label for="email">Correo*</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <div>
                   <label for="phone">Teléfono*</label>
-                  <input type="tel" id="phone" name="phone" required>
+                  <input type="tel" id="email" name="email" required>
                 </div>
                 <div>
-                  <label for="project">Proyecto*</label>
+                  <label for="email">Correo*</label>
+                  <input type="email" id="phone" name="phone" required>
+                </div>
+                <div>
+                  <!-- <label for="project"> dsadsadsa</label> -->
                   <select id="project" name="project">
                     <option value="" disabled selected hidden>¿Qué proyecto te interesa conocer?</option>
                     <option class="option__select" value="value1">Woha</option>

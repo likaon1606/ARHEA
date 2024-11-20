@@ -177,7 +177,7 @@
           <h3>WOHA</h3>
           <p>PUERTO CANCÚN</p>
           <p class="p__carousel">Departamentos con eficiente diseño y funcionalidad en Puerto Cancún, desde 115 m².</p>
-          <a class="btn__cardcarousel" href="#">
+          <a class="btn__cardcarousel" id="links__page" href="#form__footer">
             <button>VER MÁS</button>
           </a>
         </div>
@@ -189,7 +189,7 @@
           <h3>LOMAS ALTAS 247</h3>
           <p>CIUDAD DE MÉXICO</p>
           <p class="p__carousel">Departamentos de lujo desde 700 m², con amplio jardín privado y vistas a una hermosa cañada boscosa.</p>
-          <a class="btn__cardcarousel" href="#">
+          <a class="btn__cardcarousel" id="links__page" href="#form__footer">
             <button>VER MÁS</button>
           </a>
         </div>
@@ -201,7 +201,7 @@
           <h3>CASA DEL PARQUE</h3>
           <p>CIUDAD DE MÉXICO</p>
           <p class="p__carousel">Proyecto de retiro de departamentos para adultos mayores con distintas opciones de residencias asistidas.</p>
-          <a class="btn__cardcarousel" href="#">
+          <a class="btn__cardcarousel" id="links__page" href="#form__footer">
             <button>VER MÁS</button>
           </a>
         </div>
@@ -213,7 +213,7 @@
           <h3>KABEEK MARINA & CONDOS</h3>
           <p>CANCÚN</p>
           <p class="p__carousel">Departamentos con eficiente diseño y funcionalidad en Puerto Cancún, desde 115 m².</p>
-          <a class="btn__cardcarousel" href="#">
+          <a class="btn__cardcarousel" id="links__page" href="#form__footer">
             <button>VER MÁS</button>
           </a>
         </div>

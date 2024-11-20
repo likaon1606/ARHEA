@@ -117,7 +117,7 @@
   flex-direction: column
   width: 750px
   margin: auto
-  margin-top: 30px
+  margin-top: 10px
   flex: 1
 
   @include media-breakpoint-down(lg)
@@ -137,10 +137,8 @@
   & label
     color: #272424
     margin-top: 30px
-    margin-bottom: 1px
 
   & input,
-  select,
   textarea
     border: none
     padding: 0
@@ -154,18 +152,42 @@
     &:focus
       border-bottom-color: #5a799b
 
-  .form__right-final select
-    margin: 20px 0
-    padding: 20px 0
+  & select
+    margin-top: 30px
+    border: none
+    border-bottom: 2px solid #153B67
+    font-size: 14px
+    color: #272424
+    background-color: transparent
+    outline: none
+    width: 95%
+    height: 50px
+
+    &:focus
+      border-bottom-color: #5a799b
+
+  & textarea
+    height: 25px
+
+.option__select
+  background: red !important
+
 
 .btn__form-final
   align-self: flex-end
+  display: flex
+  align-items: center
+  width: 127px
+  height: 49px
   margin-top: 5%
   padding: 16px 32px
   font-size: 16px
   background-color: transparent
   color: #272424
-  border: 2px solid #153B67
+  border-top: 2px solid #153B67
+  border-right: 1px solid #153B67
+  border-bottom: 2px solid #153B67
+  border-left: 2px solid #153B67
   cursor: pointer
   transition: all 0.8s ease-in-out
   width: auto
