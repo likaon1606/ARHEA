@@ -42,7 +42,7 @@
   font-size: 52px
 
   @include media-breakpoint-down(lg)
-    none
+    font-size: 40px
 
   @include media-breakpoint-down(sm)
     font-size: 34px
@@ -51,6 +51,9 @@
   width: 85%
   padding-top: 10px
   font-weight: normal
+
+  @include media-breakpoint-down(lg)
+    width: 100%
 
 .collaborators__btn__info
   position: relative
@@ -67,6 +70,9 @@
   border: 1px solid white
   overflow: hidden
   transition: all 0.3s ease-in-out
+
+  @include media-breakpoint-down(lg)
+    justify-content: center
 
   &::after
     content: '' 
@@ -127,6 +133,12 @@
     text-transform: uppercase
     color: #272424
 
+    @include media-breakpoint-down(sm)
+      font-size: 16px
+
+    @media (max-width: 321px)
+      font-size: 12px
+
   & button
     color: #272424
     margin-top: 30px 
@@ -141,6 +153,12 @@
     overflow: hidden
     z-index: 1
     transition: color 0.8s ease
+
+    @include media-breakpoint-down(sm)
+      font-size: 12px
+
+    @media (max-width: 321px)
+      font-size: 10px
 
     &:after
       content: ''

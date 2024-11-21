@@ -139,11 +139,14 @@
   &:hover::after
     transform: scaleX(1) 
 
+    @include media-breakpoint-down(sm)
+      transform: scale(0)
+
 .nav__submenu__elements-colaboratos
   position: absolute 
   top: 0
-  left: 80% 
-  margin: -210px 0px 0px -500px 
+  left: 37% 
+  margin: -210px 0px 0px 0px 
   color: #fff
   display: none
   grid-template-columns: repeat(3, 1fr)
@@ -153,7 +156,7 @@
 
   @include media-breakpoint-down(lg)
     gap: 30px
-    margin: -120px 0px 0px -200px
+    margin: -120px 0px 0px 30px
 
   & li
     width: 180px
@@ -195,13 +198,16 @@
   &:hover::after
     transform: scaleX(1) 
 
+    @include media-breakpoint-down(sm)
+      transform: scale(0)
+
 //***
 
 .nav__submenu__elements-projects
   position: absolute 
   top: 0
-  left: 80% 
-  margin: -50px 0px 0px -500px 
+  left: 0 
+  margin: -50px 0px 0px 300px 
   color: #fff
   display: none
   grid-template-columns: repeat(3, 1fr)
