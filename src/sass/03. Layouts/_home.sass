@@ -16,13 +16,16 @@ p, button, label, input, li
   min-height: 800px
   
   @include media-breakpoint-down(lg)
-    min-height: 600px
+    min-height: 700px
 
   @include media-breakpoint-down(sm)
     min-height: 500px
 
   & .col-12
     padding: 0
+
+    @include media-breakpoint-down(sm)
+      padding: 0px 6px
 
 .home__content
   display: flex
@@ -33,7 +36,7 @@ p, button, label, input, li
   z-index: 2
 
   @include media-breakpoint-down(lg)
-    margin-top: 50px
+    margin-top: 150px    
   
 .home__carousel
   position: absolute
@@ -49,7 +52,7 @@ p, button, label, input, li
   height: 100%
 
   @include media-breakpoint-down(lg)
-    height: 600px
+    height: 700px
 
   @include media-breakpoint-down(sm)
     height: 500px
@@ -65,7 +68,7 @@ p, button, label, input, li
     font-size: 34px
 
   @include media-breakpoint-down(sm)
-    font-size: 34px
+    font-size: 30px
 
 .home__subtitle
   padding: 10px 0px 30px 0px
@@ -86,6 +89,12 @@ p, button, label, input, li
   overflow: hidden 
   text-decoration: none
 
+  @include media-breakpoint-down(sm)
+    width: 100%
+    height: auto
+    font-size: 14px
+    padding: 12px 28px
+
   &::after
     content: '' 
     position: absolute 
@@ -105,10 +114,6 @@ p, button, label, input, li
     &::after
       transform: translateX(0) 
 
-
-  @include media-breakpoint-down(sm)
-    padding: 12px 28px
-
 .home__submenu-link
   margin: 100px 0px 0px 0px
 
@@ -122,11 +127,7 @@ p, button, label, input, li
   display: flex
   list-style: none
   justify-content: space-between
-
-.home__banner__links li
-
-  @include media-breakpoint-down(sm)
-    margin-left: 0
+  padding-left: 0
 
 .carousel__button 
   background: transparent
@@ -157,13 +158,19 @@ p, button, label, input, li
   justify-content: center
   padding: 100px 0
 
-.about .row
-  padding: 0px 10%
+  @include media-breakpoint-down(sm)
+    padding: 50px 0px
 
-  @include media-breakpoint-down(lg)
-    padding: 0px
+// .about .row
+//   padding: 0px 10%
+
+//   @include media-breakpoint-down(lg)
+//     padding: 0px
 
 .left-section
+
+  @include media-breakpoint-down(sm)
+    text-align: center
 
   & h1 
     letter-spacing: 0.1em
@@ -201,14 +208,22 @@ p, button, label, input, li
     color: #fff
   
   @include media-breakpoint-down(sm)
+    font-size: 14px
     margin-bottom: 30px
 
 .right-section p
   margin-bottom: 57px
   color: #272424 
 
+  @include media-breakpoint-down(sm)
+    margin-bottom: 0
+
 .line
   margin-left: 60px 
+
+  @include media-breakpoint-down(sm)
+    margin-left: 0
+    text-align: center
 
 // .line a.brochure-link 
 //   text-decoration: none
@@ -256,6 +271,9 @@ p, button, label, input, li
 
 .development__container
   width: 66%
+
+  @include media-breakpoint-down(sm)
+    width: 100%
 
 .development__image
   position: absolute
@@ -390,7 +408,7 @@ p, button, label, input, li
     color: #153B67
 
     @include media-breakpoint-down(sm)
-      font-size: 38px
+      font-size: 30px
 
   p, .btn-inovation
     color: #272424
@@ -427,6 +445,9 @@ p, button, label, input, li
   background-color: #ECEFF3
   padding-bottom: 100px
 
+  @include media-breakpoint-down(sm)
+    padding-bottom: 1px
+
   & .container
     width: 100%
     max-width: 100% 
@@ -438,6 +459,9 @@ p, button, label, input, li
   justify-content: center
   max-width: 100% 
   overflow: hidden
+
+  @include media-breakpoint-down(sm)
+    margin: 0
 
   & .slick-dots
     position: relative
@@ -538,14 +562,9 @@ p, button, label, input, li
   transition: opacity 0.8s ease
 
   @include media-breakpoint-down(lg)
-    top: 10px
-    left: 10px
-    width: 250px
-    height: 270px
+    top: 150px
+    height: 290px
     padding: 10px
-
-    & p
-      font-size: 14px
 
   @include media-breakpoint-down(sm)
     top: 5px
@@ -628,7 +647,7 @@ p, button, label, input, li
 
     @include media-breakpoint-down(sm)
       width: 100%
-      font-size: 34px
+      font-size: 30px
 
   .p__inmob
     margin: auto
@@ -640,8 +659,8 @@ p, button, label, input, li
       margin-top: 30px
       width: 100%
 
-    @include media-breakpoint-down(lg)
-      width: 95%
+    @include media-breakpoint-down(sm)
+      width: 100%
 
   .grid
     display: grid
@@ -682,6 +701,7 @@ p, button, label, input, li
     @include media-breakpoint-down(sm)
       flex-direction: row 
       gap: 10px
+      width: 100%
 
     &::after
       content: ''

@@ -12,8 +12,8 @@
       <div class="col-12">
         <div class="about__content">
           <h1 class="about__title">ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
-          <p class="about__subtitle">Somos una <strong> desarrolladora  de proyectos inmobiliarios</strong><br> comprometidos a crear ambientes cálidos, acogedores y que <br> fomenten el bienestar de sus habitantes.</p>
-          <div class="about__submenu-link">
+          <p class="about__subtitle">Somos una <strong> desarrolladora  de proyectos inmobiliarios</strong> comprometidos a crear ambientes cálidos, acogedores y que fomenten el bienestar de sus habitantes.</p>
+          <div class="about__submenu-link col-lg-4 col-md-8 col-12">
             <button class="about__projects-btn">CONOCER PROYECTOS</button>
             <button class="about__info-btn">Más información</button>
           </div>
@@ -62,7 +62,7 @@
           <div class="about__values-content">
             <h1>¿QUÉ NOS HACE DIFERENTES?</h1>
             <p class="about__values-subtitle">En <strong>Arhea Property Development</strong> trabajamos todos los días para que encuentres el <br>hogar de tus sueños.
-            <div class="about__mision-vision col-sm-12">
+            <div class="about__mision-vision">
               <div class="about__mision">
                 <h3 class="__mision">MISIÓN</h3>
                 <p>Diseñar y construir <strong>ambientes acogedores y de calidad.</strong> Con atención meticulosa al detalle y pasión por el diseño, ofrecemos hogares funcionales y estéticamente inspiradores que reflejan los valores y aspiraciones de sus habitantes.

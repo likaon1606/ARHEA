@@ -123,7 +123,7 @@ function sliderHome() {
     centerMode: true,
     dots: true,
     autoplay: true,
-    centerPadding: '240px', //! cambios
+    centerPadding: '240px', 
     slidesToShow: 1,
     prevArrow: prevArrow,
     nextArrow: nextArrow,
@@ -141,8 +141,8 @@ function sliderHome() {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '30px',
+          centerMode: false,
+          centerPadding: '0px',
           slidesToShow: 1
         }
       },

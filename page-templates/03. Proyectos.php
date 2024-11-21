@@ -86,9 +86,7 @@
                 SAN ÁNGEL CIUDAD DE MÉXICO
               </p>
               <p>Edificio de vivienda en renta con 26 niveles y 242 unidades desde 42 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="1">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -111,9 +109,7 @@
                 Pedregal, Ciudad de México
               </p>
               <p>Edificio de vivienda en renta con 29 niveles y 361 unidades desde 42 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="2">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -133,9 +129,7 @@
                 San Jerónimo, Ciudad de México
               </p>
               <p>Único complejo en San Jerónimo con 13 apartamentos de lujo desde 250 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="3">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -156,9 +150,7 @@
               </p>
               <p>10 lujosas casas con las mejores vistas a las montañas de Contadero de 450 m² 
               cada una.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="4">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -177,9 +169,7 @@
                 Lomas de Chapultepec, Ciudad de México
               </p>
               <p>Residencial exclusivo en las Lomas con 3 departamentos de alto lujo desde 700 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="5">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -199,9 +189,7 @@
                 Lomas de Chapultepec, Ciudad de México
               </p>
               <p>Tres grandes departamentos con acabados de alta gama desde 1300 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="6">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -221,9 +209,7 @@
                 Lomas Bezares, Ciudad de México
               </p>
               <p>Dos casas de diseño vanguardista y acabados de primer nivel desde 1000 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="7">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -244,9 +230,7 @@
               </p>
               <p>Conjunto de 36 departamentos con extraordinaria orientación y vistas desde
               90 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="8">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -266,9 +250,7 @@
               Vista Hermosa, Ciudad de México
               </p>
               <p>...</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="9">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -288,9 +270,7 @@
                 Sta Maria La Ribera, Ciudad de México
               </p>
               <p>...</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="10">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -316,9 +296,7 @@
                 Toluca, México
               </p>
               <p>Proyecto de usos mixtos con departamentos desde 70 m², oficinas y centro comercial.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="11">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -338,9 +316,7 @@
                 Tlalpan, Ciudad de México
               </p>
               <p>Proyecto de retiro para adultos mayores al sur de la Ciudad de México con 49 departamentos.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="12">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -360,9 +336,7 @@
                 Condesa, Ciudad de México
               </p>
               <p>Complejo de usos mixtos con 1,900 m² de área comercial y casi 8,000 m²de construcción.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="13">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -387,9 +361,7 @@
                 Puerto Cancún, Cancún
               </p>
               <p>Residencial High-End de departamentos con diseño y funcionalidad eficientes desde 115 m².</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="14">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -409,9 +381,7 @@
                 Lago Nichupte, Cancún
               </p>
               <p>Condos diseñados bajo un exclusivo concepto de vida náutica de alto lujo de 500 m² cada uno.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="15">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -431,9 +401,7 @@
                 Puerto Cancún, Cancún
               </p>
               <p>30 amplios apartamentos con diseño atemporal de 450 m² cada uno.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="16">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -453,9 +421,7 @@
                 Puerto Cancún, Cancún
               </p>
               <p>Residencial náutico con 13 casas con acabados de máxima calidad y extraordinarias vistas a Los Canales de Puerto Cancún.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="17">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
@@ -475,9 +441,7 @@
                 Cancún
               </p>
               <p>Proyecto residencial donde la arquitectura y la madre naturaleza se unen para crear un lugar nunca antes visto.</p>
-              <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
                 <button class="submenu-residencial-btn" data-target="18">Ver más</button>
-              </a>
             </div>
 
             <div class="submenu-residencial-line"></div>
