@@ -13,7 +13,7 @@
         <div class="about__content">
           <h1 class="about__title">ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
           <p class="about__subtitle">Somos una <strong> desarrolladora  de proyectos inmobiliarios</strong> comprometidos a crear ambientes cálidos, acogedores y que fomenten el bienestar de sus habitantes.</p>
-          <div class="about__submenu-link col-lg-4 col-md-8 col-12">
+          <div class="about__submenu-link">
             <button class="about__projects-btn">CONOCER PROYECTOS</button>
             <button class="about__info-btn">Más información</button>
           </div>

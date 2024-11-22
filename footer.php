@@ -42,7 +42,7 @@
 
               <select name="form1">
                 <option value="value1">¿Qué proyecto te interesa conocer?</option>
-                <option class="option__select" value="value2">Woha</option>
+                <option value="value2">Woha</option>
                 <option value="value3">Kabeek Marina & Condos</option>
                 <option value="value4">Aldea Nizuc</option>
               </select>

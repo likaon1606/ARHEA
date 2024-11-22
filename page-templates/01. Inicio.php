@@ -28,7 +28,7 @@
         </div>
 
         <!-- Submenú -->
-        <div class="home__submenu-link col-lg-4">
+        <div class="home__submenu-link col-lg-5">
           <ul class="home__banner__links">
             <li>
               <button class="carousel__button active">RESIDENCIAL</button>

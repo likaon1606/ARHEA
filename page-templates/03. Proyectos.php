@@ -21,7 +21,7 @@
           <?php echo siteImage("projects_banner__tird", "projects__banner__image", "Banner Tercero"); ?>
         </div>
 
-        <div class="banner__project-content col-12 col-md-6 col-lg-4">
+        <div class="banner__project-content col-12 col-md-6 col-lg-5">
           <h1 class="banner__project-title">CARTERA DE PROYECTOS INMOBILIARIOS</h1>
           <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos residenciales, comerciales y mixtos</strong> a través de una efectiva coordinación de equipos de trabajo multidisciplinarios.</p>
           <button class="projects__btn__info">MÁS INFORMACIÓN</button>

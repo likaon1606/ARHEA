@@ -73,6 +73,7 @@
 .about__projects-btn
   display: flex
   align-items: center
+  justify-content: center
   width: 247px
   height: 49px
   padding: 16px 32px
@@ -122,7 +123,7 @@
 
 .about__content-gray 
   display: flex
-  justify-content: center
+  justify-content: space-evenly
   align-items: center
 
   @include media-breakpoint-down(lg)
@@ -132,8 +133,10 @@
     display: block
     
 .about__gray-title
-  width: 33%
-  margin: 0px 50px
+  width: 37%
+
+  @media (max-width: 1025px)
+    width: 44%
 
   @include media-breakpoint-down(lg)
     width: 50%
@@ -161,7 +164,9 @@
 
 .about__gray-description
   width: 36%
-  margin: 0px 50px
+
+  @media (max-width: 1025px)
+    width: 50%
 
   @include media-breakpoint-down(lg)
     width: 45%
@@ -271,13 +276,15 @@
     padding: 15px
 
 .about__mision
-  width: 29%
+  width: 368px
+  height: 255px
 
   @include media-breakpoint-down(lg)
     width: 100%
 
 .about__vision
-  width: 28%
+  width: 368px
+  height: 255px
 
   @include media-breakpoint-down(lg)
     width: 100%
