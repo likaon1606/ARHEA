@@ -9,26 +9,54 @@
             <li class="nav__submenu-projects">
               <a href="<?php echo home_url('/proyectos'); ?>">PROYECTOS</a>
               <ul class="nav__submenu__elements-projects">
-                <li>Residencial</li>
-                <li>Comercial</li>
-                <li>Caribe</li>
+                <a href="<?php echo home_url('/proyectos #buttons__projects'); ?>" id="links__page">
+                  <li>Residencial</li>
+                </a>
+                <a href="<?php echo home_url('/proyectos #buttons__projects'); ?>" id="links__page">
+                  <li>Comercial</li>
+                </a>
+                <a href="<?php echo home_url('/proyectos #buttons__projects'); ?>" id="links__page">
+                  <li>Caribe</li>
+                </a>
               </ul>
             </li>
 
             <li class="nav__submenu-colaborators">
               <a href="<?php echo home_url('/colaboradores'); ?>">COLABORADORES</a>
               <ul class="nav__submenu__elements-colaboratos">
-                <li>HKS</li>
-                <li>Gensler</li>
-                <li>Edsa</li>
-                <li>Legorreta + Legorreta</li>
-                <li>Artigas Arquitectos</li>
-                <li>Sordo Madaleno</li>
-                <li>Abax Arquitectos</li>
-                <li>Roth Architecture</li>
-                <li>Sanzpont Arquitectura</li>
-                <li>Springall + MK</li>
-                <li>Artch</li>
+                <a href="<?php echo home_url('/colaboradores #HKS'); ?>" id="links__page">
+                  <li>HKS</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #GENSLER'); ?>" id="links__page">
+                  <li>Gensler</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #EDSA'); ?>" id="links__page">
+                  <li>Edsa</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #Legorreta'); ?>" id="links__page">
+                  <li>Legorreta + Legorreta</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #Artigas'); ?>" id="links__page">
+                  <li>Artigas Arquitectos</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #Sordo'); ?>" id="links__page">
+                  <li>Sordo Madaleno</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #Abax'); ?>" id="links__page">
+                  <li>Abax Arquitectos</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #roth'); ?>" id="links__page">
+                  <li>Roth Architecture</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #Sanzpont'); ?>" id="links__page">
+                  <li>Sanzpont Arquitectura</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #Springall'); ?>" id="links__page">
+                  <li>Springall + MK</li>
+                </a>
+                <a href="<?php echo home_url('/colaboradores #artch'); ?>" id="links__page">
+                  <li>Artch</li>
+                </a>
               </ul>
             </li>
 

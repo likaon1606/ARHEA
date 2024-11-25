@@ -59,7 +59,7 @@
     <div class="row">
       <div class="col-12">
 
-        <div class="projects__submenu">
+        <div class="projects__submenu" id="buttons__projects">
           <a href="#" id="residencialBtn" class="active__projects"><button>RESIDENCIAL</button></a>
           <a href="#" id="comercialBtn"><button>COMERCIAL</button></a>
           <a href="#" id="caribeBtn"><button>EL CARIBE</button></a>
@@ -371,7 +371,7 @@
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
 
             <div class="project__residencial-img-wrapper">
-              <?php echo siteImage("caribeSection_KABEEK", "project__residencial-img", "caribeSection_KABEEK"); ?>
+              <?php echo siteImage("caribeSection_KABEEK_sale", "project__residencial-img", "caribeSection_KABEEK"); ?>
             </div>
           
             <div class="submenu-residencial-txt" data-id="15">
@@ -431,7 +431,7 @@
           <div class="__images__submenu-caribe col-12 col-md-6 col-lg-4">
 
             <div class="project__residencial-img-wrapper">
-              <?php echo siteImage("caribeSection_NYZUC", "project__residencial-img", "PASEO_MOLINO"); ?>
+              <?php echo siteImage("caribeSection_NYZUC_sale", "project__residencial-img", "PASEO_MOLINO"); ?>
             </div>
           
             <div class="submenu-residencial-txt" data-id="18">

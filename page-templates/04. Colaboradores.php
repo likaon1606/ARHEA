@@ -30,7 +30,7 @@
     <div class="row">
 
       <!--//* ICON GRID 19 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="19">
+      <div id="HKS" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="19">
         <div>
           <?php echo siteImage("logos-colaboradores/HKS", "collaborators__img-logo", "Logotipo del cliente HKS"); ?>
         </div>
@@ -175,7 +175,7 @@
       </div>
 
       <!--//* ICON GRID 20 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="20">
+      <div id="GENSLER" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="20">
         <div>
           <?php echo siteImage("logos-colaboradores/GENSLER", "collaborators__img-logo", "Logotipo del cliente GENSLER"); ?>
         </div>
@@ -317,7 +317,7 @@
       </div>
 
       <!--//* ICON GRID 21 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="21">
+      <div id="EDSA" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="21">
         <div>
           <?php echo siteImage("logos-colaboradores/EDSA", "collaborators__img-logo", "Logotipo del cliente EDSA"); ?>
         </div>
@@ -473,7 +473,7 @@
       </div>
 
       <!--//* ICON GRID 22 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="22">
+      <div id="Legorreta" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="22">
         <div>
           <?php echo siteImage("logos-colaboradores/LEGORRETA", "collaborators__img-logo", "Logotipo del cliente LEGORRETA"); ?>
         </div>
@@ -618,7 +618,7 @@
       </div>
 
       <!--//* ICON GRID 23 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="23">
+      <div id="Artigas" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="23">
         <div>
           <?php echo siteImage("logos-colaboradores/ARTIGAS", "collaborators__img-logo", "Logotipo del cliente ARTIGAS"); ?>
         </div>
@@ -664,7 +664,7 @@
       </div>
 
       <!--//* ICON GRID 24 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="24">
+      <div id="Sordo" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="24">
         <div>
           <?php echo siteImage("logos-colaboradores/SORDO_MADALENO", "collaborators__img-logo", "Logotipo del cliente ARTSORDO_MADALENOIGAS"); ?>
         </div>
@@ -801,7 +801,7 @@
       </div>
 
       <!--//* ICON GRID 25 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="25">
+      <div id="Abax" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="25">
         <div>
           <?php echo siteImage("logos-colaboradores/ABAX", "collaborators__img-logo", "Logotipo del cliente ABAX ARQUITECTOS"); ?>
         </div>
@@ -887,7 +887,7 @@
       </div>
 
       <!--//* ICON GRID 26 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="26">
+      <div id="roth" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="26">
         <div>
           <?php echo siteImage("logos-colaboradores/ROTH_ARCHITECTURE", "collaborators__img-logo", "Logotipo del cliente roth architecture"); ?>
         </div>
@@ -1047,7 +1047,7 @@
       </div>
 
       <!--//* ICON GRID 27 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="27">
+      <div id="Sanzpont" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="27">
         <div>
           <?php echo siteImage("logos-colaboradores/Sanzpont_Arquitectura", "collaborators__img-logo", "Logotipo del cliente Sanzpont Arquitectura"); ?>
         </div>
@@ -1204,7 +1204,7 @@
       </div>
 
       <!--//* ICON GRID 28 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="28">
+      <div id="Springall" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="28">
         <div>
           <?php echo siteImage("logos-colaboradores/Springall", "collaborators__img-logo", "Logotipo del cliente Springall + MK"); ?>
         </div>
@@ -1350,7 +1350,7 @@
       </div>
 
       <!--//* ICON GRID 29 -->
-      <div class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="29">
+      <div id="artch" class="logos__colaborators-img col-12 col-md-6 col-lg-4" data-id="29">
         <div>
           <?php echo siteImage("logos-colaboradores/ARTCH", "collaborators__img-logo", "Logotipo del cliente artch"); ?>
         </div>
