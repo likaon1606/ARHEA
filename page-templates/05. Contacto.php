@@ -65,7 +65,9 @@
                 <div class="info__item-final">
                   <p class="info__item-title-final">UBICACIÓN</p>
                   <p class="pipe-final">
-                    <?php echo siteImage("pipe_large", "pipe-large-final", "pipe largo para separar direcciones"); ?>
+                    <svg width="1" height="69" viewBox="0 0 1 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="1" height="69" fill="#153B67"/>
+                    </svg>
                   </p>
                   <p class="info__item-txt-final">
                     Paseo de Los Tamarindos 90, Torre 1 Piso 5,<br>
@@ -78,14 +80,18 @@
                   <div class="info__item-final">
                     <p class="info__item-title-final">TELÉFONO</p>
                     <p class="pipe-final">
-                      <?php echo siteImage("pipe_small", "pipe-small-final", "pipe corto para separar direcciones"); ?>
+                      <svg width="1" height="23" viewBox="0 0 1 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="1" height="23" fill="#153B67"/>
+                      </svg>
                     </p>
                     <p class="info__item-txt-final">55 2167 9575 / 77</p>
                   </div>
                   <div class="info__item-final">
                     <p class="info__item-title-final">EMAIL</p>
                     <p class="pipe-final">
-                      <?php echo siteImage("pipe_small", "pipe-small-final", "pipe corto para separar direcciones"); ?>
+                      <svg width="1" height="23" viewBox="0 0 1 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="1" height="23" fill="#153B67"/>
+                      </svg>
                     </p>
                     <p class="info__item-txt-final">info@arhea.mx</p>
                   </div>
