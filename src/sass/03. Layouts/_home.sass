@@ -19,7 +19,7 @@ p, button, label, input, li, select, option
     min-height: 700px
 
   @include media-breakpoint-down(sm)
-    min-height: 500px
+    min-height: 550px
 
   & .col-12
     padding: 0
@@ -37,6 +37,9 @@ p, button, label, input, li, select, option
 
   @include media-breakpoint-down(lg)
     margin-top: 150px    
+
+  @include media-breakpoint-down(sm)
+    margin-top: 100px
   
 .home__carousel
   position: absolute
@@ -54,7 +57,7 @@ p, button, label, input, li, select, option
     height: 700px
 
   @include media-breakpoint-down(sm)
-    height: 500px
+    height: 550px
 
 .home__title
   letter-spacing: 0.1em
@@ -663,6 +666,9 @@ p, button, label, input, li, select, option
     @include media-breakpoint-down(sm)
       width: 100%
       font-size: 30px
+
+    @media (max-width: 321px)
+      font-size: 25px
 
   .p__inmob
     margin: auto

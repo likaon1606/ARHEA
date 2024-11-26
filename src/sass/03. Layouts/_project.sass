@@ -21,15 +21,15 @@
 .projects__banner__image
   height: 700px
 
-  @include media-breakpoint-down(lg)
-    height: 700px
+  @include media-breakpoint-down(sm)
+    height: 600px
 
 .banner__project-content
   margin-top: 50px
   z-index: 2
 
   @include media-breakpoint-down(lg)
-    margin-top: 0px
+    margin-top: 100px
 
 .banner__project-title
   letter-spacing: 0.1em
@@ -37,7 +37,7 @@
   font-size: 48px
 
   @include media-breakpoint-down(sm)
-    font-size: 40px
+    font-size: 30px
 
 .banner__project-subtitle
   margin: 20px 0px 40px 0px
@@ -60,6 +60,9 @@
   border-bottom: 2px solid white
   border-top: 1px solid white
   transition: all 0.3s ease-in-out
+
+  @include media-breakpoint-down(lg)
+    margin-top: 30px
 
   @include media-breakpoint-down(sm)
     padding: 10px 18px
@@ -96,6 +99,12 @@
 //*** projects__title_banner ***
 
 
+
+
+
+.projects__title_banner
+  padding-top: 50px
+
 .projects__section-title
   text-align: center
   margin-top: 100px
@@ -130,6 +139,7 @@
       font-size: 40px
     
     @include media-breakpoint-down(sm)
+      font-size: 30px
       text-align: start
       width: 95%
 
