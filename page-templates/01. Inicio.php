@@ -58,7 +58,7 @@
   <div class="container">
     <div class="row d-flex align-items-center justify-content-center">
 
-      <div class="left-section col-12 col-lg-5 col-md-6">
+      <div class="left-section col-12 col-lg-4 col-md-6">
         <p class="about-title">Acerca de Nosotros</p>
         <h1>ARHEA PROPERTY DEVELOPMENT</h1>
         <a href="<?php echo home_url('/acerca-de'); ?>">
@@ -66,7 +66,7 @@
         </a>
       </div>
 
-      <div class="right-section col-12 col-lg-6 col-md-6">
+      <div class="right-section col-12 col-lg-5 col-md-6">
         <div class="line">
           <p>
             Con más de 25 años de experiencia en el sector inmobiliario y una profunda comprensión de la diversidad de cada proyecto, nuestra prioridad es conformar el equipo perfecto para cada desarrollo.

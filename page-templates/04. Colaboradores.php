@@ -16,7 +16,7 @@
         <h1 class="banner__collaborators-title">COLABORADORES</h1>
         <p class="banner__collaborators-subtitle">Seleccionamos a colaboradores altamente cualificados que compartan y respalden nuestra visión y misión para fomentar la excelencia en cada uno de nuestros proyectos.</p>
         <button class="collaborators__btn__info">MÁS INFORMACIÓN</button>
-        <?php echo siteImage("projects_img", "collaborators__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
+        <?php echo siteImage("projects_banner__tird", "collaborators__banner-img", "Banner Principal de la pestaña proyectos"); ?>   
       </div>
 
       </div>
