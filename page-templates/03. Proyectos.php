@@ -36,10 +36,10 @@
   </div>
     <!-- Carrusel de Imágenes -->
     <div class="home__carousel projects__carousel">
-          <?php echo siteImage("projects_banner__one", "projects__banner__image", "Banner Principal"); ?>
-          <?php echo siteImage("projects_banner__two", "projects__banner__image", "Banner Secundario"); ?>
-          <?php echo siteImage("projects_banner__three", "projects__banner__image", "Banner Tercero"); ?>
-        </div>
+      <?php echo siteImage("projects_banner__one", "projects__banner__image", "Banner Principal"); ?>
+      <?php echo siteImage("projects_banner__two", "projects__banner__image", "Banner Secundario"); ?>
+      <?php echo siteImage("projects_banner__three", "projects__banner__image", "Banner Tercero"); ?>
+    </div>
 </section>
 
 <section class="projects__title_banner">
