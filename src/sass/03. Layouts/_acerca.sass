@@ -482,6 +482,7 @@
     padding: 0px 10px
     
 .__blue-content
+  margin: auto
   margin-top: 50px
 
   @include media-breakpoint-down(sm)
@@ -507,6 +508,9 @@
   position: relative
   z-index: 1
   overflow: hidden
+
+  @media (max-width: 1025px)
+    width: 100%
 
   & img 
     width: 100%
@@ -587,6 +591,9 @@
   position: relative
   z-index: 1
   overflow: hidden
+
+  @media (max-width: 1025px)
+    width: 100%
 
   & img 
     width: 100%
@@ -680,4 +687,6 @@
   @media (max-width: 321px)
     top: 30%
 
-
+#links__page__about
+  text-decoration: none
+  color: #fff

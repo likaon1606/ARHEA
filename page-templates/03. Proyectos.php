@@ -14,17 +14,14 @@
     <div class="row">
       <div class="col-12">
 
-       <!-- Carrusel de Imágenes -->
-       <div class="home__carousel projects__carousel">
-          <?php echo siteImage("projects_banner__first", "projects__banner__image", "Banner Principal"); ?>
-          <?php echo siteImage("projects_banner__second", "projects__banner__image", "Banner Secundario"); ?>
-          <?php echo siteImage("projects_banner__tird", "projects__banner__image", "Banner Tercero"); ?>
-        </div>
+     
 
-        <div class="banner__project-content col-12 col-md-6 col-lg-4">
+        <div class="banner__project-content col-12 col-md-6 col-lg-5">
           <h1 class="banner__project-title">CARTERA DE PROYECTOS INMOBILIARIOS</h1>
           <p class="banner__project-subtitle">En <strong>Arhea Property Development</strong> llevamos a cabo <strong>proyectos residenciales, comerciales y mixtos</strong> a través de una efectiva coordinación de equipos de trabajo multidisciplinarios.</p>
-          <button class="projects__btn__info">MÁS INFORMACIÓN</button>
+          <a id="links__page__about" href="#form__footer">
+            <button class="projects__btn__info">MÁS INFORMACIÓN</button>
+          </a>
 
           <div class="banner__project-submenu">
             <ul class="banner__project-links">
@@ -37,6 +34,12 @@
       </div>
     </div>
   </div>
+    <!-- Carrusel de Imágenes -->
+    <div class="home__carousel projects__carousel">
+          <?php echo siteImage("projects_banner__one", "projects__banner__image", "Banner Principal"); ?>
+          <?php echo siteImage("projects_banner__two", "projects__banner__image", "Banner Secundario"); ?>
+          <?php echo siteImage("projects_banner__three", "projects__banner__image", "Banner Tercero"); ?>
+        </div>
 </section>
 
 <section class="projects__title_banner">

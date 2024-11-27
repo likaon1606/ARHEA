@@ -14,8 +14,14 @@
           <h1 class="about__title">ARHEA<br>PROPERTY<br>DEVELOPMENT</h1>
           <p class="about__subtitle">Somos una <strong> desarrolladora  de proyectos inmobiliarios</strong> comprometidos a crear ambientes cálidos, acogedores y que fomenten el bienestar de sus habitantes.</p>
           <div class="about__submenu-link">
+          <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
             <button class="about__projects-btn">CONOCER PROYECTOS</button>
-            <button class="about__info-btn">Más información</button>
+          </a>
+          <button class="about__info-btn">
+            <a id="links__page__about" href="#form__footer">
+              Más información
+            </a>
+          </button>
           </div>
           <?php echo siteImage("banner__about", "about__image", "Imagen de about Principal"); ?>
         </div>
@@ -89,7 +95,9 @@
         <h1>CORE VALUES</h1>
         <p>Desafiamos constantemente los límites del diseño para crear hogares funcionales y estéticamente inspiradores.
         </p>
-        <button class="__black-description-btn">VER PROYECTOS</button>
+        <a id="links__page" href="<?php echo home_url('/proyectos'); ?>">
+          <button class="__black-description-btn">VER PROYECTOS</button>
+        </a>
       </div>
 
       <div class="__black-description">
@@ -106,7 +114,7 @@
       <p class="__about__blue-subtitle">Poseemos más de dos <strong>décadas de conocimiento en el ámbito de bienes raíces,</strong> respaldados por un grupo de profesionales enfocados en los proyectos y sus residentes.
       </p>
       
-      <div class="__blue-content col-lg-12 d-flex justify-content-center">
+      <div class="__blue-content col-lg-11 col-12 d-flex justify-content-center">
         <div class="__blue-content-ganem">
           <?php echo siteImage("ganem", "__ganem", "Imagen de HECTOR AREHIGA GANEM"); ?>
           <div class="__ganem-description">

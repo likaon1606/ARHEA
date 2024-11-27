@@ -12,8 +12,7 @@
     min-height: 600px
   
 .projects__carousel
-  min-height: 700px
-  filter: brightness(50%)
+  filter: brightness(55%)
 
   @include media-breakpoint-down(sm)
     min-height: 600px
@@ -27,9 +26,16 @@
 .banner__project-content
   margin-top: 50px
   z-index: 2
+  width: 40%
+
+  @media (max-width: 1025px)
+    width: 50%
 
   @include media-breakpoint-down(lg)
     margin-top: 100px
+
+  @include media-breakpoint-down(sm)
+    width: 100%
 
 .banner__project-title
   letter-spacing: 0.1em
@@ -107,7 +113,7 @@
 
 .projects__section-title
   text-align: center
-  margin-top: 100px
+  margin-top: 50px
 
   @include media-breakpoint-down(lg)
     margin-top: 0px
@@ -357,11 +363,11 @@
   z-index: 50
 
   @include media-breakpoint-down(lg)
-    top: 450px
+    top: 480px
     left: 50px
 
   @include media-breakpoint-down(sm)
-    top: 530px
+    top: 615px
     left: 20px
 
 .left__arrow__projects
@@ -447,11 +453,14 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) 
   z-index: 6
 
+  @media (max-width: 1025px)
+    max-width: 41%
+
   @include media-breakpoint-down(lg)
-    margin-top: 60px
-    max-width: 40%
+    margin-top: -60px
+    max-width: 50%
     padding: 0
-    left: 400px
+    left: 380px
 
   @include media-breakpoint-down(sm)
     max-width: 100%
@@ -487,14 +496,14 @@
       font-size: 18px
 
     @include media-breakpoint-down(sm)
-      font-size: 14px
+      font-size: 16px
 
   & p
     @include media-breakpoint-down(lg)
-      font-size: 14px
+      font-size: 16px
 
     @include media-breakpoint-down(sm)
-      font-size: 12px
+      font-size: 14px
 
 .close-modal-projects
   position: absolute
