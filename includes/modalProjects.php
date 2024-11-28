@@ -448,9 +448,9 @@ modal__text__ubicationa ubicación privilegiada a escasas cuadras de Paseo de la
     <?php echo siteImage("modal-caribe/aldea_nyzuc_2", "slider__projects__img", "en venta ALDEA NYZUC"); ?> 
     <?php echo siteImage("modal-caribe/aldea_nyzuc_3", "slider__projects__img", "en venta ALDEA NYZUC"); ?> 
   </div>
-  <div class="modal-content">
+  <div class="modal-content_nyzuc">
       <span class="close-modal-projects">
-        <?php echo siteImage("boton-cerrar.svg", "slider__projects__close__img"); ?>        <?php echo siteImage("boton-cerrar.svg", "slider__projects__close__img"); ?>
+        <?php echo siteImage("boton-cerrar.svg", "slider__projects__close__img"); ?>
       </span>
     <div class="modal-text">
       <h3>ALDEA NYZUC</h3>
