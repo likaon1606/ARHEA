@@ -28,7 +28,6 @@ npm install --global gulp-cli
 cd ../wp-content/themes/
 mkdir nuevoproyecto
 cd nuevoproyecto
-git clone https://github.com/medinnna/wordpress-gulp-boilerplate.git .
 ```
 
 3. Instalar dependencias del proyecto
